@@ -1,2 +1,2 @@
-# GreenItea
-Repo officiel pour le Design4Green 2022
+# GreenITeaTraining
+Projet d'entrainement pour écoconception
