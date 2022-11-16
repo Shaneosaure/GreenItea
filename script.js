@@ -1,5 +1,11 @@
 /**ficher pour java script */
 var basketList=[];
+
+
+/**liste des formations**/
+let formationsList= {
+}
+
 /**fonction d'ajout dans le panier */
 function addBasket(btnId){
     basketList.push(document.getElementById(btnId));
