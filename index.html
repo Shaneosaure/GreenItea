@@ -13,12 +13,36 @@
 <body>
   <header>
     <h1>Votre formation personnalisée !</h1>
+    <div id="basket"></div>
+    <a href="javascript:void(0);" class="icon" onclick="displayBasket()">
+      <i class="fa fa-bars"></i>
+    </a>
   </header>
   <main>
-    
+    <div class="accessibility">
+
+    </div>
+    <div class="filter" id="filter">
+      <div class="structure" id="structure">
+        <ul>Structure:
+          <li>
+            <label for="mooc"> <input type="checkbox" name="structure" value="mooc" id="mooc">MOOC</label>
+          </li>
+          <li>
+            <label for="prive"><input type="checkbox" name="structure" value="prive" id="prive">Prive</label>
+          </li>
+          <li>
+            <label for="public"><input type="checkbox" name="structure" value="public" id="public">Public</label>
+          </li>
+        </ul>
+        <div class="filter-button">
+          <input class="filter" type="button" onclick="filter()" value="Filtrer résultat">
+        </div>
+      </div>
+    </div>
   </main>
   <footer>
-    <h3 class="textFooter">Créé l'équipe numéro 8</h3>
+    <h3 class="textFooter">Créé par l'équipe numéro 8</h3>
   </footer> 
 </body>
 
