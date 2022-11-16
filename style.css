@@ -3,6 +3,44 @@
     display: none;
 }
 
+.mapblock {
+    box-sizing: border-box;
+    border: 5px solid #000000;
+    -webkit-border-radius: 18px / 20px;
+    -moz-border-radius: 18px / 20px;
+    border-radius: 18px / 20px;
+    overflow-y: auto;
+    scrollbar-width: auto;
+    -ms-overflow-style: none;
+    margin-bottom: 70px;
+    margin-right: 2%;
+    height: 600px;
+    display:inline-block;
+    width:45%;
+}
+.mapblock::-webkit-scrollbar{
+    display: none;
+}
+
+.listblock {
+    box-sizing: border-box;
+    border: 5px solid #000000;
+    overflow-y: auto;
+    -webkit-border-radius: 18px / 20px;
+    -moz-border-radius: 18px / 20px;
+    border-radius: 18px / 20px;
+    scrollbar-width: auto;
+    -ms-overflow-style: none;
+    margin-left: 2%;
+    margin-bottom: 70px;
+    height: 600px;
+    display:inline-block;
+   width:45%;
+}
+.listblock::-webkit-scrollbar{
+    display: none;
+}
+
 .bouton-menu{
     position:absolute;
     top:0;
