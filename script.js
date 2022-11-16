@@ -1718,7 +1718,6 @@ function closeBasket() {
     document.getElementById("close-menu").style.display="none";
 }
 
-
 /**fonction pour download le panier en pdf */
 function downloadBasket() {
     var element = document.getElementById("basket-list");
