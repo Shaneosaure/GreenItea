@@ -8,10 +8,10 @@ let formationsList =
     {
         type_formation: "Formation Continue",
         structure: "MOOC",
-        etablissement: "Column1",
-        departement_uf: "Column2",
-        cformation: "Column3",
-        objectif: "Column4",
+        etablissement: "",
+        departement_uf: "", 
+        cformation: "", 
+        objectif: "",
         contenu: "Développeur responsable :\n- Comprendre les enjeux du Numérique Responsable\n- Comprendre l'impact environnemental des décisions de développement\n- Apprendre les bonnes pratiques éco-responsables à mettre en oeuvre dans votre quotidien\n- Mesurer l'empreinte",
         type_organisme: "Cours en ligne",
         nom: "The green Companion",
@@ -1622,6 +1622,8 @@ let formationsList =
     }
 ]
 
+const list  = document.getElementById('list');
+formationsList.innerHTML = data.map(i => `<li>${i}</li>`).join('');
 
 let filtersList = [];
 
@@ -1692,7 +1694,13 @@ function closeBasket(){
     document.getElementById("open-menu").style.display="block";
     document.getElementById("close-menu").style.display="none";
 }
+function showList(){
+    
+}
+
+
 /**fonction pour imprimer la page en pdf */
 function print() {
 
 }
+
