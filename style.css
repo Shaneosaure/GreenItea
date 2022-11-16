@@ -1,1 +1,10 @@
-/* Sidenav menu */
+/** Basket burger menu */
+.header #basket {
+    display: none;
+}
+.header a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}

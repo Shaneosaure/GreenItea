@@ -18,6 +18,15 @@ function removeBasket(btnId){
         }
     }
 }
+/**fonction afficher le panier */
+function displayBasket() {
+    var x = document.getElementById("basket");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+}
 /**fonction pour imprimer la page en pdf */
 function print(){
 
