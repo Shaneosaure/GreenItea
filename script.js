@@ -1630,7 +1630,7 @@ function filter() {
     let cbformation = document.querySelectorAll('input[name="formation"]:not(:checked)');
     let cbstructure = document.querySelectorAll('input[name="structure"]:not(:checked)');
     let cbvalidation = document.querySelectorAll('input[name="validation"]:not(:checked)');
-    let cblocalisation = document.querySelectorAll('input[name="localisation"]:not(:checked)');
+    let cbduree = document.querySelectorAll('input[name="duree"]:not(:checked)');
     let cblocalisation = document.querySelectorAll('input[name="localisation"]:not(:checked)');
     let cblocalisation = document.querySelectorAll('input[name="localisation"]:not(:checked)');
     let cblocalisation = document.querySelectorAll('input[name="localisation"]:not(:checked)');
@@ -1646,6 +1646,17 @@ function filter() {
     cblocalisation.forEach((checkbox) => {
         values.push(checkbox.value);
     });
+    values.push("\nDurée:")
+    cbduree.forEach((checkbox) => {
+        values.push(checkbox.value);
+    });
+    cblocalisation.forEach((checkbox) => {
+        values.push(checkbox.value);
+    });
+    cblocalisation.forEach((checkbox) => {
+        values.push(checkbox.value);
+    });
+
     alert(values);
 }
 
