@@ -8,6 +8,9 @@
   <script src="script.js"></script>
   <link rel="stylesheet" href="style.css">
   <title>Team N°8</title>
+
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
 </head>
 
 <body>
@@ -139,8 +142,23 @@
       <div class="filter-button">
         <input class="filter" type="button" onclick="filter()" value="Filtrer résultat">
       </div>
-
     </div>
+    <div class="centralblock">
+      <div class="mapblock">
+        <div id='map' style='width: 400px; height: 300px;'></div>
+        <script>
+          mapboxgl.accessToken = 'pk.eyJ1Ijoib3p5bG8iLCJhIjoiY2tvNDF0dWZmMGVvajJwbXhraGgxbHhrZiJ9.2OZEB1HTJDUniC9ys_QgkQ';
+          var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11'
+          });
+        </script>
+      </div>
+      <div class="listblock">
+
+      </div>
+    </div>
+
   </main>
   <footer>
     <h3 class="textFooter">Créé par l'équipe numéro 8</h3>
