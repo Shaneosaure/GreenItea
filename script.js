@@ -1659,7 +1659,7 @@ function filter() {
     cbmodacces.forEach((checkbox) => {
         values.push(checkbox.value);
     });
-    alert(values);
+    console.log(values);
 }
 
 /**fonction d'ajout dans le panier */
