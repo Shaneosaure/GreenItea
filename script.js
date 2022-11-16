@@ -1739,9 +1739,9 @@ function SendMail(){
         email_id : document.getElementById("email_id").value,
         message: formationsList.formationsList[0].intitule,
     }
-    emailjs.send("service_zfl00os","template_mm1u33n",params).then(function(res)){
+    emailjs.send("service_zfl00os","template_mm1u33n",params).then(function (res) {
         alert("Success"+ res.status);
-    }
+    })
 }
 
 /**fonction pour zoomer */
