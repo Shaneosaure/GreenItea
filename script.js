@@ -1670,6 +1670,7 @@ window.onload = function affichagelist() {
     let list = document.getElementById("showinglist");
 
     for (let i = 0; i < formationsList.formationsList.length; i++) {
+        /** Intitulé */
         let h4 = document.createElement("h4");
         if (formationsList.formationsList[i].intitule == "") {
             h4.innerHTML = "Pas d'intitulé";
@@ -1677,6 +1678,55 @@ window.onload = function affichagelist() {
             h4.innerHTML = formationsList.formationsList[i].intitule;
         }
         list.appendChild(h4);
+
+        /** Nom organisme */
+        let nom = document.createElement("p");
+        if (formationsList.formationsList[i].nom == "") {
+            nom.innerHTML = "Organisme: non spécifié";
+        } else {
+            nom.innerHTML = "Organisme: " + formationsList.formationsList[i].nom;
+        }
+        list.appendChild(nom);
+
+        /** Ville */
+        let ville = document.createElement("p");
+        if (formationsList.formationsList[i].ville == "") {
+            ville.innerHTML = "Lieu: non spécifié";
+        } else {
+            ville.innerHTML = "Lieu: " + formationsList.formationsList[i].ville;
+        }
+        list.appendChild(ville);
+
+        /** Duree */
+        let duree = document.createElement("p");
+        if (formationsList.formationsList[i].duree == "") {
+            duree.innerHTML = "Durée: non spécifiée";
+        } else {
+            duree.innerHTML = "Durée: " + formationsList.formationsList[i].duree + " jour(s)";
+        }
+        list.appendChild(duree);
+
+        /** Structure */
+        let structure = document.createElement("p");
+        if (formationsList.formationsList[i].structure == "") {
+            structure.innerHTML = "Structure: non spécifiée";
+        } else {
+            structure.innerHTML = "Structure: " + formationsList.formationsList[i].structure;
+        }
+        list.appendChild(structure);
+
+        /** Type de formation */
+        let type_formation = document.createElement("p");
+        if (formationsList.formationsList[i].type_formation == "") {
+            type_formation.innerHTML = "Type de formation: spécifiée";
+        } else {
+            type_formation.innerHTML = "Type de formation: " + formationsList.formationsList[i].type_formation;
+        }
+        list.appendChild(type_formation);
+
+
+
+        /** ligne horizontal */
         let horizontalline = document.createElement("hr");
         list.appendChild(horizontalline);
     }
@@ -1703,22 +1753,21 @@ function removeBasket(btnId) {
 
 /**fonction afficher le panier */
 function openBasket() {
-    document.getElementById("basket").style.display="block";
+    document.getElementById("basket").style.display = "block";
     setTimeout(() => {
         document.getElementById("basket").classList.toggle('show-menu');
         document.getElementById("open-menu").style.display = "none";
         document.getElementById("close-menu").style.display = "block";
-    },10);
+    }, 10);
 }
 function closeBasket() {
     document.getElementById("basket").classList.toggle('show-menu');
     setTimeout(() => {
-        setTimeout(() => { document.getElementById("basket").style.display="none"; },500);
-        document.getElementById("open-menu").style.display="block";
-        document.getElementById("close-menu").style.display="none";
-    },10);
+        setTimeout(() => { document.getElementById("basket").style.display = "none"; }, 500);
+        document.getElementById("open-menu").style.display = "block";
+        document.getElementById("close-menu").style.display = "none";
+    }, 10);
 }
-
 
 /**fonction pour download le panier en pdf */
 function downloadBasket() {
@@ -1742,9 +1791,15 @@ const BodyVariable = "Ici on mets les formations et tout";
         email_id : document.getElementById("email_id").value,
         message:  document.getElementById("message").value,
         /**formationsList.formationsList[0].intitule,
+function SendMail() {
+    var params = {
+        from_name: document.getElementById("fullName").value,
+        email_id: document.getElementById("email_id").value,
+        message: document.getElementById("message").value,
+        /**formationsList.formationsList[0].intitule, 
     }
-    emailjs.send("service_zfl00os","template_mm1u33n",params).then(function(res){
-        alert("Success"+ res.status);
+    emailjs.send("service_zfl00os", "template_mm1u33n", params).then(function (res) {
+        alert("Success" + res.status);
     });
 }*/
 
