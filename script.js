@@ -1671,6 +1671,11 @@ window.onload = function affichagelist() {
     let list = document.getElementById("showinglist");
 
     for (let i = 0; i < formationsList.formationsList.length; i++) {
+        /**on crée un li */
+        let li = document.createElement("li");
+        li.setAttribute('id', i);
+        list.appendChild(li);
+
         /** Intitulé */
         let h4 = document.createElement("h4");
         if (formationsList.formationsList[i].intitule == "") {
@@ -1678,7 +1683,7 @@ window.onload = function affichagelist() {
         } else {
             h4.innerHTML = formationsList.formationsList[i].intitule;
         }
-        list.appendChild(h4);
+        li.appendChild(h4);
 
         /** Nom organisme */
         let nom = document.createElement("p");
@@ -1687,7 +1692,7 @@ window.onload = function affichagelist() {
         } else {
             nom.innerHTML = "Organisme: " + formationsList.formationsList[i].nom;
         }
-        list.appendChild(nom);
+        li.appendChild(nom);
 
         /** Ville */
         let ville = document.createElement("p");
@@ -1696,7 +1701,7 @@ window.onload = function affichagelist() {
         } else {
             ville.innerHTML = "Lieu: " + formationsList.formationsList[i].ville;
         }
-        list.appendChild(ville);
+        li.appendChild(ville);
 
         /** Duree */
         let duree = document.createElement("p");
@@ -1705,7 +1710,7 @@ window.onload = function affichagelist() {
         } else {
             duree.innerHTML = "Durée: " + formationsList.formationsList[i].duree + " jour(s)";
         }
-        list.appendChild(duree);
+        li.appendChild(duree);
 
         /** Structure */
         let structure = document.createElement("p");
@@ -1714,7 +1719,7 @@ window.onload = function affichagelist() {
         } else {
             structure.innerHTML = "Structure: " + formationsList.formationsList[i].structure;
         }
-        list.appendChild(structure);
+        li.appendChild(structure);
 
         /** Type de formation */
         let type_formation = document.createElement("p");
@@ -1723,18 +1728,18 @@ window.onload = function affichagelist() {
         } else {
             type_formation.innerHTML = "Type de formation: " + formationsList.formationsList[i].type_formation;
         }
-        list.appendChild(type_formation);
+        li.appendChild(type_formation);
 
         var input = document.createElement("input");
         input.setAttribute('class', 'addButton');
         input.setAttribute('type', 'button');
         input.setAttribute('onclick', 'addBasket(this.id)');
         input.setAttribute('value', '+');
-        list.appendChild(input);
+        li.appendChild(input);
 
         /** ligne horizontal */
         let horizontalline = document.createElement("hr");
-        list.appendChild(horizontalline);
+        li.appendChild(horizontalline);
     }
 }
 
@@ -1749,6 +1754,7 @@ function addBasket(btnId) {
 }
 
 var basketList = [];
+
 /**fonction de retrait du panier */
 function removeBasket(btnId) {
     for (let n = 0; n < basketList.length; n++) {
