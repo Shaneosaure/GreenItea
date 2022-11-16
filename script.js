@@ -1625,6 +1625,7 @@ let formationsList = {
 
 let filtersList = [];
 
+/** ressors les checkbox pas sélectionné */
 function filter() {
     let values = [];
 
@@ -1661,12 +1662,20 @@ function filter() {
     });
     console.log(values);
     console.log(formationsList.formationsList[5].duree);
+}
 
+
+/** au chargement de la page, la liste s'affiche*/
+window.onload = function affichagelist() {
     let list = document.getElementById("showinglist");
 
     for (let i = 0; i < formationsList.formationsList.length; i++) {
         let h4 = document.createElement("h4");
-        h4.innerHTML = formationsList.formationsList[i].intitule;
+        if (formationsList.formationsList[i].intitule == "") {
+            h4.innerHTML = "Pas d'intitulé";
+        } else {
+            h4.innerHTML = formationsList.formationsList[i].intitule;
+        }
         list.appendChild(h4);
         let horizontalline = document.createElement("hr");
         list.appendChild(horizontalline);
@@ -1674,6 +1683,7 @@ function filter() {
 }
 
 var basketList = [];
+
 /**fonction d'ajout dans le panier */
 function addBasket(btnId) {
     basketList.push(document.getElementById(btnId));
