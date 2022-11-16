@@ -1,10 +1,48 @@
 /** Basket burger menu */
-.header #basket {
+.header{
+    padding:0 12px;
+    position:fixed;
+    z-index:999;
+    width:100%;
+    max-width:480px;
+    background:#111;
+    box-sizing:border-box;
+    border-bottom:1px solid #fff;
+}
+.nav #basket {
     display: none;
 }
-.header a.icon {
+.nav a.icon {
     display: block;
     position: absolute;
     right: 0;
     top: 0;
+}
+.bouton-menu{
+    position:absolute;
+    top:0;
+    right:0;
+    width:50px;
+    height:50px;
+    overflow:hidden;
+    background:#fff;
+    color:#000;
+    line-height:50px;
+    text-align:center;
+    font-size:40px;
+    cursor:pointer;
+    transition:all .5s;
+}
+#close-menu{
+    display: none;
+}
+#basket{
+    transition:transform .5s;
+    position:absolute;
+    width:100%;
+    max-width:480px;
+    transform:translateY(-300px);
+}
+#basket.show-menu{
+    transform:translateY(51px);
 }

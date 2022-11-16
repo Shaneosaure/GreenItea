@@ -19,13 +19,17 @@ function removeBasket(btnId){
     }
 }
 /**fonction afficher le panier */
-function displayBasket() {
-    var x = document.getElementById("basket");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
+function openBasket(){
+    document.getElementById("basket").classList.toggle('show-menu');
+    document.getElementById("open-menu").style.display="none";
+    document.getElementById("close-menu").style.display="block";
+    console.log("opened")
+}
+function closeBasket(){
+    document.getElementById("basket").classList.toggle('show-menu');
+    document.getElementById("open-menu").style.display="block";
+    document.getElementById("close-menu").style.display="none";
+    console.log("closed")
 }
 /**fonction pour imprimer la page en pdf */
 function print(){
