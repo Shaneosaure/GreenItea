@@ -3,8 +3,8 @@
 
 
 /**liste des formations**/
-let formationsList = 
-    [
+let formationsList = {
+    formationsList: [
     {
         type_formation: "Formation Continue",
         structure: "MOOC",
@@ -1620,7 +1620,8 @@ let formationsList =
         modalites: "",
         url: "http:\/\/www.vcharpenay.link\/courses\/num-responsable.html"
     }
-]
+    ]
+}
 
 
 ul = document.createElement('ul');
@@ -1678,7 +1679,7 @@ function filter() {
         values.push(checkbox.value);
     });
     console.log(values);
-    console.log(formationsList.type_formation[5])
+    console.log(formationsList.formationsList[5].duree);
 }
 var basketList = [];
 /**fonction d'ajout dans le panier */
