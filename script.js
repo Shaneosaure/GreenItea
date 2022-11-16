@@ -1682,20 +1682,16 @@ window.onload = function affichagelist() {
     }
 }
 
-var basketList = [];
+
 
 /**fonction d'ajout dans le panier */
 function addBasket(btnId) {
-    basketList.push(document.getElementById(btnId));
-    for (let j = 0; j < basketList.length; j++) {
-        let item = basketList[j].cloneNode(true);
-        let li = document.createElement("li");
-        li.innerText = item.innerText;
-        document.getElementById("basket-list").appendChild(li);
-    }
-
+    let item = document.getElementById(btnId).cloneNode(true);
+    let li = document.createElement("li");
+    li.innerText = item.innerText;
+    document.getElementById("basket-list").appendChild(li);
 }
-
+var basketList = [];
 /**fonction de retrait du panier */
 function removeBasket(btnId) {
     for (let n = 0; n < basketList.length; n++) {
@@ -1707,15 +1703,20 @@ function removeBasket(btnId) {
 
 /**fonction afficher le panier */
 function openBasket() {
-    document.getElementById("basket").classList.toggle('show-menu');
-    document.getElementById("open-menu").style.display = "none";
-    document.getElementById("close-menu").style.display = "block";
+    document.getElementById("basket").style.display="block";
+    setTimeout(() => {
+        document.getElementById("basket").classList.toggle('show-menu');
+        document.getElementById("open-menu").style.display = "none";
+        document.getElementById("close-menu").style.display = "block";
+    },10);
 }
 function closeBasket() {
     document.getElementById("basket").classList.toggle('show-menu');
-    setTimeout(() => { document.getElementById("basket").style.display="none"; },500);
-    document.getElementById("open-menu").style.display="block";
-    document.getElementById("close-menu").style.display="none";
+    setTimeout(() => {
+        setTimeout(() => { document.getElementById("basket").style.display="none"; },500);
+        document.getElementById("open-menu").style.display="block";
+        document.getElementById("close-menu").style.display="none";
+    },10);
 }
 
 /**fonction pour download le panier en pdf */
@@ -1736,10 +1737,12 @@ function SendMail(){
     var params={
         from_name : document.getElementById("fullName").value,
         email_id : document.getElementById("email_id").value,
+        message:  document.getElementById("message").value,
+        /**formationsList.formationsList[0].intitule, */
     }
-    emailjs.send("service_zfl00os","template_mm1u33n",params).then(function(res)){
+    emailjs.send("service_zfl00os","template_mm1u33n",params).then(function(res){
         alert("Success"+ res.status);
-    }
+    });
 }
 
 /**fonction pour zoomer */

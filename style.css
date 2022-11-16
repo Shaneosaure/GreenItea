@@ -72,6 +72,9 @@
     box-sizing: border-box;
     border: 2px solid #000000;
     overflow-y: auto;
+    overflow-y: auto;
+    scrollbar-width: auto;
+    -ms-overflow-style: none;
 }
 #basket.show-menu{
     transform:translateY(51px);
