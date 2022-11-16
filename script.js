@@ -1619,7 +1619,6 @@ let formationsList = {
         URL: "http:\/\/www.vcharpenay.link\/courses\/num-responsable.html"
     },
     ]
-
 }
 
 let filtersList = [];
