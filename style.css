@@ -36,7 +36,7 @@
     margin-bottom: 70px;
     height: 600px;
     display:inline-block;
-   width:45%;
+    width:45%;
 }
 .listblock::-webkit-scrollbar{
     display: none;
@@ -69,6 +69,9 @@
     max-width:480px;
     background:#fff;
     transform:translateY(-300px);
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    overflow-y: auto;
 }
 #basket.show-menu{
     transform:translateY(51px);
