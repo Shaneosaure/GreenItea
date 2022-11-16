@@ -1623,7 +1623,7 @@ let formationsList =
 ]
 
 const list  = document.getElementById('list');
-formationsList.innerHTML = data.map(i => `<li>${i}</li>`).join('');
+formationsList.innerHTML = formationsList.map(i => `<li>${i}</li>`).join('');
 
 let filtersList = [];
 
