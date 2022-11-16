@@ -1,4 +1,3 @@
-/*fichier pour le css*/
 /* Sidenav menu */
 .sidenav {
     height: 100%;
@@ -10,46 +9,47 @@
     background-color: #e8e8e8;
     padding-top: 60px;
     transition: left 0.5s ease;
-}
-
-/* Sidenav menu links */
-.sidenav a {
+  }
+  
+  /* Sidenav menu links */
+  .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
     transition: 0.3s;
-}
-
-.sidenav a:hover {
+  }
+  
+  .sidenav a:hover {
     color: #111;
-}
-
-.sidenav ul {
+  }
+  
+  .sidenav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-}
-
-/* Active class */
-.sidenav.active {
+  }
+  
+  /* Active class */
+  .sidenav.active {
     left: 0;
-}
-
-/* Close btn */
-.sidenav .close {
+  }
+  
+  /* Close btn */
+  .sidenav .close {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
-}
-
-/* Icône burger */
-.burger-icon span {
+  }
+  
+  /* Icône burger */
+  .burger-icon span {
     display: block;
     width: 35px;
     height: 5px;
     background-color: black;
     margin: 6px 0;
-}
+  }
+  
