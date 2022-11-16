@@ -1631,11 +1631,10 @@ function filter() {
     /**query de chaque colonne du tableau */
     let cbformation = document.querySelectorAll('input[name="formation"]:not(:checked)');
     let cbstructure = document.querySelectorAll('input[name="structure"]:not(:checked)');
+    let cblocalisation = document.querySelectorAll('input[name="localisation"]:not(:checked)');
     let cbvalidation = document.querySelectorAll('input[name="validation"]:not(:checked)');
     let cbduree = document.querySelectorAll('input[name="duree"]:not(:checked)');
-    let cblocalisation = document.querySelectorAll('input[name="localisation"]:not(:checked)');
-    let cblocalisation = document.querySelectorAll('input[name="localisation"]:not(:checked)');
-    let cblocalisation = document.querySelectorAll('input[name="localisation"]:not(:checked)');
+    let cbmodacces = document.querySelectorAll('input[name="modacces"]:not(:checked)');
     values.push("Formation:")
     cbformation.forEach((checkbox) => {
         values.push(checkbox.value);
@@ -1648,17 +1647,18 @@ function filter() {
     cblocalisation.forEach((checkbox) => {
         values.push(checkbox.value);
     });
+    values.push("\nValidation:")
+    cbvalidation.forEach((checkbox) => {
+        values.push(checkbox.value);
+    });
     values.push("\nDurée:")
     cbduree.forEach((checkbox) => {
         values.push(checkbox.value);
     });
-    cblocalisation.forEach((checkbox) => {
+    values.push("\nModalité d'accés:")
+    cbmodacces.forEach((checkbox) => {
         values.push(checkbox.value);
     });
-    cblocalisation.forEach((checkbox) => {
-        values.push(checkbox.value);
-    });
-
     alert(values);
 }
 
