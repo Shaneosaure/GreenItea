@@ -1622,8 +1622,24 @@ let formationsList =
     }
 ]
 
-const list  = document.getElementById('list');
-formationsList.innerHTML = formationsList.map(i => `<li>${i}</li>`).join('');
+
+ul = document.createElement('ul');
+
+document.getElementById('list').appendChild(ul);
+
+for (let i of ARRAY) { 
+    let li = document.createElement("li"); li.innerHTML = i; 
+    ol.appendChild(li);
+ }
+
+formationsList.forEach(item => {
+    let li = document.createElement('li');
+    ul.appendChild(li);
+
+    li.innerHTML += item;
+});
+
+
 
 let filtersList = [];
 
@@ -1662,6 +1678,7 @@ function filter() {
         values.push(checkbox.value);
     });
     console.log(values);
+    console.log(formationsList.type_formation[5])
 }
 
 /**fonction d'ajout dans le panier */
