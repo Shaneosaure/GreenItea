@@ -1,22 +1,45 @@
 /** Basket burger menu */
-.header{
-    padding:0 12px;
-    position:fixed;
-    z-index:999;
-    width:100%;
-    max-width:480px;
-    background:#111;
-    box-sizing:border-box;
-    border-bottom:1px solid #fff;
-}
 .nav #basket {
     display: none;
 }
-.nav a.icon {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
+
+.mapblock {
+    box-sizing: border-box;
+    border: 5px solid #000000;
+    -webkit-border-radius: 18px / 20px;
+    -moz-border-radius: 18px / 20px;
+    border-radius: 18px / 20px;
+    overflow-y: auto;
+    scrollbar-width: auto;
+    -ms-overflow-style: none;
+    margin-bottom: 70px;
+    margin-right: 2%;
+    height: 600px;
+    display:inline-block;
+    width:45%;
+}
+.mapblock::-webkit-scrollbar{
+    display: none;
+}
+
+
+.listblock {
+    box-sizing: border-box;
+    border: 5px solid #000000;
+    overflow-y: auto;
+    -webkit-border-radius: 18px / 20px;
+    -moz-border-radius: 18px / 20px;
+    border-radius: 18px / 20px;
+    scrollbar-width: auto;
+    -ms-overflow-style: none;
+    margin-left: 2%;
+    margin-bottom: 70px;
+    height: 600px;
+    display:inline-block;
+   width:45%;
+}
+.listblock::-webkit-scrollbar{
+    display: none;
 }
 
 .bouton-menu{
@@ -40,8 +63,10 @@
 #basket{
     transition:transform .5s;
     position:absolute;
+    right: 0;
     width:100%;
     max-width:480px;
+    background:#fff;
     transform:translateY(-300px);
 }
 #basket.show-menu{

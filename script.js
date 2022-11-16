@@ -1,10 +1,10 @@
 /**ficher pour java script */
-var basketList = [];
+
 
 
 /**liste des formations**/
-let formationsList = 
-    [
+let formationsList = {
+    formationsList: [
     {
         type_formation: "Formation Continue",
         structure: "MOOC",
@@ -1620,10 +1620,8 @@ let formationsList =
         modalites: "",
         url: "http:\/\/www.vcharpenay.link\/courses\/num-responsable.html"
     }
-]
-
-const list  = document.getElementById('list');
-formationsList.innerHTML = data.map(i => `<li>${i}</li>`).join('');
+    ]
+}
 
 let filtersList = [];
 
@@ -1662,12 +1660,29 @@ function filter() {
         values.push(checkbox.value);
     });
     console.log(values);
+    console.log(formationsList.formationsList[5].duree);
+
+    let list = document.getElementById("showinglist");
+
+    for (let i = 0; i < formationsList.formationsList.length; i++) {
+        let li = document.createElement("li"); 
+        li.innerHTML = formationsList.formationsList[i].intitule; 
+        list.appendChild(li);
+    } 
 }
 
+var basketList = [];
 /**fonction d'ajout dans le panier */
 function addBasket(btnId) {
     basketList.push(document.getElementById(btnId));
+    for(let j=0;j<basketList.length;j++){
+        let item = basketList[j].cloneNode(true);
+        let li = document.createElement("li");
+        li.innerText = item.innerText;
+        document.getElementById("basket-list").appendChild(li);
+    }
 }
+
 /**fonction de retrait du panier */
 function removeBasket(btnId) {
     for (let n = 0; n < basketList.length; n++) {
@@ -1676,31 +1691,29 @@ function removeBasket(btnId) {
         }
     }
 }
+
 /**fonction afficher le panier */
 function openBasket(){
     document.getElementById("basket").classList.toggle('show-menu');
     document.getElementById("open-menu").style.display="none";
     document.getElementById("close-menu").style.display="block";
-    for(let j=0;j<basketList.length;j++){
-        let item = basketList[j].cloneNode(true);
-        let li = document.createElement("li");
-        li.innerText = item.innerText;
-        document.getElementById("basket").appendChild(li);
-    }
 }
 function closeBasket(){
-    document.getElementById("basket").innerHTML="";
     document.getElementById("basket").classList.toggle('show-menu');
     document.getElementById("open-menu").style.display="block";
     document.getElementById("close-menu").style.display="none";
 }
-function showList(){
-    
+
+
+/**fonction pour download le panier en pdf */
+function downloadBasket(){
+    var element = document.getElementById("basket-list");
+    var opt = {
+        margin:       1,
+        filename:     'MonPanier.pdf',
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { scale: 2 },
+        jsPDF:        { unit: 'in', format: 'A4', orientation: 'portrait' }
+      };
+    html2pdf().set(opt).from(element).save();
 }
-
-
-/**fonction pour imprimer la page en pdf */
-function print() {
-
-}
-
