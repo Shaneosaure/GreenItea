@@ -1,14 +1,4 @@
 /** Basket burger menu */
-.header{
-    padding:0 12px;
-    position:fixed;
-    z-index:999;
-    width:100%;
-    max-width:480px;
-    background:#111;
-    box-sizing:border-box;
-    border-bottom:1px solid #fff;
-}
 .nav #basket {
     display: none;
 }
@@ -34,6 +24,7 @@
 #basket{
     transition:transform .5s;
     position:absolute;
+    right: 0;
     width:100%;
     max-width:480px;
     background:#fff;
