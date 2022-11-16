@@ -3,7 +3,7 @@ var basketList = [];
 
 
 /**liste des formations**/
-let formationsList = {
+let formationsList = 
     [
     {
         Type_Formation: "Formation Continue",
@@ -1617,9 +1617,9 @@ let formationsList = {
         Durée: "",
         Modalites: "",
         URL: "http:\/\/www.vcharpenay.link\/courses\/num-responsable.html"
-    },
-    ]
-}
+    }
+]
+
 
 let filtersList = [];
 
