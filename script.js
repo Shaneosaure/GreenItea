@@ -1625,6 +1625,7 @@ let formationsList = {
 
 let filtersList = [];
 
+
 /** ressors les checkbox pas sélectionné */
 function filter() {
     let values = [];
@@ -1724,7 +1725,12 @@ window.onload = function affichagelist() {
         }
         list.appendChild(type_formation);
 
-
+        var input = document.createElement("input");
+        input.setAttribute('class', 'addButton');
+        input.setAttribute('type', 'button');
+        input.setAttribute('onclick', 'addBasket(this.id)');
+        input.setAttribute('value', '+');
+        list.appendChild(input);
 
         /** ligne horizontal */
         let horizontalline = document.createElement("hr");
@@ -1741,6 +1747,7 @@ function addBasket(btnId) {
     li.innerText = item.innerText;
     document.getElementById("basket-list").appendChild(li);
 }
+
 var basketList = [];
 /**fonction de retrait du panier */
 function removeBasket(btnId) {
