@@ -1,0 +1,1 @@
+/*ficher pour java script*/
