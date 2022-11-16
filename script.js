@@ -1626,7 +1626,7 @@ let formationsList = {
 
 ul = document.createElement('ul');
 
-/*document.getElementById('list').appendChild(ul);
+document.getElementById('list').appendChild(ul);
 
 for (let i of ARRAY) { 
     let li = document.createElement("li"); li.innerHTML = i; 
@@ -1643,7 +1643,6 @@ formationsList.forEach(item => {
 
 
 let filtersList = [];
-*/
 function filter() {
     let values = [];
 
