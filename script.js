@@ -1622,6 +1622,8 @@ let formationsList =
     }
 ]
 
+const list  = document.getElementById('list');
+formationsList.innerHTML = data.map(i => `<li>${i}</li>`).join('');
 
 let filtersList = [];
 
@@ -1692,7 +1694,13 @@ function closeBasket(){
     document.getElementById("open-menu").style.display="block";
     document.getElementById("close-menu").style.display="none";
 }
+function showList(){
+    
+}
+
+
 /**fonction pour imprimer la page en pdf */
 function print() {
 
 }
+

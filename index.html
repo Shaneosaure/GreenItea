@@ -19,7 +19,9 @@
     <input type="button" id="open-menu" class="bouton-menu" value="≡" onclick="openBasket()">
     <input type="button" id="close-menu" class="bouton-menu" value="×" onclick="closeBasket()">
   </header>
-  <nav id="basket"></nav>
+  <nav id="basket">
+    
+  </nav>
   <main>
     <div class="accessibility">
 
@@ -150,12 +152,15 @@
           mapboxgl.accessToken = 'pk.eyJ1Ijoib3p5bG8iLCJhIjoiY2tvNDF0dWZmMGVvajJwbXhraGgxbHhrZiJ9.2OZEB1HTJDUniC9ys_QgkQ';
           var map = new mapboxgl.Map({
             container: 'map',
-            style: 'mapbox://styles/mapbox/streets-v11'
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center:[45.422,6.069]
           });
         </script>
       </div>
       <div class="listblock">
-
+        <ul id="list">
+          
+        </ul>
       </div>
     </div>
 
