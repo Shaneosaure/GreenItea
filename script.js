@@ -9,9 +9,26 @@ let formationsList = {
 let filtersList = [];
 
 function filter() {
-    let checkboxes = document.querySelectorAll('input[name="structure"]:not(:checked)');
     let values = [];
-    checkboxes.forEach((checkbox) => {
+
+    /**query de chaque colonne du tableau */
+    let cbformation = document.querySelectorAll('input[name="formation"]:not(:checked)');
+    let cbstructure = document.querySelectorAll('input[name="structure"]:not(:checked)');
+    let cbvalidation = document.querySelectorAll('input[name="validation"]:not(:checked)');
+    let cblocalisation = document.querySelectorAll('input[name="localisation"]:not(:checked)');
+    let cblocalisation = document.querySelectorAll('input[name="localisation"]:not(:checked)');
+    let cblocalisation = document.querySelectorAll('input[name="localisation"]:not(:checked)');
+    let cblocalisation = document.querySelectorAll('input[name="localisation"]:not(:checked)');
+    values.push("Formation:")
+    cbformation.forEach((checkbox) => {
+        values.push(checkbox.value);
+    });
+    values.push("\nStructure:")
+    cbstructure.forEach((checkbox) => {
+        values.push(checkbox.value);
+    });
+    values.push("\nLocalisation:")
+    cblocalisation.forEach((checkbox) => {
         values.push(checkbox.value);
     });
     alert(values);
