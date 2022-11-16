@@ -1679,13 +1679,18 @@ function openBasket(){
     document.getElementById("basket").classList.toggle('show-menu');
     document.getElementById("open-menu").style.display="none";
     document.getElementById("close-menu").style.display="block";
-    console.log("opened")
+    for(let j=0;j<basketList.length;j++){
+        let item = basketList[j].cloneNode(true);
+        let li = document.createElement("li");
+        li.innerText = item.innerText;
+        document.getElementById("basket").appendChild(li);
+    }
 }
 function closeBasket(){
+    document.getElementById("basket").innerHTML="";
     document.getElementById("basket").classList.toggle('show-menu');
     document.getElementById("open-menu").style.display="block";
     document.getElementById("close-menu").style.display="none";
-    console.log("closed")
 }
 /**fonction pour imprimer la page en pdf */
 function print() {
