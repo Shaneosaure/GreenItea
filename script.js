@@ -1623,25 +1623,6 @@ let formationsList = {
     ]
 }
 
-
-ul = document.createElement('ul');
-
-document.getElementById('list').appendChild(ul);
-
-for (let i of ARRAY) { 
-    let li = document.createElement("li"); li.innerHTML = i; 
-    ol.appendChild(li);
- }
-
-formationsList.forEach(item => {
-    let li = document.createElement('li');
-    ul.appendChild(li);
-
-    li.innerHTML += item;
-});
-
-
-
 let filtersList = [];
 
 function filter() {
@@ -1680,7 +1661,16 @@ function filter() {
     });
     console.log(values);
     console.log(formationsList.formationsList[5].duree);
+
+    let list = document.getElementById("showinglist");
+
+    for (let i = 0; i < formationsList.formationsList.length; i++) {
+        let li = document.createElement("li"); 
+        li.innerHTML = formationsList.formationsList[i].intitule; 
+        list.appendChild(li);
+    } 
 }
+
 var basketList = [];
 /**fonction d'ajout dans le panier */
 function addBasket(btnId) {
@@ -1692,6 +1682,7 @@ function addBasket(btnId) {
         document.getElementById("basket-list").appendChild(li);
     }
 }
+
 /**fonction de retrait du panier */
 function removeBasket(btnId) {
     for (let n = 0; n < basketList.length; n++) {
@@ -1700,6 +1691,7 @@ function removeBasket(btnId) {
         }
     }
 }
+
 /**fonction afficher le panier */
 function openBasket(){
     document.getElementById("basket").classList.toggle('show-menu');
