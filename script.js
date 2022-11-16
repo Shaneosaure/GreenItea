@@ -9,7 +9,7 @@ let formationsList = {
 let filtersList = [];
 
 function filter() {
-    let checkboxes = document.querySelectorAll('input[name="structure"]:checked');
+    let checkboxes = document.querySelectorAll('input[name="structure"]:not(:checked)');
     let values = [];
     checkboxes.forEach((checkbox) => {
         values.push(checkbox.value);
