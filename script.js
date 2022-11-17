@@ -2015,11 +2015,11 @@ function modifyRegionParameters(elm, locx, locy) {
 
     const vh = window.innerHeight;
 
-    var transX = vw * (1.05 - ((locx - 50) / 540));
-    var transY = (0.9 * vh / 2) - (locy - 420) * 2 * vh / 540;
+    var transX = 0 - (2*(locx-125))
+    var transY = 800-(locy/1000)
 
     var scalevar = vw / 540;
-    console.log(vw)
+    
 
     var reg = document.getElementById("g_" + elm);
 
