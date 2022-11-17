@@ -989,7 +989,7 @@ let formationsList = {
             nom: "IMT - Telecom Sud Paris",
             intitule: "Numérique et consommation énergétique : agir du processeur au logiciel",
             ville: "Évry",
-            region: "Île-de-France",
+            region: "Centre-Val-de-Loire",
             acquis: "",
             duree: "",
             modalites: "Présentiel",
