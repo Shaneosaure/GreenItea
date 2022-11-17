@@ -1650,8 +1650,8 @@ function filter() {
         values.push(checkbox.value);
     });
     values.push("\nValidation:")
-    cbvalidation.forEach((checkbox) => {
-        values.push(checkbox.value);
+    cbvalidation.forEach((radio) => {
+        values.push(radio.value);
     });
     values.push("\nDurée:")
     cbduree.forEach((checkbox) => {
@@ -1851,4 +1851,11 @@ function SendMail() {
 }*/
 
 
-/**fonction pour zoomer */
+/**fonction pour calculer le translate*/
+
+const appHeight = () => {
+    const vh = window.innerHeight;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+  window.addEventListener('resize', appHeight)
+  appHeight()
