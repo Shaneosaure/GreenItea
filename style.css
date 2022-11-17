@@ -197,7 +197,7 @@
     background-color: #ffffff;
   }
   
-.filter > div {
+.filter form > div {
     /** background-color: #ffffff;*/
     width: 33%;
     text-align: center;
@@ -216,11 +216,4 @@
     list-style-type: none;
     text-align: center;
     padding: 0%;
-}
-
-#Viincent{
-    text-align: above;
-    
-    line-height: 100%;
-    font-size: 100%;
 }
