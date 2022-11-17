@@ -165,18 +165,32 @@
     transform:translateY(51px);
 }
 
-.filter{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 10px;
+/**Pour le filtre*/
+
+.filter {
+    display: flex;
+    /** flex-wrap: wrap; */
+    align-content: center;
+    padding-right:2.5%;
+    padding-left: 2.5%;
     background-color: #ffffff;
-    padding: 10px;
+  }
+  
+.filter > div {
+    background-color: #ffffff;
+    width: 33%;
+    text-align: center;
+    line-height: 100%;
+    font-size: 100%;
 }
 
-.localisation {
-    grid-row: span 2;
+#bulletpoint{
+    list-style-type: none;
+    text-align: left;
 }
-  
-.duree{
-    grid-column: span 2;
+
+#bulletpoint_long{
+    columns: 2;
+    list-style-type: none;
+    text-align: left;
 }
