@@ -2137,7 +2137,7 @@ function modifyRegionParameters(elm, locx, locy) {
     
 
     var reg = document.getElementById("g_" + elm);
-    var gcarte = document.getElementById("carteloc");
+    
 
     /*var styleTranslate = translateX(transX) translateY(transY) scale(scale.toString());*/
     console.log("translateX(" + transX + "px) translateY(" + transY + "px) scale(" + scalevar + ")");
@@ -2145,7 +2145,7 @@ function modifyRegionParameters(elm, locx, locy) {
 
     console.log(reg.style.transform);
     reg.style.transform = "translateX(" + transX.toString() + "px) translateY(" + transY.toString() + "px) scale(" + scalevar.toString() + ")";
-    gcarte.style.transform = "translate("+0+","+0+") scale("+1+")";
+    
 
 
     /*changer le css des classes .g_nom-de-la-region*/
