@@ -2093,23 +2093,6 @@ function sendMail(){
     var body= "Bonjour,%0D%0AJe souhaiterai un devis sur ces formations suivante:%0D%0A"+aaa+"%0D%0AMerci de votre retour%0D%0ACordialement,";
     window.location.href = "mailto:vvoisin.ing2024@esaip.org ?subject=Demande de Devis de Formation &body="+body;
 }
-/**function SendMail(){
-    var params={
-        from_name : document.getElementById("fullName").value,
-        email_id : document.getElementById("email_id").value,
-        message:  document.getElementById("message").value,
-        /**formationsList.formationsList[0].intitule,
-function SendMail() {
-    var params = {
-        from_name: document.getElementById("fullName").value,
-        email_id: document.getElementById("email_id").value,
-        message: document.getElementById("message").value,
-        /**formationsList.formationsList[0].intitule, 
-    }
-    emailjs.send("service_zfl00os", "template_mm1u33n", params).then(function (res) {
-        alert("Success" + res.status);
-    });
-}*/
 
 
 //**Filter Region */
