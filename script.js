@@ -1733,7 +1733,7 @@ window.onload = function affichagelist() {
         var input = document.createElement("input");
         input.setAttribute('class', 'addButton');
         input.setAttribute('type', 'button');
-        input.setAttribute('onclick', 'addBasket(this.id)');
+        input.setAttribute('onclick', 'addBasket(this.parentNode.id)');
         input.setAttribute('value', '+');
         li.appendChild(input);
 
@@ -1745,21 +1745,43 @@ window.onload = function affichagelist() {
 
 
 
+var basketList = [];
+
 /**fonction d'ajout dans le panier */
 function addBasket(btnId) {
-    let item = document.getElementById(btnId).cloneNode(true);
     let li = document.createElement("li");
-    li.innerText = item.innerText;
-    document.getElementById("basket-list").appendChild(li);
+    li.setAttribute('id', 'b_' + btnId);
+    var verif = true;
+    li.innerText = document.getElementById(btnId).firstChild.innerText;
+
+    /** si pas empty, on verifie les doublons */
+    for (let i = 0; i < basketList.length; i++) {
+        if (basketList[i] == 'b_' + btnId) {
+            verif = false;
+            break;
+        }
+    }
+    /** si pas doublon, on add */
+    if (verif) {
+        document.getElementById("basket-list").appendChild(li);
+        var input = document.createElement("input");
+        input.setAttribute('class', 'subButton');
+        input.setAttribute('type', 'button');
+        input.setAttribute('onclick', 'removeBasket(this.parentNode.id)');
+        input.setAttribute('value', '-');
+        basketList.push('b_' + btnId);
+        li.appendChild(input);
+    }
+    
 }
 
-var basketList = [];
 
 /**fonction de retrait du panier */
 function removeBasket(btnId) {
-    for (let n = 0; n < basketList.length; n++) {
-        if (basketList[n] == document.getElementById(btnId)) {
-            basketList.splice(n, 1);
+    for (let i = 0; i < basketList.length; i++) {
+        if (basketList[i] == btnId) {
+            document.getElementById(btnId).remove();
+            basketList.splice(i, 1);
         }
     }
 }
@@ -1784,6 +1806,7 @@ function closeBasket() {
 
 /**fonction pour download le panier en pdf */
 function downloadBasket() {
+
     var element = document.getElementById("basket-list");
     var opt = {
         margin: 1,
