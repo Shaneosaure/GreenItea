@@ -13,12 +13,14 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <title>Team N°8</title>
 
+  </script>
+
 </head>
 
 <body>
   <header>
     <h1>Votre formation personnalisée !</h1>
-    <button style="font-size:24px" id="open-menu" class="bouton-menu" value="basket-menu" onclick="openBasket()"><i class="fa fa-shopping-cart"></i></button>
+    <button style="font-size:24px" id="open-menu" class="bouton-menu" value="≡" onclick="openBasket()"><i class="fa fa-shopping-cart"></i></button>
     
     <input type="button" id="close-menu" class="bouton-menu" value="×" onclick="closeBasket()">
   </header>
@@ -38,8 +40,7 @@
 
     </div>
     <div class="filter" id="filter">
-      <div class="formation" id="formation">
-        <h4>Formation</h4>
+      <div class="formation" id="formation">Formation:
         <ul id="bulletpoint">
           <form>
             <li>
@@ -52,8 +53,7 @@
             </li>
         </ul>
       </div>
-      <div class="structure" id="structure">
-        <h4>Structure</h4>
+      <div class="structure" id="structure">Structure:
         <ul id="bulletpoint">
           <li>
             <label for="mooc"> <input type="checkbox" name="structure" value="mooc" id="mooc">MOOC</label>
@@ -66,8 +66,7 @@
           </li>
         </ul>
       </div>
-      <div class="localisation" id="localisation">
-        <h4>Localisation</h4>
+      <div class="localisation" id="localisation">Localisation:
         <ul id="bulletpoint_long">
           <li>
             <label for="auvergne-rhône-alpes"> <input type="radio" name="localisation" value="auvergne-rhône-alpes"
@@ -115,8 +114,7 @@
           </li>
         </ul>
       </div>
-      <div class="validation" id="validation">
-        <h4>Validation des acquis</h4>
+      <div class="validation" id="validation">Validation des acquis :
         <ul id="bulletpoint">
           <li>
             <label for="oui"> <input type="radio" name="validation" value="oui" id="oui">Oui</label>
@@ -126,8 +124,7 @@
           </li>
         </ul>
       </div>
-      <div class="duree" id="duree">
-        <h4>Durée de la formation/intervention (en j)</h4>
+      <div class="duree" id="duree">Durée de la formation/intervention (en j) :
         <ul id="bulletpoint_long">
           <li>
             <label for="0.5-duree"> <input type="checkbox" name="duree" value="0.5-duree" id="0.5-duree">0,5</label>
@@ -158,8 +155,7 @@
           </li>
         </ul>
       </div>
-      <div class="modacces" id="modacces">
-        <h4>Modalité d'accès</h4>
+      <div class="modacces" id="modacces">Modalité d'accès :
         <ul id="bulletpoint">
           <li>
             <label for="presentiel"> <input type="checkbox" name="modacces" value="presentiel"
