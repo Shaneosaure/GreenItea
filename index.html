@@ -12,18 +12,17 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <title>Team N°8</title>
+  
 
-
-
+  
 
 </head>
 
 <body class="body">
   <header class="header">
     <h1>Votre formation personnalisée !</h1>
-    <button style="font-size:24px" id="open-menu" class="bouton-panier" value="basket-menu" onclick="openBasket()"><i
-        class="fa fa-shopping-cart"></i></button>
-    <input type="text" id="searchBar" placeholder="Recherche" oninput="searchList()">
+    <button style="font-size:24px" id="open-menu" class="bouton-panier" value="basket-menu" onclick="openBasket()"><i class="fa fa-shopping-cart"></i></button>
+    <input type="text" id="searchBar" placeholder="Recherche" onchange="searchList()">
     <input type="button" id="close-menu" class="bouton-panier" value="×" onclick="closeBasket()">
   </header>
   <nav id="basket">
@@ -41,7 +40,8 @@
 
     </div>
     <div class="filter" id="filter">
-      <div class="formation" id="formation">Formation:
+      <div class="formation" id="formation">
+        <h4 class="filter_six">Formation:</h4>
         <ul id="bulletpoint">
           <form>
             <li>
@@ -54,7 +54,8 @@
             </li>
         </ul>
       </div>
-      <div class="structure" id="structure">Structure:
+      <div class="structure" id="structure">
+        <h4 class="filter_six">Structure:</h4>
         <ul id="bulletpoint">
           <li>
             <label for="mooc"> <input type="checkbox" name="structure" value="mooc" id="mooc">MOOC</label>
@@ -67,7 +68,8 @@
           </li>
         </ul>
       </div>
-      <div class="localisation" id="localisation">Localisation:
+      <div class="localisation" id="localisation">
+        <h4 class="filter_six">Localisation:</h4>
         <ul id="bulletpoint_long">
           <li>
             <label for="auvergne-rhône-alpes"> <input type="radio" name="localisation" value="auvergne-rhône-alpes"
@@ -115,69 +117,75 @@
           </li>
         </ul>
       </div>
-      <div class="validation" id="validation">Validation des acquis :
-        <ul id="bulletpoint">
-          <li>
-            <label for="oui"> <input type="radio" name="validation" value="oui" id="oui">Oui</label>
-          </li>
-          <li>
-            <label for="non"><input type="radio" name="validation" value="non" id="non">Non</label>
-          </li>
-        </ul>
-      </div>
       <div class="duree" id="duree">Durée de la formation/intervention (en j) :
-        <ul id="bulletpoint_long">
-          <li>
-            <label for="0.5-duree"> <input type="checkbox" name="duree" value="0.5-duree" id="0.5-duree">0,5</label>
-          </li>
-          <li>
-            <label for="1-duree"> <input type="checkbox" name="duree" value="1-duree" id="1-duree">1</label>
-          </li>
-          <li>
-            <label for="1.5-duree"> <input type="checkbox" name="duree" value="1.5-duree" id="1.5-duree">1,5</label>
-          </li>
-          <li>
-            <label for="2-duree"> <input type="checkbox" name="duree" value="2-duree" id="2-duree">2</label>
-          </li>
-          <li>
-            <label for="3-duree"> <input type="checkbox" name="duree" value="3-duree" id="3-duree">3</label>
-          </li>
-          <li>
-            <label for="5-duree"> <input type="checkbox" name="duree" value="5-duree" id="5-duree">5</label>
-          </li>
-          <li>
-            <label for="8-duree"> <input type="checkbox" name="duree" value="8-duree" id="8-duree">8</label>
-          </li>
-          <li>
-            <label for="10.5-duree"> <input type="checkbox" name="duree" value="10.5-duree" id="10.5-duree">10,5</label>
-          </li>
-          <li>
-            <label for="58-duree"> <input type="checkbox" name="duree" value="58-duree" id="58-duree">58</label>
-          </li>
-        </ul>
-      </div>
-      <div class="modacces" id="modacces">Modalité d'accès :
-        <ul id="bulletpoint">
-          <li>
-            <label for="presentiel"> <input type="checkbox" name="modacces" value="presentiel"
-                id="presentiel">Présentiel</label>
-          </li>
-          <li>
-            <label for="distanciel"><input type="checkbox" name="modacces" value="distanciel"
-                id="distanciel">Distanciel</label>
-          </li>
-          <li>
-            <label for="hybride"> <input type="checkbox" name="modacces" value="hybride" id="hybride">Hybride</label>
-          </li>
-        </ul>
+        <div class="validation" id="validation">
+          <h4 class="filter_six">Validation des acquis :</h4>
+          <ul id="bulletpoint">
+            <li>
+              <label for="oui"> <input type="radio" name="validation" value="oui" id="oui">Oui</label>
+            </li>
+            <li>
+              <label for="non"><input type="radio" name="validation" value="non" id="non">Non</label>
+            </li>
+          </ul>
+        </div>
+        <div class="duree" id="duree">
+          <h4 class="filter_six">Durée de la formation/intervention (en j) :</h4>
+          <ul id="bulletpoint_long">
+            <li>
+              <label for="0.5-duree"> <input type="checkbox" name="duree" value="0.5-duree" id="0.5-duree">0,5</label>
+            </li>
+            <li>
+              <label for="1-duree"> <input type="checkbox" name="duree" value="1-duree" id="1-duree">1</label>
+            </li>
+            <li>
+              <label for="1.5-duree"> <input type="checkbox" name="duree" value="1.5-duree" id="1.5-duree">1,5</label>
+            </li>
+            <li>
+              <label for="2-duree"> <input type="checkbox" name="duree" value="2-duree" id="2-duree">2</label>
+            </li>
+            <li>
+              <label for="3-duree"> <input type="checkbox" name="duree" value="3-duree" id="3-duree">3</label>
+            </li>
+            <li>
+              <label for="5-duree"> <input type="checkbox" name="duree" value="5-duree" id="5-duree">5</label>
+            </li>
+            <li>
+              <label for="8-duree"> <input type="checkbox" name="duree" value="8-duree" id="8-duree">8</label>
+            </li>
+            <li>
+              <label for="10.5-duree"> <input type="checkbox" name="duree" value="10.5-duree"
+                  id="10.5-duree">10,5</label>
+            </li>
+            <li>
+              <label for="58-duree"> <input type="checkbox" name="duree" value="58-duree" id="58-duree">58</label>
+            </li>
+          </ul>
+        </div>
+        <div class="modacces" id="modacces">
+          <h4 class="filter_six">Modalité d'accés :</h4>
+          <ul id="bulletpoint">
+            <li>
+              <label for="presentiel"> <input type="checkbox" name="modacces" value="presentiel"
+                  id="presentiel">Présentiel</label>
+            </li>
+            <li>
+              <label for="distanciel"><input type="checkbox" name="modacces" value="distanciel"
+                  id="distanciel">Distanciel</label>
+            </li>
+            <li>
+              <label for="hybride"> <input type="checkbox" name="modacces" value="hybride" id="hybride">Hybride</label>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-
     <div class="flex">
       <input type="button" class="flex-child" onclick="filter()" value="Filtrer résultat">
       <input type="reset" class="flex-child" value="Reset" />
     </div>
     </form>
+    </div>
     <div class="centralblock">
       <div class="mapblock">
         <div class="col-md-12 demo-block rounded padding demo-background margin-bottom-big">
@@ -188,7 +196,7 @@
 
                 <svg id='map' class="svg" version="1.1" style=" width: 100%; height: 90vh;">
                   <desc>JavaScript chart by amCharts 3.21.15</desc>
-                  <g id="cartloc" transform="translate(150,100) scale(1)">
+                  <g id="cartloc" transform="translate(140,100) scale(1)">
                     <g id="g_Auvergne-Rhône-Alpes">
 
 
@@ -315,10 +323,6 @@
                       </g>
                       <g transform="translate(295,150) scale(0.2)">
                         <path id="versailles" class="at-176__pin"
-                          d="M24,0A24,24,0,0,0,0,24C0,37.25,20,72,24,72S48,37.25,48,24A24,24,0,0,0,24,0Zm0,33a9,9,0,1,1,9-9A9,9,0,0,1,24,34Z" />
-                      </g>
-                      <g transform="translate(295,128) scale(0.2)">
-                        <path id="pontoise" class="at-176__pin"
                           d="M24,0A24,24,0,0,0,0,24C0,37.25,20,72,24,72S48,37.25,48,24A24,24,0,0,0,24,0Zm0,33a9,9,0,1,1,9-9A9,9,0,0,1,24,34Z" />
                       </g>
                     </g>
