@@ -1383,7 +1383,8 @@ let formationsList = {
             type_organisme: "Centre de Formation",
             nom: "EMERAUDE COMPETENCES MFR - CFA",
             intitule: "Titre de Responsable d'Espace de Médiation Numérique",
-            ville: "SAINT MALO",
+            ville: "Saint Malo",
+            region: "Bretagne",
             acquis: "\nLe Titre Professionnel de responsable d'espace de médiation numérique\nNiveau 5 (bac+2)",
             duree: 58,
             modalites: "Présentiel",
@@ -1681,7 +1682,10 @@ let formationsList = {
     ]
 }
 
-let filtersList = [];
+/** list temporaire pour les filtres */
+let filtersList = {
+    filtersList: []
+};
 
 
 /** ressors les checkbox pas sélectionné */
@@ -1700,16 +1704,16 @@ function filter() {
         values.push(checkbox.value);
     });
     values.push("\nStructure:")
-    cbstructure.forEach((checkbox) => {
-        values.push(checkbox.value);
+    cblocalisation.forEach((radio) => {
+        values.push(radio.value);
     });
     values.push("\nLocalisation:")
     cblocalisation.forEach((checkbox) => {
         values.push(checkbox.value);
     });
     values.push("\nValidation:")
-    cbvalidation.forEach((checkbox) => {
-        values.push(checkbox.value);
+    cbvalidation.forEach((radio) => {
+        values.push(radio.value);
     });
     values.push("\nDurée:")
     cbduree.forEach((checkbox) => {
@@ -1801,7 +1805,85 @@ window.onload = function affichagelist() {
     }
 }
 
+function afficheFilterList() {
 
+    let list = document.getElementById("showinglist");
+    for (let i = 0; i < formationsList.formationsList.length; i++) {
+        list.removeChild(list.lastChild);
+    }
+    console.log(list);
+    for (let i = 0; i < filtersList.filtersList.length; i++) {
+        /**on crée un li */
+        let li = document.createElement("li");
+        li.setAttribute('id', i);
+        list.appendChild(li);
+
+        /** Intitulé */
+        let h4 = document.createElement("h4");
+        if (filtersList.filtersList[i].intitule == "") {
+            h4.innerHTML = "Pas d'intitulé";
+        } else {
+            h4.innerHTML = filtersList.filtersList[i].intitule;
+        }
+        li.appendChild(h4);
+
+        /** Nom organisme */
+        let nom = document.createElement("p");
+        if (filtersList.filtersList[i].nom == "") {
+            nom.innerHTML = "Organisme: non spécifié";
+        } else {
+            nom.innerHTML = "Organisme: " + filtersList.filtersList[i].nom;
+        }
+        li.appendChild(nom);
+
+        /** Ville */
+        let ville = document.createElement("p");
+        if (filtersList.filtersList[i].ville == "") {
+            ville.innerHTML = "Lieu: non spécifié";
+        } else {
+            ville.innerHTML = "Lieu: " + filtersList.filtersList[i].ville;
+        }
+        li.appendChild(ville);
+
+        /** Duree */
+        let duree = document.createElement("p");
+        if (filtersList.filtersList[i].duree == "") {
+            duree.innerHTML = "Durée: non spécifiée";
+        } else {
+            duree.innerHTML = "Durée: " + filtersList.filtersList[i].duree + " jour(s)";
+        }
+        li.appendChild(duree);
+
+        /** Structure */
+        let structure = document.createElement("p");
+        if (filtersList.filtersList[i].structure == "") {
+            structure.innerHTML = "Structure: non spécifiée";
+        } else {
+            structure.innerHTML = "Structure: " + filtersList.filtersList[i].structure;
+        }
+        li.appendChild(structure);
+
+        /** Type de formation */
+        let type_formation = document.createElement("p");
+        if (filtersList.filtersList[i].type_formation == "") {
+            type_formation.innerHTML = "Type de formation: spécifiée";
+        } else {
+            type_formation.innerHTML = "Type de formation: " + filtersList.filtersList[i].type_formation;
+        }
+        li.appendChild(type_formation);
+
+        var input = document.createElement("input");
+        input.setAttribute('class', 'addButton');
+        input.setAttribute('type', 'button');
+        input.setAttribute('onclick', 'addBasket(this.parentNode.id)');
+        input.setAttribute('value', '+');
+        li.appendChild(input);
+
+        /** ligne horizontal */
+        let horizontalline = document.createElement("hr");
+        li.appendChild(horizontalline);
+    }
+}
 
 var basketList = [];
 
@@ -1810,7 +1892,7 @@ function addBasket(btnId) {
     let li = document.createElement("li");
     li.setAttribute('id', 'b_' + btnId);
     var verif = true;
-    li.innerText = document.getElementById(btnId).firstChild.innerText;
+    li.innerHTML = document.getElementById(btnId).firstChild.innerText;
 
     /** si pas empty, on verifie les doublons */
     for (let i = 0; i < basketList.length; i++) {
@@ -1829,6 +1911,49 @@ function addBasket(btnId) {
         input.setAttribute('value', '-');
         basketList.push('b_' + btnId);
         li.appendChild(input);
+        
+        /** On ajoute aussi des éléments cachés */
+        for (let i = 0; i < basketList.length; i++) {
+            if (basketList[i] == 'b_' + btnId) {
+
+                let ul = document.createElement("ul");
+                ul.setAttribute('id', 'details');
+                ul.setAttribute('class', 'details');
+                ul.style.display= 'none';
+                let il2 = document.createElement("il");
+                il2.innerHTML = "Durée: " + formationsList.formationsList[btnId].duree + "jour(s)";
+                ul.appendChild(il2);
+                let il3 = document.createElement("il");
+                il3.innerHTML = "Type de formation: " + formationsList.formationsList[btnId].type_formation;
+                ul.appendChild(il3);
+                let il4 = document.createElement("il");
+                il4.innerHTML = "Lieu: " + formationsList.formationsList[btnId].ville;
+                ul.appendChild(il4);
+                let il5 = document.createElement("il");
+                il5.innerHTML = "Type de structure: " + formationsList.formationsList[btnId].structure;
+                ul.appendChild(il5);
+                let il6 = document.createElement("il");
+                il6.innerHTML = "Type d'organisme: " + formationsList.formationsList[btnId].type_organisme;
+                ul.appendChild(il6);
+                let il7 = document.createElement("il");
+                il7.innerHTML = "Nom de l'organisme: " + formationsList.formationsList[btnId].nom;
+                ul.appendChild(il7);
+                let il8 = document.createElement("il");
+                il8.innerHTML = "Modalités de la formation: " + formationsList.formationsList[btnId].modalites;
+                ul.appendChild(il8);
+                let il9 = document.createElement("il");
+                il9.innerHTML = "Acquis: " + formationsList.formationsList[btnId].acquis;
+                ul.appendChild(il9);
+                let il10 = document.createElement("il");
+                il10.innerHTML = "Contenu de la formation: " + formationsList.formationsList[btnId].contenu;
+                ul.appendChild(il10);
+                let il11 = document.createElement("il");
+                il11.innerHTML = "URL de la formation: " + formationsList.formationsList[btnId].url;
+                ul.appendChild(il11);
+                li.appendChild(ul);
+
+            }
+        }
     }
 
 }
@@ -1862,6 +1987,16 @@ function closeBasket() {
     }, 10);
 }
 
+
+/** fonction pour afficher les details du panier le temps de print */
+function setDetailsDisplay(elm,prop){
+    var details = elm.getElementsByClassName("details");
+    for (var i = 0; i < details.length; i++) {
+        details[i].style.display= prop;
+    }
+}
+
+/** fonction pour afficher les details du panier le temps de print */
 function setButtonsDisplay(elm, prop) {
     var btns = elm.getElementsByClassName("subButton");
     var other = elm.getElementsByClassName("toolsBasket");
@@ -1872,10 +2007,12 @@ function setButtonsDisplay(elm, prop) {
         other[i].style.display = prop;
     }
 }
+
 /**fonction pour download le panier en pdf */
 function downloadBasket() {
     var content = document.getElementById('basket');
     setButtonsDisplay(content, 'none')
+    setDetailsDisplay(content, 'block');
     var opt = {
         margin: 1,
         filename: 'MonPanier.pdf',
@@ -1885,45 +2022,40 @@ function downloadBasket() {
     };
     html2pdf().set(opt).from(content.innerHTML).save();
     setButtonsDisplay(content, '');
+    setDetailsDisplay(content, 'none');
 }
 
-/**fonction pour Email */
+/**Argument pour Email */
 const SubjectVariable = "Demande de Devis de Formation";
 const BodyVariable = "Ici on mets les formations et tout";
-/**function SendMail(){
-    var params={
-        from_name : document.getElementById("fullName").value,
-        email_id : document.getElementById("email_id").value,
-        message:  document.getElementById("message").value,
-        /**formationsList.formationsList[0].intitule,
-function SendMail() {
-    var params = {
-        from_name: document.getElementById("fullName").value,
-        email_id: document.getElementById("email_id").value,
-        message: document.getElementById("message").value,
-        /**formationsList.formationsList[0].intitule, 
+
+
+//**Filter Region */
+function filterRegion(ville) {
+    for (let i = 0; i < formationsList.formationsList.length; i++) {
+        if (formationsList.formationsList[i].ville == ville && formationsList.formationsList[i].ville != "" ) {
+            filtersList.filtersList.push(formationsList.formationsList[i]);
+        }
     }
-    emailjs.send("service_zfl00os", "template_mm1u33n", params).then(function (res) {
-        alert("Success" + res.status);
-    });
-}*/
+    console.log(filtersList);
 
-
-
+}
 
 /**fonction pour faire afficher que la bonne région */
-const listRegion = ["Auvergne-Rhône-Alpes", "Centre-Val-de-Loire", "Pays-de-la-Loire", "Occitanie", "Hauts-de-France", "Normandie", "Provence-Alpes-Côte-dAzur", "Île-de-France", "Bourgogne-Franche-Comté", "Bretagne", "Grand-Est", "Nouvelle-Aquitaine"]
-
+const listRegion =["Auvergne-Rhône-Alpes", "Centre-Val-de-Loire", "Pays-de-la-Loire", "Occitanie", "Hauts-de-France", "Normandie", "Provence-Alpes-Côte-dAzur", "Île-de-France", "Bourgogne-Franche-Comté", "Bretagne", "Grand-Est", "Nouvelle-Aquitaine"]
 function showRegion(nameelm, locx, locy) {
     for (var i = 0; i < listRegion.length; i++) {
-        if(nameelm != listRegion[i]) {
+        if (nameelm != listRegion[i]) {
             setButtonsDisplayRegion(listRegion[i], 'none');
         }
         else {
         }
     }
     modifyRegionParameters(nameelm, locx, locy);
-    
+    filterRegion("Rennes");
+    afficheFilterList();
+
+
 }
 
 
@@ -1940,24 +2072,26 @@ function modifyRegionParameters(elm, locx, locy) {
     const vw = window.innerWidth;
 
     const vh = window.innerHeight;
-    
-    var transX = vw*(1.05-((locx-50)/540));
-    var transY = (0.9 * vh / 2) - (locy-420) * 2 * vh / 540;
-   
-    var scalevar = vw/540 ;
+
+    var transX = vw * (1.05 - ((locx - 50) / 540));
+    var transY = (0.9 * vh / 2) - (locy - 420) * 2 * vh / 540;
+
+    var scalevar = vw / 540;
     console.log(vw)
-    
-    var reg = document.getElementById("g_"+elm);
-    
+
+    var reg = document.getElementById("g_" + elm);
+
     /*var styleTranslate = translateX(transX) translateY(transY) scale(scale.toString());*/
-    console.log("translateX("+transX+"px) translateY("+transY+"px) scale("+scalevar+")");
-   
-    
-     console.log(reg.style.transform);
-    reg.style.transform = "translateX("+transX.toString()+"px) translateY("+ transY.toString()+"px) scale("+scalevar.toString()+")";
-  
-    
+    console.log("translateX(" + transX + "px) translateY(" + transY + "px) scale(" + scalevar + ")");
+
+
+    console.log(reg.style.transform);
+    reg.style.transform = "translateX(" + transX.toString() + "px) translateY(" + transY.toString() + "px) scale(" + scalevar.toString() + ")";
+
+
     /*changer le css des classes .g_nom-de-la-region*/
 
 }
+
+
 
