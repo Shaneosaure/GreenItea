@@ -1718,7 +1718,7 @@ let formationsList = {
     ]
 }
 
-/** list temporaire pour les filtres */
+/** liste pour les filtres */
 let filtersList = {
     filtersList: []
 };
@@ -1740,15 +1740,11 @@ function filter() {
         values.push(checkbox.value);
     });
     values.push("\nStructure:")
-    cblocalisation.forEach((radio) => {
-        values.push(radio.value);
-    });
-    values.push("\nLocalisation:")
-    cblocalisation.forEach((checkbox) => {
+    cbstructure.forEach((checkbox) => {
         values.push(checkbox.value);
     });
-    values.push("\nValidation:")
-    cbvalidation.forEach((radio) => {
+    values.push("\nLocalisation:")
+    cblocalisation.forEach((radio) => {
         values.push(radio.value);
     });
     values.push("\nDurée:")
