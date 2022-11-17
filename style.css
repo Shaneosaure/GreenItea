@@ -142,8 +142,8 @@
     display: flex;
     /** flex-wrap: wrap; */
     align-content: center;
-    padding-right:10%;
-    padding-left: 10%;
+    padding-right:2.5%;
+    padding-left: 2.5%;
     background-color: #ffffff;
   }
   
@@ -156,6 +156,12 @@
 }
 
 #bulletpoint{
+    list-style-type: none;
+    text-align: left;
+}
+
+#bulletpoint_long{
+    columns: 2;
     list-style-type: none;
     text-align: left;
 }
