@@ -2299,7 +2299,7 @@ function setButtonsDisplayRegion(elm, prop) {
 function modifyRegionParameters(elm, locx, locy) {
     const vw = window.innerWidth;
     const vh = window.innerHeight;
-    var transX = (600 - 3.3 * locx) * (vw / 1920)
+    var transX = (600 - 3 * locx) * (vw / 1920)
     var transY = (650 - 3 * (locy)) * (vw / 1920)
     var scalevar = vw / 540;
     var reg = document.getElementById("g_" + elm);
