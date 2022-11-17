@@ -2130,8 +2130,8 @@ function modifyRegionParameters(elm, locx, locy) {
 
     const vh = window.innerHeight;
 
-    var transX = -locx
-    var transY = -locy
+    var transX = (116-locx)*(vw/1080)
+    var transY = (-(locy))*(vh/1080)
 
     var scalevar = vw / 540;
     
