@@ -2110,46 +2110,40 @@ function showRegion(nameelm, locx, locy) {
     }
     modifyRegionParameters(nameelm, locx, locy);
     filterRegion(nameelm);
-    afficheFilterList();
-
+   afficheFilterList();
+return
 
 }
 
 
 function setButtonsDisplayRegion(elm, prop) {
-
     var reg = document.getElementById(elm);
     reg.style.display = prop;
-
-
 }
 
 /**fonction pour calculer le translate*/
 function modifyRegionParameters(elm, locx, locy) {
     const vw = window.innerWidth;
-
     const vh = window.innerHeight;
-
-    var transX = (116-locx)*(vw/1080)
-    var transY = (-(locy))*(vh/1080)
-
+    var transX = (600-3*locx)*(vw/1920)
+    var transY = (650-3*(locy))*(vw/1920)
     var scalevar = vw / 540;
-    
-
     var reg = document.getElementById("g_" + elm);
-    
-
     /*var styleTranslate = translateX(transX) translateY(transY) scale(scale.toString());*/
-    console.log("translateX(" + transX + "px) translateY(" + transY + "px) scale(" + scalevar + ")");
+    reg.style.transform = "translateX(" + transX.toString() + "px) translateY(" + transY.toString() + "px) scale("+scalevar.toString()+")";
+}
 
-
-    console.log(reg.style.transform);
-    reg.style.transform = "translateX(" + transX.toString() + "px) translateY(" + transY.toString() + "px) scale(" + scalevar.toString() + ")";
+function showFullMap() {
+    console.log("entrer dans la fonction");
+    for (var i = 0; i < listRegion.length; i++) {
+        var temp = document.getElementById("g_" + listRegion[i])
+        console.log("entrer dans la fonction 1");
+        temp.style.transform = "translateX(0px) translateY(0px) scale(1)";
+        console.log("entrer dans la fonction 2");
+        setButtonsDisplayRegion(listRegion[i], '');
+        console.log("entrer dans la fonction 3");
     
-
-
-    /*changer le css des classes .g_nom-de-la-region*/
-
+    }
 }
 
 

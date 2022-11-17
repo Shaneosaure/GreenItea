@@ -103,6 +103,12 @@
     transform: translateX(0) translateY(0) scale(1);
 }
 
+#closebutton {
+    z-index: 1;
+    display:"visible";
+}
+
+
 
 
 
