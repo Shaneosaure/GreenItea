@@ -1852,11 +1852,15 @@ window.onload = function affichageload() {
 }
 
 function affichagelist() {
+
     /**vidage filter list */
     let list1 = document.getElementById("showinglist");
     for (let i = 0; i < filtersList.filtersList.length; i++) {
         list1.removeChild(list1.lastChild);
     }
+    filtersList = {
+        filtersList: []
+    };
 
     let list = document.getElementById("showinglist");
 
@@ -1948,9 +1952,8 @@ function affichagelist() {
 function afficheFilterList() {
 
     let list = document.getElementById("showinglist");
-    for (let i = 0; i < formationsList.formationsList.length; i++) {
-        list.removeChild(list.lastChild);
-    }
+    list.innerHTML = "";
+
     console.log(list);
     for (let i = 0; i < filtersList.filtersList.length; i++) {
         /**on crée un li */
@@ -2036,7 +2039,14 @@ function afficheFilterList() {
 }
 
 function searchList() {
-
+    let list1 = document.getElementById("showinglist");
+    for (let i = 0; i < filtersList.filtersList.length; i++) {
+        list1.removeChild(list1.lastChild);
+    }
+    filtersList = {
+        filtersList: []
+    };
+    
     const result = document.getElementById("searchBar").value.toLowerCase();
     if (result != "") {
         for (let i = 0; i < formationsList.formationsList.length; i++) {
@@ -2065,11 +2075,7 @@ function searchList() {
                 }
             }
         }
-        affichagelist();
         afficheFilterList();
-        for (let i = 0; i < filtersList.filtersList.length; i++) {
-            filtersList.filtersList.pop();
-        }
     }
 }
 
