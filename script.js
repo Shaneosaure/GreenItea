@@ -1739,12 +1739,12 @@ function filter() {
         values.push(checkbox.value);
     });
     values.push("\nStructure:")
-    cbstructure.forEach((checkbox) => {
-        values.push(checkbox.value);
-    });
-    values.push("\nLocalisation:")
     cblocalisation.forEach((radio) => {
         values.push(radio.value);
+    });
+    values.push("\nLocalisation:")
+    cblocalisation.forEach((checkbox) => {
+        values.push(checkbox.value);
     });
     values.push("\nValidation:")
     cbvalidation.forEach((radio) => {
@@ -1852,11 +1852,15 @@ window.onload = function affichageload() {
 }
 
 function affichagelist() {
+
     /**vidage filter list */
     let list1 = document.getElementById("showinglist");
     for (let i = 0; i < filtersList.filtersList.length; i++) {
         list1.removeChild(list1.lastChild);
     }
+    filtersList = {
+        filtersList: []
+    };
 
     let list = document.getElementById("showinglist");
 
@@ -1948,9 +1952,8 @@ function affichagelist() {
 function afficheFilterList() {
 
     let list = document.getElementById("showinglist");
-    for (let i = 0; i < formationsList.formationsList.length; i++) {
-        list.removeChild(list.lastChild);
-    }
+    list.innerHTML = "";
+
     console.log(list);
     for (let i = 0; i < filtersList.filtersList.length; i++) {
         /**on crée un li */
@@ -2036,7 +2039,14 @@ function afficheFilterList() {
 }
 
 function searchList() {
-
+    let list1 = document.getElementById("showinglist");
+    for (let i = 0; i < filtersList.filtersList.length; i++) {
+        list1.removeChild(list1.lastChild);
+    }
+    filtersList = {
+        filtersList: []
+    };
+    
     const result = document.getElementById("searchBar").value.toLowerCase();
     if (result != "") {
         for (let i = 0; i < formationsList.formationsList.length; i++) {
@@ -2065,11 +2075,7 @@ function searchList() {
                 }
             }
         }
-        affichagelist();
         afficheFilterList();
-        for (let i = 0; i < filtersList.filtersList.length; i++) {
-            filtersList.filtersList.pop();
-        }
     }
 }
 
@@ -2230,7 +2236,7 @@ function downloadBasket() {
     setDetailsDisplay(content, 'block');
     var opt = {
         margin: 1,
-        filename: 'MaFormation.pdf',
+        filename: 'MonPanier.pdf',
         image: { type: 'jpeg', quality: 0.98 },
         html2canvas: { scale: 2 },
         jsPDF: { unit: 'in', format: 'A4', orientation: 'portrait' }
@@ -2282,7 +2288,7 @@ function showRegion(nameelm, locx, locy) {
 
 
 function setButtonsDisplayRegion(elm, prop) {
-    var reg = document.getElementById(elm);
+    var reg = document.getElementById("g_"+elm);
     reg.style.display = prop;
 }
 

@@ -86,51 +86,51 @@
 
 /* css de chaque région */
 #Auvergne-Rhône-Alpes {
-    display: visible;
+    display: block;
 }
 
 #Centre-Val-de-Loire {
-    display: visible;
+    display: block;
 }
 
 #Pays-de-la-Loire {
-    display: visible;
+    display: block;
 }
 
 #Occitanie {
-    display: visible;
+    display: block;
 }
 
 #Hauts-de-France {
-    display: visible;
+    display: block;
 }
 
 #Normandie {
-    display: visible;
+    display: block;
 }
 
 #Provence-Alpes-Côte-dAzur {
-    display: visible;
+    display: block;
 }
 
 #Île-de-France {
-    display: visible;
+    display: block;
 }
 
 #Bourgogne-Franche-Comté {
-    display: visible;
+    display: block;
 }
 
 #Bretagne {
-    display: visible;
+    display: block;
 }
 
 #Grand-Est {
-    display: visible;
+    display: block;
 }
 
 #Nouvelle-Aquitaine {
-    display: visible;
+    display: block;
 }
 
 #g_Bretagne {
@@ -142,6 +142,7 @@
 }
 
 #g_Auvergne-Rhône-Alpes {
+    display:block;
     transform: translateX(0) translateY(0) scale(1);
 }
 
