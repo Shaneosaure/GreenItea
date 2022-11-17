@@ -1625,6 +1625,8 @@ let formationsList = {
 
 let filtersList = [];
 
+
+/** ressors les checkbox pas sélectionné */
 function filter() {
     let values = [];
 
@@ -1661,55 +1663,161 @@ function filter() {
     });
     console.log(values);
     console.log(formationsList.formationsList[5].duree);
+}
 
+
+/** au chargement de la page, la liste s'affiche*/
+window.onload = function affichagelist() {
     let list = document.getElementById("showinglist");
 
     for (let i = 0; i < formationsList.formationsList.length; i++) {
+        /**on crée un li */
+        let li = document.createElement("li");
+        li.setAttribute('id', i);
+        list.appendChild(li);
+
+        /** Intitulé */
         let h4 = document.createElement("h4");
-        h4.innerHTML = formationsList.formationsList[i].intitule;
-        list.appendChild(h4);
+        if (formationsList.formationsList[i].intitule == "") {
+            h4.innerHTML = "Pas d'intitulé";
+        } else {
+            h4.innerHTML = formationsList.formationsList[i].intitule;
+        }
+        li.appendChild(h4);
+
+        /** Nom organisme */
+        let nom = document.createElement("p");
+        if (formationsList.formationsList[i].nom == "") {
+            nom.innerHTML = "Organisme: non spécifié";
+        } else {
+            nom.innerHTML = "Organisme: " + formationsList.formationsList[i].nom;
+        }
+        li.appendChild(nom);
+
+        /** Ville */
+        let ville = document.createElement("p");
+        if (formationsList.formationsList[i].ville == "") {
+            ville.innerHTML = "Lieu: non spécifié";
+        } else {
+            ville.innerHTML = "Lieu: " + formationsList.formationsList[i].ville;
+        }
+        li.appendChild(ville);
+
+        /** Duree */
+        let duree = document.createElement("p");
+        if (formationsList.formationsList[i].duree == "") {
+            duree.innerHTML = "Durée: non spécifiée";
+        } else {
+            duree.innerHTML = "Durée: " + formationsList.formationsList[i].duree + " jour(s)";
+        }
+        li.appendChild(duree);
+
+        /** Structure */
+        let structure = document.createElement("p");
+        if (formationsList.formationsList[i].structure == "") {
+            structure.innerHTML = "Structure: non spécifiée";
+        } else {
+            structure.innerHTML = "Structure: " + formationsList.formationsList[i].structure;
+        }
+        li.appendChild(structure);
+
+        /** Type de formation */
+        let type_formation = document.createElement("p");
+        if (formationsList.formationsList[i].type_formation == "") {
+            type_formation.innerHTML = "Type de formation: spécifiée";
+        } else {
+            type_formation.innerHTML = "Type de formation: " + formationsList.formationsList[i].type_formation;
+        }
+        li.appendChild(type_formation);
+
+        var input = document.createElement("input");
+        input.setAttribute('class', 'addButton');
+        input.setAttribute('type', 'button');
+        input.setAttribute('onclick', 'addBasket(this.parentNode.id)');
+        input.setAttribute('value', '+');
+        li.appendChild(input);
+
+        /** ligne horizontal */
         let horizontalline = document.createElement("hr");
-        list.appendChild(horizontalline);
+        li.appendChild(horizontalline);
     }
 }
 
+
+
 var basketList = [];
+
 /**fonction d'ajout dans le panier */
 function addBasket(btnId) {
-    basketList.push(document.getElementById(btnId));
-    for (let j = 0; j < basketList.length; j++) {
-        let item = basketList[j].cloneNode(true);
-        let li = document.createElement("li");
-        li.innerText = item.innerText;
-        document.getElementById("basket-list").appendChild(li);
+    let li = document.createElement("li");
+    li.setAttribute('id', 'b_' + btnId);
+    var verif = true;
+    li.innerText = document.getElementById(btnId).firstChild.innerText;
+
+    /** si pas empty, on verifie les doublons */
+    for (let i = 0; i < basketList.length; i++) {
+        if (basketList[i] == 'b_' + btnId) {
+            verif = false;
+            break;
+        }
     }
+    /** si pas doublon, on add */
+    if (verif) {
+        document.getElementById("basket-list").appendChild(li);
+        var input = document.createElement("input");
+        input.setAttribute('class', 'subButton');
+        input.setAttribute('type', 'button');
+        input.setAttribute('onclick', 'removeBasket(this.parentNode.id)');
+        input.setAttribute('value', '-');
+        basketList.push('b_' + btnId);
+        li.appendChild(input);
+    }
+
 }
+
 
 /**fonction de retrait du panier */
 function removeBasket(btnId) {
-    for (let n = 0; n < basketList.length; n++) {
-        if (basketList[n] == document.getElementById(btnId)) {
-            basketList.splice(n, 1);
+    for (let i = 0; i < basketList.length; i++) {
+        if (basketList[i] == btnId) {
+            document.getElementById(btnId).remove();
+            basketList.splice(i, 1);
         }
     }
 }
 
 /**fonction afficher le panier */
 function openBasket() {
-    document.getElementById("basket").classList.toggle('show-menu');
-    document.getElementById("open-menu").style.display = "none";
-    document.getElementById("close-menu").style.display = "block";
+    document.getElementById("basket").style.display = "block";
+    setTimeout(() => {
+        document.getElementById("basket").classList.toggle('show-menu');
+        document.getElementById("open-menu").style.display = "none";
+        document.getElementById("close-menu").style.display = "block";
+    }, 10);
 }
 function closeBasket() {
     document.getElementById("basket").classList.toggle('show-menu');
-    document.getElementById("open-menu").style.display = "block";
-    document.getElementById("close-menu").style.display = "none";
+    setTimeout(() => {
+        setTimeout(() => { document.getElementById("basket").style.display = "none"; }, 500);
+        document.getElementById("open-menu").style.display = "block";
+        document.getElementById("close-menu").style.display = "none";
+    }, 10);
 }
 
-
+function setButtonsDisplay(elm, prop) {
+    var btns = elm.getElementsByClassName("subButton");
+    var other = elm.getElementsByClassName("toolsBasket");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].style.display = prop;
+    }
+    for (var i = 0; i < other.length; i++) {
+        other[i].style.display = prop;
+    }
+}
 /**fonction pour download le panier en pdf */
 function downloadBasket() {
-    var element = document.getElementById("basket-list");
+    var content = document.getElementById('basket');
+    setButtonsDisplay(content, 'none')
     var opt = {
         margin: 1,
         filename: 'MonPanier.pdf',
@@ -1717,8 +1825,30 @@ function downloadBasket() {
         html2canvas: { scale: 2 },
         jsPDF: { unit: 'in', format: 'A4', orientation: 'portrait' }
     };
-    html2pdf().set(opt).from(element).save();
+    html2pdf().set(opt).from(content.innerHTML).save();
+    setButtonsDisplay(content, '');
 }
+
+/**fonction pour Email */
+const SubjectVariable = "Demande de Devis de Formation";
+const BodyVariable = "Ici on mets les formations et tout";
+/**function SendMail(){
+    var params={
+        from_name : document.getElementById("fullName").value,
+        email_id : document.getElementById("email_id").value,
+        message:  document.getElementById("message").value,
+        /**formationsList.formationsList[0].intitule,
+function SendMail() {
+    var params = {
+        from_name: document.getElementById("fullName").value,
+        email_id: document.getElementById("email_id").value,
+        message: document.getElementById("message").value,
+        /**formationsList.formationsList[0].intitule, 
+    }
+    emailjs.send("service_zfl00os", "template_mm1u33n", params).then(function (res) {
+        alert("Success" + res.status);
+    });
+}*/
 
 
 /**fonction pour calculer le translate*/
