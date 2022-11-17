@@ -18,7 +18,7 @@ let formationsList = {
             intitule: "Développeur responsable",
             ville: "National",
             region: "",
-            acquis: "Non",
+            acquis: "non",
             duree: "1.5",
             modalites: "Distanciel",
             url: "https:\/\/thegreencompagnon.com\/cours\/developpeur-responsable\/"
@@ -36,7 +36,7 @@ let formationsList = {
             intitule: "Designer responsable",
             ville: "National",
             region: "",
-            acquis: "Non",
+            acquis: "non",
             duree: 1.5,
             modalites: "Distanciel",
             url: "https:\/\/thegreencompagnon.com\/cours\/ux-ui-designer-responsable\/"
@@ -54,7 +54,7 @@ let formationsList = {
             intitule: "Infrastructure responsable",
             ville: "National",
             region: "",
-            acquis: "Non",
+            acquis: "non",
             duree: 1.5,
             modalites: "Distanciel",
             url: "https:\/\/thegreencompagnon.com\/cours\/sre-responsable\/"
@@ -72,7 +72,7 @@ let formationsList = {
             intitule: "Impact du numérique et concepts clés de l'éco-conception",
             ville: "National",
             region: "",
-            acquis: "Non",
+            acquis: "non",
             duree: 0.5,
             modalites: "Distanciel",
             url: "https:\/\/thegreencompagnon.com\/cours\/impact-du-numerique-et-concepts-cles-de-leco-conception\/"
@@ -90,7 +90,7 @@ let formationsList = {
             intitule: "Appliquez les principes du GreenIT dans votre entreprise",
             ville: "National",
             region: "",
-            acquis: "Non",
+            acquis: "non",
             duree: 0.5,
             modalites: "Distanciel",
             url: "https:\/\/openclassrooms.com\/fr\/courses\/6227476-appliquez-les-principes-du-green-it-dans-votre-entreprise"
@@ -108,9 +108,9 @@ let formationsList = {
             intitule: "NUMÉRIQUE RESPONSABLE",
             ville: "Toulouse",
             region: "Occitanie",
-            acquis: "Non",
+            acquis: "non mais les apprenants sont en mesure de passer le certificat de connaissance à l'issue de cette formation",
             duree: 2,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: ""
         },
         {
@@ -126,9 +126,9 @@ let formationsList = {
             intitule: "Ecoconception de site Internet",
             ville: "Toulouse",
             region: "Occitanie",
-            acquis: "Oui",
+            acquis: "oui. Un certificat de connaissance délivré par l'INR",
             duree: 2,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/www.toulouse.cci.fr\/solution\/eco-conception-de-site-internet"
         },
         {
@@ -144,9 +144,9 @@ let formationsList = {
             intitule: "Accessibilité et assurance qualité web",
             ville: "Toulouse",
             region: "Occitanie",
-            acquis: "Non",
+            acquis: "non",
             duree: 2,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: ""
         },
         {
@@ -162,9 +162,9 @@ let formationsList = {
             intitule: "ECOCONCEPTION-  GESTION DE PROJETS",
             ville: "National",
             region: "",
-            acquis: "Oui",
+            acquis: "OBJECTIFS PÉDAGOGIQUES\nPrendre du recul par rapport au « business as usual » dans les projets informatiques.\nDéfinir les enjeux et contextes du numérique et pourquoi il est crucial d’intégrer une démarche d’écoconception.\nAcquérir et de mettre en pratique sous forme d’ateliers les connaissances socles sur le sujet du Numérique Responsable.\nS’appuyer sur une méthodologie pour déployer le Numérique Responsable dans les projets.\nIdentifier les référentiels et outils existants.\nComprendre l’écoconception appliquée aux services numériques.\nÊtre en mesure de concevoir un logiciel en intégrant les bonnes pratiques d’éco-conception numérique.",
             duree: 2,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/infogreenfactory.green\/contact\/\n\nou\n\nvia notre partenaire IHMISEN: https:\/\/ihmisen.com\/NRE030_Ecoconception-pour-la-gestion-de-projets.php"
         },
         {
@@ -180,9 +180,9 @@ let formationsList = {
             intitule: "NUMÉRIQUE RESPONSABLE",
             ville: "National",
             region: "",
-            acquis: "Oui",
+            acquis: "Définir les enjeux et contextes du numérique et pourquoi il est crucial d’intégrer une démarche responsable.\nIdentifier dans l’ensemble du cycle de vie des équipements et services numériques les critères importants (achats, usage, fin de vie, conception).\nDécouvrir une méthodologie et des outils pour une mise en pratique du numérique responsable.\nValider la certification « Numérique responsable » portée par l’Université de la Rochelle et l’Institut du Numérique Responsable (INR).",
             duree: 2,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/infogreenfactory.green\/contact\/\n\nou\n\nhttps:\/\/ihmisen.com\/NRE010_Sensibilisation-au-Numerique-Responsable.php"
         },
         {
@@ -234,9 +234,9 @@ let formationsList = {
             intitule: "Ecoconception outils, GR 491 et RGESN",
             ville: "Toulouse",
             region: "Occitanie",
-            acquis: "Oui",
+            acquis: "Cette formation vise à fournir aux participants une connaissance du\nréférentiel de l’INR le GR491 et du RGESN (référentiel d'écoconception issu du GR491) pour mettre en pratique les recommandations dans\nchacune des étapes projet.\nLa formation permettra :\n• De préciser les objectifs du référentiel\n• De comprendre la structure des éléments proposés dans le référentiel\n• D’identifier les relations avec les Objectifs de Développement Durable\nde l’ONU\n• De préciser la méthodologie de mise en œuvre du référentiel dans une\norganisation\n• De comprendre les éléments exposés dans le référentiel\n• De relier le référentiel INR avec les autres référentiels disponibles\nLe module « Référentiel INR » a donc pour vocation de permettre aux acteurs\ndu numérique (Product Owner, Développeurs, Designers, Chefs de projet) de\nmettre en pratique l’écoconception de services numériques dans une\ndémarche Numérique Responsable et de sobriété numérique.",
             duree: 1,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/ihmisen.com\/NRE060_Referentiel-CoRSer-Num-de-l-INR.php"
         },
         {
@@ -252,9 +252,9 @@ let formationsList = {
             intitule: "Initier une démarche Numérique Responsable dans mon entreprise",
             ville: "Rennes",
             region: "Bretagne",
-            acquis: "Oui",
+            acquis: "Possibilité de passer la certification numérique responsable de l'INR après la formation.",
             duree: 3,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/www.ecologeek.fr\/formation"
         },
         {
@@ -272,7 +272,7 @@ let formationsList = {
             region: "Île-de-France",
             acquis: "Non",
             duree: 1.5,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "http:\/\/www.valerieschneider.com"
         },
         {
@@ -288,9 +288,9 @@ let formationsList = {
             intitule: "S'orienter vers un numérique plus responsable",
             ville: "Paris",
             region: "Île-de-France",
-            acquis: "Oui",
+            acquis: "Certificat de connaissance de l’Institut du Numérique Responsable (optionnel)",
             duree: 2,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/www.mir-cf.com\/formations"
         },
         {
@@ -306,9 +306,9 @@ let formationsList = {
             intitule: "Sensibilisation au Numérique Responsable",
             ville: "Toulouse",
             region: "Occitanie",
-            acquis: "Oui",
+            acquis: "› Attestation de fin de formation.\n› Certification Numérique Responsable (NR).",
             duree: 2,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/www.ihmisen.com\/NRE010_Sensibilisation-au-Numerique-Responsable.php"
         },
         {
@@ -324,9 +324,9 @@ let formationsList = {
             intitule: "Numérique Responsable - Ecoconception pour les dirigeants",
             ville: "Toulouse",
             region: "Occitanie",
-            acquis: "Oui",
+            acquis: "› Attestation de fin de formation.",
             duree: 1,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/www.ihmisen.com\/NRE020_Ecoconception-pour-les-dirigeants.php"
         },
         {
@@ -342,9 +342,9 @@ let formationsList = {
             intitule: "Numérique Responsable - Ecoconception pour la gestion de projets",
             ville: "Toulouse",
             region: "Occitanie",
-            acquis: "Oui",
+            acquis: "› Attestation de fin de formation.",
             duree: 2,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/www.ihmisen.com\/NRE030_Ecoconception-pour-la-gestion-de-projets.php"
         },
         {
@@ -360,9 +360,9 @@ let formationsList = {
             intitule: "Numérique Responsable - Ecoconception pour les développeurs",
             ville: "Toulouse",
             region: "Occitanie",
-            acquis: "Oui",
+            acquis: "› Attestation de fin de formation.",
             duree: 3,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/www.ihmisen.com\/NRE040_Ecoconception-pour-les-developpeurs.php"
         },
         {
@@ -378,9 +378,9 @@ let formationsList = {
             intitule: "Numérique Responsable – Référentiel « Conception responsable de Services Numériques » de l’INR",
             ville: "Toulouse",
             region: "Occitanie",
-            acquis: "Oui",
+            acquis: "› Attestation de fin de formation.",
             duree: 1,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/www.ihmisen.com\/NRE060_Referentiel-CoRSer-Num-de-l-INR.php"
         },
         {
@@ -396,9 +396,9 @@ let formationsList = {
             intitule: "Numérique Responsable – Ecoconception pour les Fonctionnels",
             ville: "Toulouse",
             region: "Occitanie",
-            acquis: "Oui",
+            acquis: "› Attestation de fin de formation.",
             duree: 2,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/www.ihmisen.com\/NRE070_Ecoconception-pour-les-Fonctionnels.php"
         },
         {
@@ -414,9 +414,9 @@ let formationsList = {
             intitule: "Numérique Responsable – Ecoconception pour les Lead Dev, Développeurs et UX Designers",
             ville: "Toulouse",
             region: "Occitanie",
-            acquis: "Oui",
+            acquis: "› Attestation de fin de formation.",
             duree: 3,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/www.ihmisen.com\/NRE080_Ecoconception-pour-les-lead-dev-developpeurs-UX-designers.php"
         },
         {
@@ -432,9 +432,9 @@ let formationsList = {
             intitule: "Comprendre le numérique responsable & la démarche d’écoconception numérique, avec ateliers pratiques",
             ville: "Paris",
             region: "Île-de-France",
-            acquis: "Oui",
+            acquis: "Validation de participation",
             duree: 1,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "http:\/\/www.temesis.com"
         },
         {
@@ -452,7 +452,7 @@ let formationsList = {
             region: "",
             acquis: "Non",
             duree: 0.5,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/www.fresquedunumerique.org\/"
         },
         {
@@ -468,9 +468,9 @@ let formationsList = {
             intitule: "Maitriser les enjeux et piloter une démarche Numérique Responsable avec le label NR",
             ville: "Paris",
             region: "Île-de-France",
-            acquis: "Oui",
+            acquis: "En route vers la labellisation\nOui, validation des compétences :\n-Comprendre les enjeux du numérique responsable et les comportements clefs à adopter pour les respecter.\n-Connaître le référentiel du Label du Numérique Responsable ainsi que les enjeux de cette thématique.\n-Savoir évaluer les enjeux, son niveau et ses axes d’amélioration sur le numérique responsable.\n\n-Identifier les priorités propres à son organisation dans le cadre de sa démarche NR. Se préparer à un audit NR externe.\n-Rédiger des engagements concrets, engageants, réalisables et conformes aux attentes d’un comité de labellisation.\n-Être capable de préparer l’auto-évaluation d’une organisation et de mener une démarche de labellisation LNR1 ou LNR2 dans une entreprise ou organisation.",
             duree: 3,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/docs.zohopublic.eu\/folder\/1ciiyda9edd3f0194450b9507cffdd32025d6"
         },
         {
@@ -488,7 +488,7 @@ let formationsList = {
             region: "Pays-de-la-Loire",
             acquis: "Non",
             duree: 0.5,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/tkpx.eu\/formations-professionnelles\/"
         },
         {
@@ -506,7 +506,7 @@ let formationsList = {
             region: "Île-de-France",
             acquis: "Non",
             duree: 0.5,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/www.om-conseil.fr\/atelier-ludique-de-sensibilisation-au-numerique-responsable\/"
         },
         {
@@ -522,9 +522,9 @@ let formationsList = {
             intitule: "Amorcer une transformation numérique responsable",
             ville: "Puteaux-La défense",
             region: "Île-de-France",
-            acquis: "Oui",
+            acquis: "Le formateur évalue la progression pédagogique du participant tout au long de la formation au moyen de QCM, mises en situation, travaux pratiques…\nLe participant complète également un test de positionnement en amont et en aval pour valider les compétences acquises.",
             duree: 1,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/www.orsys.fr\/formation-amorcer-une-transformation-numerique-responsable.html"
         },
         {
@@ -540,9 +540,9 @@ let formationsList = {
             intitule: "Ecoconception des services numériques",
             ville: "Puteaux-La défense",
             region: "Île-de-France",
-            acquis: "Oui",
+            acquis: "Le formateur évalue la progression pédagogique du participant tout au long de la formation au moyen de QCM, mises en situation, travaux pratiques…\nLe participant complète également un test de positionnement en amont et en aval pour valider les compétences acquises.",
             duree: 2,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/www.orsys.fr\/formation-ecoconception-des-services-numeriques.html"
         },
         {
@@ -560,7 +560,7 @@ let formationsList = {
             region: "Île-de-France",
             acquis: "Le formateur évalue la progression pédagogique du participant tout au long de la formation au moyen de QCM, mises en situation, travaux pratiques…\nLe participant complète également un test de positionnement en amont et en aval pour valider les compétences acquises.",
             duree: 2,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/www.orsys.fr\/formation-green-it-demarche-mise-en-oeuvre.html"
         },
         {
@@ -578,7 +578,7 @@ let formationsList = {
             region: "Île-de-France",
             acquis: "Le formateur évalue la progression pédagogique du participant tout au long de la formation au moyen de QCM, mises en situation, travaux pratiques…\nLe participant complète également un test de positionnement en amont et en aval pour valider les compétences acquises.",
             duree: 2,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/www.orsys.fr\/formation-green-data-center-optimiser-votre-performance-energetique.html"
         },
         {
@@ -596,7 +596,7 @@ let formationsList = {
             region: "Île-de-France",
             acquis: "Le formateur évalue la progression pédagogique du participant tout au long de la formation au moyen de QCM, mises en situation, travaux pratiques…\nLe participant complète également un test de positionnement en amont et en aval pour valider les compétences acquises.",
             duree: 1,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/www.orsys.fr\/formation-sensibilisation-a-l-accessibilite-numerique.html"
         },
         {
@@ -614,7 +614,7 @@ let formationsList = {
             region: "Île-de-France",
             acquis: "Le formateur évalue la progression pédagogique du participant tout au long de la formation au moyen de QCM, mises en situation, travaux pratiques…\nLe participant complète également un test de positionnement en amont et en aval pour valider les compétences acquises.",
             duree: 1,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/www.orsys.fr\/formation-accessibilite-numerique-dans-un-projet.html"
         },
         {
@@ -632,7 +632,7 @@ let formationsList = {
             region: "Île-de-France",
             acquis: "Le formateur évalue la progression pédagogique du participant tout au long de la formation au moyen de QCM, mises en situation, travaux pratiques…\nLe participant complète également un test de positionnement en amont et en aval pour valider les compétences acquises.",
             duree: 5,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/www.orsys.fr\/formation-rgaa-audit-accessibilite-site-web-ou-application-mobile.html"
         },
         {
@@ -650,7 +650,7 @@ let formationsList = {
             region: "Pays-de-la-Loire",
             acquis: "OUI \/\/ Crédits ECTS ?",
             duree: 2,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "www.esaip.org"
         },
         {
@@ -666,9 +666,9 @@ let formationsList = {
             intitule: "L’éco-conception logicielle",
             ville: "Saint-Barthélemy d'Anjou",
             region: "Pays-de-la-Loire",
-            acquis: "Oui",
+            acquis: "OUI \/\/ crédits ECTS",
             duree: 3,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "www.esaip.org"
         },
         {
@@ -686,7 +686,7 @@ let formationsList = {
             region: "Pays-de-la-Loire",
             acquis: "OUI \/\/ Crédits ECTS",
             duree: 3,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "www.esaip.org"
         },
         {
@@ -704,7 +704,7 @@ let formationsList = {
             region: "Normandie",
             acquis: "Non",
             duree: 0.5,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/ideance.net\/fr\/formation-accessibilite\/"
         },
         {
@@ -722,7 +722,7 @@ let formationsList = {
             region: "Normandie",
             acquis: "Non",
             duree: 0.5,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/ideance.net\/fr\/formation-accessibilite\/"
         },
         {
@@ -740,7 +740,7 @@ let formationsList = {
             region: "Normandie",
             acquis: "Non",
             duree: 1,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/ideance.net\/fr\/formation-accessibilite\/"
         },
         {
@@ -758,7 +758,7 @@ let formationsList = {
             region: "Normandie",
             acquis: "Non",
             duree: 1,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/ideance.net\/fr\/formation-accessibilite\/"
         },
         {
@@ -776,7 +776,7 @@ let formationsList = {
             region: "Normandie",
             acquis: "Non",
             duree: 3,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/ideance.net\/fr\/formation-accessibilite\/"
         },
         {
@@ -794,7 +794,7 @@ let formationsList = {
             region: "Normandie",
             acquis: "Non",
             duree: 2,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/ideance.net\/fr\/formation-accessibilite\/"
         },
         {
@@ -810,9 +810,9 @@ let formationsList = {
             intitule: "Comprendre le numérique responsable & la démarche d’écoconception numérique",
             ville: "Paris",
             region: "Île-de-France",
-            acquis: "Oui",
+            acquis: "- Évaluation des acquis au cours de la formation sous forme de quiz ludo-interactif\n- Questionnaire d’évaluation en fin de session dans lequel le participant évalue les apports de la formation et sa capacité à les mettre en œuvre",
             duree: 2,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/temesis.hop3team.com\/formations\/formation-complete-comprendre-le-numerique-responsable-la-demarche-d-ecoconception-numer"
         },
         {
@@ -828,7 +828,7 @@ let formationsList = {
             intitule: "",
             ville: "Anglet",
             region: "Nouvelle-Aquitaine",
-            acquis: "Non",
+            acquis: "",
             duree: 1,
             modalites: "Présentiel",
             url: ""
@@ -846,7 +846,7 @@ let formationsList = {
             intitule: "",
             ville: "Anglet",
             region: "Nouvelle-Aquitaine",
-            acquis: "Non",
+            acquis: "",
             duree: 2,
             modalites: "Présentiel",
             url: ""
@@ -864,7 +864,7 @@ let formationsList = {
             intitule: "Green It",
             ville: "Anglet",
             region: "Nouvelle-Aquitaine",
-            acquis: "Oui",
+            acquis: "Crédits ECTS 2.0",
             duree: 2,
             modalites: "Présentiel",
             url: "https:\/\/formation.univ-pau.fr\/fr\/catalogue\/sciences-technologies-sante-STS\/master-14\/master-informatique-79_1\/m1-m2-parcours-systemes-informatiques-pour-le-genie-de-la-logistique-industrielle-et-des-services-siglis-126_1\/amelioration-continue-K1C9B5WX\/green-it-K1C9DJJS.html"
@@ -882,9 +882,9 @@ let formationsList = {
             intitule: "",
             ville: "Bordeaux",
             region: "Nouvelle-Aquitaine",
-            acquis: "Non",
+            acquis: "",
             duree: 0.5,
-            modalites: "Présentiel",
+            modalites: "présentiel",
             url: ""
         },
         {
@@ -900,9 +900,9 @@ let formationsList = {
             intitule: "",
             ville: "Bordeaux",
             region: "Nouvelle-Aquitaine",
-            acquis: "Non",
+            acquis: "",
             duree: 3,
-            modalites: "Présentiel",
+            modalites: "présentiel",
             url: ""
         },
         {
@@ -918,9 +918,9 @@ let formationsList = {
             intitule: "",
             ville: "Bordeaux",
             region: "Nouvelle-Aquitaine",
-            acquis: "Non",
+            acquis: "",
             duree: 1,
-            modalites: "Présentiel",
+            modalites: "présentiel",
             url: ""
         },
         {
@@ -936,9 +936,9 @@ let formationsList = {
             intitule: "",
             ville: "Bordeaux",
             region: "Nouvelle-Aquitaine",
-            acquis: "Non",
+            acquis: "",
             duree: 0.5,
-            modalites: "Présentiel",
+            modalites: "présentiel",
             url: ""
         },
         {
@@ -954,9 +954,9 @@ let formationsList = {
             intitule: "\nInformatique et développement durable\n\n",
             ville: "Lille",
             region: "Hauts-de-France",
-            acquis: "Non",
+            acquis: "",
             duree: 1,
-            modalites: "Présentiel",
+            modalites: "présentiel",
             url: "https:\/\/www.polytech-lille.fr\/formation\/8-specialites\/informatique-et-statistique\/"
         },
         {
@@ -972,9 +972,9 @@ let formationsList = {
             intitule: "DUT Informatique - parcours Environnement Connecté Intelligent",
             ville: "La Rochelle",
             region: "Nouvelle-Aquitaine",
-            acquis: "Non",
+            acquis: "",
             duree: "",
-            modalites: "Présentiel",
+            modalites: "présentiel",
             url: ""
         },
         {
@@ -990,7 +990,7 @@ let formationsList = {
             intitule: "Numérique et consommation énergétique : agir du processeur au logiciel",
             ville: "Évry",
             region: "Île-de-France",
-            acquis: "Non",
+            acquis: "",
             duree: "",
             modalites: "Présentiel",
             url: "https:\/\/www-inf.telecom-sudparis.eu\/COURS\/CSC4535\/numenv\/?page=numenv"
@@ -1008,9 +1008,9 @@ let formationsList = {
             intitule: "Le numérique responsable",
             ville: "La Rochelle",
             region: "Nouvelle-Aquitaine",
-            acquis: "Non",
+            acquis: "",
             duree: 2,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/formations.univ-larochelle.fr\/formation-numerique-responsable"
         },
         {
@@ -1026,7 +1026,7 @@ let formationsList = {
             intitule: "",
             ville: "Albi",
             region: "Occitanie",
-            acquis: "Non",
+            acquis: "",
             duree: "",
             modalites: "Présentiel",
             url: ""
@@ -1044,7 +1044,7 @@ let formationsList = {
             intitule: "",
             ville: "Toulouse",
             region: "Occitanie",
-            acquis: "Non",
+            acquis: "",
             duree: "",
             modalites: "Présentiel",
             url: "https:\/\/miage.ut-capitole.fr\/master-2is-innovative-information-systems--611942.kjsp"
@@ -1062,7 +1062,7 @@ let formationsList = {
             intitule: "",
             ville: "Montpellier",
             region: "Occitanie",
-            acquis: "Non",
+            acquis: "",
             duree: "",
             modalites: "Présentiel",
             url: "https:\/\/ufr6.www.univ-montp3.fr\/fr\/formation\/masters\/master_miashs"
@@ -1080,7 +1080,7 @@ let formationsList = {
             intitule: "",
             ville: "Ales",
             region: "Occitanie",
-            acquis: "Non",
+            acquis: "",
             duree: "",
             modalites: "Présentiel",
             url: "https:\/\/www.imt-mines-ales.fr\/formations\/domaines-dexcellence\/informatique-et-intelligence-artificielle"
@@ -1098,7 +1098,7 @@ let formationsList = {
             intitule: "",
             ville: "Saint-Étienne",
             region: "Auvergne-Rhône-Alpes",
-            acquis: "Non",
+            acquis: "",
             duree: "",
             modalites: "Présentiel",
             url: ""
@@ -1116,7 +1116,7 @@ let formationsList = {
             intitule: "#NumériqueTraining",
             ville: "Nantes",
             region: "Pays-de-la-Loire",
-            acquis: "Non",
+            acquis: "",
             duree: 0.5,
             modalites: "Distanciel",
             url: "https:\/\/rse.metropole.nantes.fr\/agir\/boite-a-outils-rse-nantes\/se-former-au-numerique-responsable\/"
@@ -1134,7 +1134,7 @@ let formationsList = {
             intitule: " Face cachée du numérique : impacts environnementaux, sociaux et sociétaux de l'essor des nouvelles technologies",
             ville: "Nantes",
             region: "Pays-de-la-Loire",
-            acquis: "Non",
+            acquis: "",
             duree: 8,
             modalites: "Présentiel",
             url: "https:\/\/moodle.imt-atlantique.fr\/course\/view.php?id=1429"
@@ -1152,7 +1152,7 @@ let formationsList = {
             intitule: "Introduction à l’éco-conception de services numériques",
             ville: "Paris",
             region: "Île-de-France",
-            acquis: "Non",
+            acquis: "",
             duree: 1,
             modalites: "Distanciel",
             url: "https:\/\/agence-lucie.com\/formation\/introduction-eco-conception-services-numeriques\/"
@@ -1170,7 +1170,7 @@ let formationsList = {
             intitule: "(Éco)conception responsable de service numérique",
             ville: "Paris",
             region: "Île-de-France",
-            acquis: "Oui",
+            acquis: "Certificat de connaissance GreenIT",
             duree: 3,
             modalites: "Présentiel",
             url: "https:\/\/www.octo.academy\/formations\/formation\/151\/ecoconception-responsable-de-service-numerique\/1465\/"
@@ -1188,7 +1188,7 @@ let formationsList = {
             intitule: "GreenIT : A practical study from IoT to the Cloud",
             ville: "Nantes",
             region: "Pays-de-la-Loire",
-            acquis: "Non",
+            acquis: "",
             duree: 5,
             modalites: "Présentiel",
             url: "http:\/\/greenit.menaud.fr\/"
@@ -1206,9 +1206,9 @@ let formationsList = {
             intitule: "Formation Éco-Conception de Services Numériques",
             ville: "Levallois-Perret\n",
             region: "Île-de-France",
-            acquis: "Oui",
+            acquis: "Certification \"Eco Conception Web\"\nIl se présente sous la forme d'un QCM de 60 questions auxquelles il vous faudra répondre en 60 minutes. Il vous faut un score de 65% afin d'obtenir votre certification.",
             duree: 3,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/www.plb.fr\/formation\/oracle\/formation-eco-conception-logiciels,5-700598.php"
         },
         {
@@ -1224,7 +1224,7 @@ let formationsList = {
             intitule: "Comprendre et mettre en place une démarche éco-conception",
             ville: "Saint-Étienne",
             region: "Auvergne-Rhône-Alpes",
-            acquis: "Non",
+            acquis: "",
             duree: 2,
             modalites: "Distanciel",
             url: "https:\/\/www.cetim.fr\/formation\/formation\/Conception\/Eco-conception\/comprendre-et-mettre-en-place-une-demarche-eco-conception-g10"
@@ -1242,7 +1242,7 @@ let formationsList = {
             intitule: "Innover sur vos produits : comprendre et mettre en place une démarche éco-conception",
             ville: "Mulhouse",
             region: "Grand-Est",
-            acquis: "Non",
+            acquis: "",
             duree: 2,
             modalites: "Distanciel",
             url: "https:\/\/www.cetim.fr\/formation\/formation\/Conception\/Eco-conception\/innover-sur-vos-produits-comprendre-et-mettre-en-place-une-demarche-eco-conception-w-g10"
@@ -1260,9 +1260,9 @@ let formationsList = {
             intitule: "Savoir réaliser une Analyse du cycle de vie (ACV) d'un produit",
             ville: "Paris",
             region: "Île-de-France",
-            acquis: "Non",
+            acquis: "",
             duree: 2,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/www.cetim.fr\/formation\/formation\/Industrie-du-Futur\/Eco-conception\/savoir-realiser-une-analyse-du-cycle-de-vie-acv-d-un-produit-g11"
         },
         {
@@ -1278,7 +1278,7 @@ let formationsList = {
             intitule: "ESIEE (CCI Paris)",
             ville: "Pontoise",
             region: "Île-de-France",
-            acquis: "Oui",
+            acquis: "QCM - Certificat ESIEE-IT",
             duree: 2,
             modalites: "Distanciel",
             url: "https:\/\/www.esiee-it.fr\/fr\/formation-continue-green-it-le-numerique-responsable-grit0"
@@ -1296,9 +1296,9 @@ let formationsList = {
             intitule: "Sensibilisation au numérique responsable et à l’écoconception",
             ville: "Paris",
             region: "Île-de-France",
-            acquis: "Non",
+            acquis: "",
             duree: 0.5,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/www.temesis.com\/expertises\/ecoconception\/formation\/sensibilisation-numerique-responsable\/"
         },
         {
@@ -1314,9 +1314,9 @@ let formationsList = {
             intitule: "Atelier de bonnes pratiques d’écoconception et de numérique responsable",
             ville: "Paris",
             region: "Île-de-France",
-            acquis: "Non",
+            acquis: "",
             duree: 0.5,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/www.temesis.com\/expertises\/ecoconception\/formation\/atelier-ecoconception-numerique-responsable\/"
         },
         {
@@ -1332,9 +1332,9 @@ let formationsList = {
             intitule: "Comprendre le numérique responsable & la démarche d’écoconception numérique (1 jour)",
             ville: "Paris",
             region: "Île-de-France",
-            acquis: "Non",
+            acquis: "",
             duree: 1,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/www.temesis.com\/expertises\/ecoconception\/formation\/comprendre-numerique-responsable-ecoconception\/"
         },
         {
@@ -1350,9 +1350,9 @@ let formationsList = {
             intitule: "Comprendre le numérique responsable & la démarche d’écoconception numérique (2 jours avec atelier)",
             ville: "Paris",
             region: "Île-de-France",
-            acquis: "Non",
+            acquis: "",
             duree: 2,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/www.temesis.com\/expertises\/ecoconception\/formation\/comprendre-numerique-responsable-ecoconception-atelier\/"
         },
         {
@@ -1368,7 +1368,7 @@ let formationsList = {
             intitule: "Formation en lligne",
             ville: "Paris",
             region: "Île-de-France",
-            acquis: "Non",
+            acquis: "",
             duree: 3,
             modalites: "Distanciel",
             url: "https:\/\/www.temesis.com\/expertises\/ecoconception\/formation\/module-specifique\/"
@@ -1386,9 +1386,9 @@ let formationsList = {
             intitule: "EPF Ecole d'ingénieur.e.s",
             ville: "Montpellier",
             region: "Occitanie",
-            acquis: "Oui",
+            acquis: "Skill-based evaluation",
             duree: 3,
-            modalites: "Distanciel",
+            modalites: "",
             url: "https:\/\/www.epf.fr\/formations\/cycle-master-les-majeures\/majeure-data-engineering"
         },
         {
@@ -1404,7 +1404,7 @@ let formationsList = {
             intitule: "Titre de Responsable d'Espace de Médiation Numérique",
             ville: "Saint Malo",
             region: "Bretagne",
-            acquis: "Oui",
+            acquis: "\nLe Titre Professionnel de responsable d'espace de médiation numérique\nNiveau 5 (bac+2)",
             duree: 58,
             modalites: "Présentiel",
             url: "http:\/\/www.emeraude-competences-mfr.fr\/formations-5-54-titre-professionnel-responsable-d--039-espace-de-mediation-numerique.html"
@@ -1421,7 +1421,7 @@ let formationsList = {
             nom: "IT Akademy",
             intitule: "Développeur fullstack",
             ville: "Lyon",
-            acquis: "Oui",
+            acquis: "Certification RNCP31678 pour l'ensemble de la formation",
             duree: 1,
             modalites: "Présentiel",
             url: "https:\/\/www.it-akademy.fr\/formation\/parcours\/2\/developpeur-fullstack-dfs"
@@ -1439,9 +1439,9 @@ let formationsList = {
             intitule: "",
             ville: "Rouen",
             region: "Normandie",
-            acquis: "Non",
+            acquis: "",
             duree: 0.5,
-            modalites: "Distanciel",
+            modalites: "distanciel",
             url: "https:\/\/metropoleposition.fr\/agir-pour-un-numerique-responsable\/"
         },
         {
@@ -1457,9 +1457,9 @@ let formationsList = {
             intitule: "Numérique responsable",
             ville: "Rennes",
             region: "Bretagne",
-            acquis: "Non",
+            acquis: "",
             duree: 5,
-            modalites: "Hybride",
+            modalites: "présentiel et distanciel",
             url: "https:\/\/www.competens.net\/product\/fc\/558"
         },
         {
@@ -1475,9 +1475,9 @@ let formationsList = {
             intitule: "Sensibilisation à l’écoconception de services numériques – conception logicielle web et mobile",
             ville: "Nantes et Rennes",
             region: "Pays-de-la-Loire et Bretagne",
-            acquis: "Non",
+            acquis: "non",
             duree: 0.5,
-            modalites: "Hybride",
+            modalites: "présentiel et distanciel",
             url: ""
         },
         {
@@ -1495,7 +1495,7 @@ let formationsList = {
             region: "Bretagne",
             acquis: "Non",
             duree: 3,
-            modalites: "Présentiel",
+            modalites: "présentiel",
             url: ""
         },
         {
@@ -1511,9 +1511,9 @@ let formationsList = {
             intitule: "Eco-conception de site web",
             ville: "Nantes",
             region: "Pays-de-la-Loire",
-            acquis: "Non",
+            acquis: "",
             duree: 10.5,
-            modalites: "Hybride",
+            modalites: "présentiel et distanciel",
             url: "https:\/\/corymbe.coop\/formation\/eco-conception-de-site-web\/"
         },
         {
@@ -1531,7 +1531,7 @@ let formationsList = {
             region: "Bratagne",
             acquis: "Non",
             duree: 0.5,
-            modalites: "Hybride",
+            modalites: "présentiel et distanciel",
             url: "www.tisserands.bzh et https:\/\/www.linkedin.com\/feed\/update\/urn:li:activity:6907681791600152576"
         },
         {
@@ -1547,7 +1547,7 @@ let formationsList = {
             intitule: "Aligner ses pratiques numériques (outils, usages) avec les valeurs de son activité professionnelle",
             ville: "Nantes",
             region: "Pays-de-la-Loire",
-            acquis: "Oui",
+            acquis: "Contrôle continu pendant la formation \/ Exercices de mise en pratique",
             duree: 2,
             modalites: "Présentiel",
             url: "https:\/\/info.pingbase.net\/offre-de-formation\/#1638529798812-a741f1a7-1e06"
@@ -1565,9 +1565,9 @@ let formationsList = {
             intitule: "Intégrer le Numérique Responsable  dans votre stratégie de tourisme durable & RSE",
             ville: "National",
             region: "",
-            acquis: "Oui",
+            acquis: "Un QCM de connaissances avec une attestation de formation",
             duree: 1,
-            modalites: "Hybride",
+            modalites: "présentiel et distanciel",
             url: "https:\/\/www.canva.com\/design\/DAE7aYGUMJY\/fe-TdVeh6GZjXKSowQ9ybg\/view?utm_content=DAE7aYGUMJY&utm_campaign=designshare&utm_medium"
         },
         {
@@ -1583,9 +1583,9 @@ let formationsList = {
             intitule: "Design numérique responsable",
             ville: "Nantes",
             region: "Pays-de-la-Loire",
-            acquis: "Oui",
+            acquis: "À l’issue de la formation, vous pourrez :\n- Acquérir les bases théoriques de la conception numérique responsable.\n- Connaître les leviers les plus impactants pour des interfaces plus respectueuses de l’environnement\n- Acquérir les bases théoriques des règles d’accessibilité web",
             duree: 1,
-            modalites: "Hybride",
+            modalites: "présentiel et distanciel",
             url: "https:\/\/www.notion.so\/jujotte\/Design-num-rique-responsable-91eb43034a0d4291b3be2c85ba496bfa"
         },
         {
@@ -1601,9 +1601,9 @@ let formationsList = {
             intitule: "Comprendre le numérique responsable & la démarche d’écoconception numérique",
             ville: "Paris - France",
             region: "Île-de-France",
-            acquis: "Oui",
+            acquis: "- Évaluation des acquis au cours de la formation sous forme de quiz ludo-interactif\n- Questionnaire d’évaluation en fin de session dans lequel le participant évalue les apports de la formation et sa capacité à les mettre en œuvre",
             duree: 1.5,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: ""
         },
         {
@@ -1619,9 +1619,9 @@ let formationsList = {
             intitule: "Atelier pro écoconception & design numérique",
             ville: "Paris",
             region: "Île-de-France",
-            acquis: "Oui",
+            acquis: "- Compréhension des impacts environnementaux du numérique et le rôle du design sur ces enjeux\n- Découverte des concepts clés de la démarche d’écoconception\n- Capacité à estimer l’empreinte environnementale d’un parcours\n- Etre capable d’identifier des pistes d’amélioration et d’optimiser certains contenus web pour réduire l’impact environnemental d’un service numérique",
             duree: 0.5,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: ""
         },
         {
@@ -1637,9 +1637,9 @@ let formationsList = {
             intitule: "Formation à l'écoconception de services numériques par Designers Ethiques",
             ville: "Paris",
             region: "Île-de-France",
-            acquis: "Oui",
+            acquis: "- Comprendre les enjeux environnementaux du numérique\n- Savoir en quoi consiste l'écoconception\n- Être capable d'estimer l'impact environnemental d'un parcours web\n- Acquérir les bonnes pratiques d'écoconception en tant que designer ou concepteur de service numérique\n- Identifier des leviers d'action au sein de son entreprise",
             duree: 1,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/www.ut-capitole.fr\/formations\/nos-diplomes\/masters\/master-m2-mention-management-parcours-type-droit-et-gestion-de-la-res"
         },
         {
@@ -1655,9 +1655,9 @@ let formationsList = {
             intitule: "Introduction au Numérique Responsable",
             ville: "Paris",
             region: "Île-de-France",
-            acquis: "Oui",
+            acquis: "Connaissances sur l'impact environnemental du numérique, compréhension des enjeux de la DSI",
             duree: 1,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/www.elee.com\/sites\/elee-site\/files\/2022-02\/El%C3%A9e%20-%20Catalogue%20des%20formations%202022_0.pdf"
         },
         {
@@ -1673,9 +1673,9 @@ let formationsList = {
             intitule: "La sobriété numérique et son application dans la stratégie de la DSI",
             ville: "Puteaux",
             region: "Île-de-France",
-            acquis: "Oui",
+            acquis: "- Développer une compréhension poussée du numérique responsable et de l’environnement réglementaire\n- Comprendre les principes de la comptabilité carbone pour l’IT et savoir mesurer et identifier ses flux d’émissions\n- Bâtir un plan d’action et une stratégie Green IT, en embarquant les équipes et les parties prenantes",
             duree: 2,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/www.elee.com\/sites\/elee-site\/files\/2022-02\/El%C3%A9e%20-%20Catalogue%20des%20formations%202022_0.pdf"
         },
         {
@@ -1691,9 +1691,9 @@ let formationsList = {
             intitule: "Achats IT responsables",
             ville: "Puteaux",
             region: "Île-de-France",
-            acquis: "Oui",
+            acquis: "- connaissances pour des achats IT plus durables\n- labels, certifications",
             duree: 1,
-            modalites: "Hybride",
+            modalites: "Présentiel et distanciel",
             url: "https:\/\/www.elee.com\/sites\/elee-site\/files\/2022-02\/El%C3%A9e%20-%20Catalogue%20des%20formations%202022_0.pdf"
         },
         {
@@ -1709,9 +1709,9 @@ let formationsList = {
             intitule: "",
             ville: "",
             region: "",
-            acquis: "Non",
+            acquis: "",
             duree: "",
-            modalites: "Distanciel",
+            modalites: "",
             url: "http:\/\/www.vcharpenay.link\/courses\/num-responsable.html"
         }
     ]
@@ -1724,124 +1724,42 @@ let filtersList = {
 
 
 /** ressors les checkbox pas sélectionné */
-let values = [];
-function recoverFilters() {
-    values = [];
-    /**query de chaque colonne du tableau */
-    let cbformation = document.querySelectorAll('input[name="formation"]:checked');
-    let cbstructure = document.querySelectorAll('input[name="structure"]:checked');
-    let cblocalisation = document.querySelectorAll('input[name="localisation"]:checked');
-    let cbvalidation = document.querySelectorAll('input[name="validation"]:checked');
-    let cbduree = document.querySelectorAll('input[name="duree"]:checked');
-    let cbmodacces = document.querySelectorAll('input[name="modacces"]:checked');
+function filter() {
+    let values = [];
 
+    /**query de chaque colonne du tableau */
+    let cbformation = document.querySelectorAll('input[name="formation"]:not(:checked)');
+    let cbstructure = document.querySelectorAll('input[name="structure"]:not(:checked)');
+    let cblocalisation = document.querySelectorAll('input[name="localisation"]:not(:checked)');
+    let cbvalidation = document.querySelectorAll('input[name="validation"]:not(:checked)');
+    let cbduree = document.querySelectorAll('input[name="duree"]:not(:checked)');
+    let cbmodacces = document.querySelectorAll('input[name="modacces"]:not(:checked)');
+    values.push("Formation:")
     cbformation.forEach((checkbox) => {
         values.push(checkbox.value);
     });
-    values.push(";")
+    values.push("\nStructure:")
     cbstructure.forEach((checkbox) => {
         values.push(checkbox.value);
     });
-    values.push(";")
+    values.push("\nLocalisation:")
     cblocalisation.forEach((radio) => {
         values.push(radio.value);
     });
-    values.push(";")
+    values.push("\nValidation:")
     cbvalidation.forEach((radio) => {
         values.push(radio.value);
     });
-    values.push(";")
+    values.push("\nDurée:")
     cbduree.forEach((checkbox) => {
         values.push(checkbox.value);
     });
-    values.push(";")
+    values.push("\nModalité d'accés:")
     cbmodacces.forEach((checkbox) => {
         values.push(checkbox.value);
     });
-    values.push(";")
     console.log(values);
-    let filterReferential = 0;
-    let j = 0;
-    for (let i = 0; i < values.length; i++) {
-        if (values[i] == ";") {
-            filterReferential++;
-            switch (filterReferential) {
-                case 1:
-                    if (j != i) {
-                        while (j < i) {
-                            console.log(values[j]);
-                            filterFormation(values[j]);
-                            j++
-                        }
-                    } else {
-                        j++;
-                    }
-
-                    break;
-                case 2:
-                    if (j != i) {
-                        while (j < i) {
-                            console.log(values[j]);
-                            filterStructure(values[j]);
-                            j++;
-                        }
-                    } else {
-                        j++;
-                    }
-
-                    break;
-                case 3:
-                    if (j != i) {
-                        while (j < i) {
-                            console.log(values[j]);
-                            filterRegion(values[j]);
-                            j++;
-                        }
-                    } else {
-                        j++;
-                    }
-                    break;
-                case 4:
-                    if (j != i) {
-                        while (j < i) {
-                            console.log(values[j]);
-                            filterAcquis(values[j]);
-                            j++;
-                        }
-                    } else {
-                        j++;
-                    }
-                    break;
-                case 5:
-                    if (j != i) {
-                        while (j < i) {
-                            console.log(values[j]);
-                            filterDuree(values[j]);
-                            j++
-                        }
-                    } else {
-                        j++;
-                    }
-                    break;
-                case 6:
-                    if (j != i) {
-                        while (j < i) {
-                            console.log(values[j]);
-                            filterModalite(values[j]);
-                            j++
-                        }
-                    } else {
-                        j++;
-                    }
-                    break;
-                default:
-                    break;
-            }
-        }
-
-    }
-    console.log(filtersList);
-    afficheFilterList();
+    console.log(formationsList.formationsList[5].duree);
 }
 
 
@@ -1939,7 +1857,7 @@ function afficheFilterList() {
     for (let i = 0; i < formationsList.formationsList.length; i++) {
         list.removeChild(list.lastChild);
     }
-
+    console.log(list);
     for (let i = 0; i < filtersList.filtersList.length; i++) {
         /**on crée un li */
         let li = document.createElement("li");
@@ -2112,37 +2030,37 @@ function addBasket(btnId) {
                     il5.innerHTML = "Type de structure: " + formationsList.formationsList[btnId].structure;
                     ul.appendChild(il5);
                 }
-                if (formationsList.formationsList[btnId].type_organisme != "") {
+                if (formationsList.formationsList[btnId].type_organisme!= "" ) {
                     let il6 = document.createElement("li");
                     il6.innerHTML = "Type d'organisme: " + formationsList.formationsList[btnId].type_organisme;
                     ul.appendChild(il6);
                 }
-
-                if (formationsList.formationsList[btnId].nom != "") {
+                
+                if (formationsList.formationsList[btnId].nom != "" ) {
                     let il7 = document.createElement("li");
                     il7.innerHTML = "Nom de l'organisme: " + formationsList.formationsList[btnId].nom;
                     ul.appendChild(il7);
                 }
-
-                if (formationsList.formationsList[btnId].modalites != "") {
+                
+                if (formationsList.formationsList[btnId].modalites !="" ) {
                     let il8 = document.createElement("li");
                     il8.innerHTML = "Modalités de la formation: " + formationsList.formationsList[btnId].modalites;
                     ul.appendChild(il8);
                 }
-
-                if (formationsList.formationsList[btnId].acquis != "") {
+                
+                if (formationsList.formationsList[btnId].acquis!="" ) {
                     let il9 = document.createElement("li");
                     il9.innerHTML = "Acquis: " + formationsList.formationsList[btnId].acquis;
                     ul.appendChild(il9);
                 }
-
-                if (formationsList.formationsList[btnId].contenu != "") {
+                
+                if (formationsList.formationsList[btnId].contenu!="" ) {
                     let il10 = document.createElement("li");
                     il10.innerHTML = "Contenu de la formation: " + formationsList.formationsList[btnId].contenu;
                     ul.appendChild(il10);
                 }
-
-                if (formationsList.formationsList[btnId].url != "") {
+                
+                if (formationsList.formationsList[btnId].url!="" ) {
                     let il11 = document.createElement("li");
                     il11.innerHTML = "URL de la formation: " + formationsList.formationsList[btnId].url;
                     ul.appendChild(il11);
@@ -2214,7 +2132,7 @@ function downloadBasket() {
     var opt = {
         margin: 1,
         filename: 'MaFormation.pdf',
-        image: { type: 'jpeg', quality: 1 },
+        image: { type: 'jpeg', quality: 0.98 },
         html2canvas: { scale: 2 },
         jsPDF: { unit: 'in', format: 'A4', orientation: 'portrait' }
     };
@@ -2237,54 +2155,15 @@ function sendMail() {
 }
 
 
-//**Filters function*/
-function filterFormation(formation) {
-    for (let i = 0; i < formationsList.formationsList.length; i++) {
-        if (formationsList.formationsList[i].type_formation == formation && formationsList.formationsList[i].type_formation != "") {
-            filtersList.filtersList.push(formationsList.formationsList[i]);
-        }
-    }
-}
-
-function filterStructure(structure) {
-    for (let i = 0; i < formationsList.formationsList.length; i++) {
-        if (formationsList.formationsList[i].structure == structure && formationsList.formationsList[i].structure != "") {
-            filtersList.filtersList.push(formationsList.formationsList[i]);
-        }
-    }
-}
-
-
+//**Filter Region */
 function filterRegion(region) {
     for (let i = 0; i < formationsList.formationsList.length; i++) {
         if (formationsList.formationsList[i].region == region && formationsList.formationsList[i].region != "") {
             filtersList.filtersList.push(formationsList.formationsList[i]);
         }
     }
-}
+    console.log(filtersList);
 
-function filterAcquis(acquis) {
-    for (let i = 0; i < formationsList.formationsList.length; i++) {
-        if (formationsList.formationsList[i].acquis == acquis && formationsList.formationsList[i].acquis != "") {
-            filtersList.filtersList.push(formationsList.formationsList[i]);
-        }
-    }
-}
-
-function filterDuree(duree) {
-    for (let i = 0; i < formationsList.formationsList.length; i++) {
-        if (formationsList.formationsList[i].duree == duree && formationsList.formationsList[i].duree != "") {
-            filtersList.filtersList.push(formationsList.formationsList[i]);
-        }
-    }
-}
-
-function filterModalite(Modalite) {
-    for (let i = 0; i < formationsList.formationsList.length; i++) {
-        if (formationsList.formationsList[i].modalites == Modalite && formationsList.formationsList[i].modalites != "") {
-            filtersList.filtersList.push(formationsList.formationsList[i]);
-        }
-    }
 }
 
 /**fonction pour faire afficher que la bonne région */
