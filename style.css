@@ -136,6 +136,8 @@
     transform:translateY(51px);
 }
 
+/**Pour le filtre*/
+/*
 .filter{
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -150,4 +152,27 @@
   
 .duree{
     grid-column: span 2;
+}*/
+
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-right:10%;
+    padding-left: 10%;
+    background-color: #ffffff;
+  }
+  
+.filter > div {
+    background-color: #ffffff;
+    width: 33%;
+    /** margin: 5px;*/
+    text-align: center;
+    line-height: 100%;
+    font-size: 100%;
+}
+
+#bulletpoint{
+    list-style-type: none;
+    text-align: left;
 }
