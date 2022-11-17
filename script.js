@@ -2066,9 +2066,9 @@ const BodyVariable = "Ici on mets les formations et tout";
 
 
 //**Filter Region */
-function filterRegion(ville) {
+function filterRegion(region) {
     for (let i = 0; i < formationsList.formationsList.length; i++) {
-        if (formationsList.formationsList[i].ville == ville && formationsList.formationsList[i].ville != "" ) {
+        if (formationsList.formationsList[i].region == region && formationsList.formationsList[i].region != "" ) {
             filtersList.filtersList.push(formationsList.formationsList[i]);
         }
     }
@@ -2087,7 +2087,7 @@ function showRegion(nameelm, locx, locy) {
         }
     }
     modifyRegionParameters(nameelm, locx, locy);
-    filterRegion("Rennes");
+    filterRegion(nameelm);
     afficheFilterList();
 
 
