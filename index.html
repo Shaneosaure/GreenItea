@@ -41,10 +41,10 @@
 
     </div>
     <div class="filter" id="filter">
-      <div class="formation" id="formation">
-        <ul id="bulletpoint">
-          <h4 id='Viincent'>Formation:</h4>
-          <form>
+      <form>
+        <div class="formation" id="formation">
+          <ul id="bulletpoint">
+            <li><h4>Formation:</h4></li>
             <li>
               <label for="formation-continue"> <input type="checkbox" name="formation" value="formation-continue"
                   id="formation-continue">Formation Continue</label>
@@ -53,136 +53,135 @@
               <label for="formation-initiale"><input type="checkbox" name="formation" value="formation-initiale"
                   id="formation-initiale">Formation initiale</label>
             </li>
-        </ul>
+          </ul>
+        </div>
+        <div class="structure" id="structure">
+          <ul id="bulletpoint">
+            <li><h4>Structure:</h4></li>
+            <li>
+              <label for="mooc"> <input type="checkbox" name="structure" value="mooc" id="mooc">MOOC</label>
+            </li>
+            <li>
+              <label for="prive"><input type="checkbox" name="structure" value="prive" id="prive">Prive</label>
+            </li>
+            <li>
+              <label for="public"><input type="checkbox" name="structure" value="public" id="public">Public</label>
+            </li>
+          </ul>
+        </div>
+        <div class="localisation" id="localisation">
+          <ul id="bulletpoint_long">
+            <li><h4>Localisation:</h4></li>
+            <li>
+              <label for="auvergne-rhône-alpes"> <input type="radio" name="localisation" value="auvergne-rhône-alpes"
+                  id="auvergne-rhône-alpes">Auvergne-Rhône-Alpes</label>
+            </li>
+            <li>
+              <label for="bourgogne-franche-comté"><input type="radio" name="localisation" value="bourgogne-franche-comté"
+                  id="bourgogne-franche-comté">Bourgogne-Franche-Comté</label>
+            </li>
+            <li>
+              <label for="bretagne"><input type="radio" name="localisation" value="bretagne"
+                  id="bretagne">Bretagne</label>
+            </li>
+            <li>
+              <label for="centre-val-de-loire"><input type="radio" name="localisation" value="centre-val-de-loire"
+                  id="centre-val-de-loire">Centre-Val de Loire</label>
+            </li>
+            <li>
+              <label for="grand-est"><input type="radio" name="localisation" value="grand-est" id="grand-est">Grand
+                Est</label>
+            </li>
+            <li>
+              <label for="hauts-de-france"><input type="radio" name="localisation" value="hauts-de-france"
+                  id="hauts-de-france">Hauts-de-France</label>
+            </li>
+            <li>
+              <label for="ile-de-france"><input type="radio" name="localisation" value="ile-de-france"
+                  id="ile-de-france">Île-de-France</label>
+            </li>
+            <li>
+              <label for="nouvelle-aquitaine"><input type="radio" name="localisation" value="nouvelle-aquitaine"
+                  id="nouvelle-aquitaine">Nouvelle-Aquitaine</label>
+            </li>
+            <li>
+              <label for="occitanie"><input type="radio" name="localisation" value="occitanie"
+                  id="occitanie">Occitanie</label>
+            </li>
+            <li>
+              <label for="pays-de-la-loire"><input type="radio" name="localisation" value="pays-de-la-loire"
+                  id="pays-de-la-loire">Pays de la Loire</label>
+            </li>
+            <li>
+              <label for="provence-alpes-côte-dazur"><input type="radio" name="localisation"
+                  value="provence-alpes-côte-dazur" id="provence-alpes-côte-dazur">Provence-Alpes-Côte d'Azur</label>
+            </li>
+          </ul>
+        </div>
+        <div class="validation" id="validation">
+          <ul id="bulletpoint">
+            <li><h4>Validation des acquis :</h4></li>
+            <li>
+              <label for="oui"> <input type="radio" name="validation" value="oui" id="oui">Oui</label>
+            </li>
+            <li>
+              <label for="non"><input type="radio" name="validation" value="non" id="non">Non</label>
+            </li>
+          </ul>
+        </div>
+        <div class="duree" id="duree">
+          <ul id="bulletpoint_long">
+            <li><h4 id='Viincent'>Durée de la formation/intervention (en j) :</h4></li>
+            <li>
+              <label for="0.5-duree"> <input type="checkbox" name="duree" value="0.5-duree" id="0.5-duree">0,5</label>
+            </li>
+            <li>
+              <label for="1-duree"> <input type="checkbox" name="duree" value="1-duree" id="1-duree">1</label>
+            </li>
+            <li>
+              <label for="1.5-duree"> <input type="checkbox" name="duree" value="1.5-duree" id="1.5-duree">1,5</label>
+            </li>
+            <li>
+              <label for="2-duree"> <input type="checkbox" name="duree" value="2-duree" id="2-duree">2</label>
+            </li>
+            <li>
+              <label for="3-duree"> <input type="checkbox" name="duree" value="3-duree" id="3-duree">3</label>
+            </li>
+            <li>
+              <label for="5-duree"> <input type="checkbox" name="duree" value="5-duree" id="5-duree">5</label>
+            </li>
+            <li>
+              <label for="8-duree"> <input type="checkbox" name="duree" value="8-duree" id="8-duree">8</label>
+            </li>
+            <li>
+              <label for="10.5-duree"> <input type="checkbox" name="duree" value="10.5-duree" id="10.5-duree">10,5</label>
+            </li>
+            <li>
+              <label for="58-duree"> <input type="checkbox" name="duree" value="58-duree" id="58-duree">58</label>
+            </li>
+          </ul>
+        </div>
+        <div class="modacces" id="modacces">
+          <ul id="bulletpoint">
+            <li><h4>Modalité d'accès :</h4></li>
+            <li>
+              <label for="presentiel"> <input type="checkbox" name="modacces" value="presentiel"
+                  id="presentiel">Présentiel</label>
+            </li>
+            <li>
+              <label for="distanciel"><input type="checkbox" name="modacces" value="distanciel"
+                  id="distanciel">Distanciel</label>
+            </li>
+            <li>
+              <label for="hybride"> <input type="checkbox" name="modacces" value="hybride" id="hybride">Hybride</label>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="structure" id="structure">
-        <ul id="bulletpoint">
-          <h4 id='Viincent'>Structure:</h4>
-          <li>
-            <label for="mooc"> <input type="checkbox" name="structure" value="mooc" id="mooc">MOOC</label>
-          </li>
-          <li>
-            <label for="prive"><input type="checkbox" name="structure" value="prive" id="prive">Prive</label>
-          </li>
-          <li>
-            <label for="public"><input type="checkbox" name="structure" value="public" id="public">Public</label>
-          </li>
-        </ul>
+      <div class="flex">
+        <input type="button" class="flex-child" onclick="filter()" value="Filtrer résultat">
+        <input type="reset" class="flex-child" value="Reset" />
       </div>
-      <div class="localisation" id="localisation">
-        <ul id="bulletpoint_long">
-          <h4 id='Viincent'>Localisation:</h4>
-          <li>
-            <label for="auvergne-rhône-alpes"> <input type="radio" name="localisation" value="auvergne-rhône-alpes"
-                id="auvergne-rhône-alpes">Auvergne-Rhône-Alpes</label>
-          </li>
-          <li>
-            <label for="bourgogne-franche-comté"><input type="radio" name="localisation" value="bourgogne-franche-comté"
-                id="bourgogne-franche-comté">Bourgogne-Franche-Comté</label>
-          </li>
-          <li>
-            <label for="bretagne"><input type="radio" name="localisation" value="bretagne"
-                id="bretagne">Bretagne</label>
-          </li>
-          <li>
-            <label for="centre-val-de-loire"><input type="radio" name="localisation" value="centre-val-de-loire"
-                id="centre-val-de-loire">Centre-Val de Loire</label>
-          </li>
-          <li>
-            <label for="grand-est"><input type="radio" name="localisation" value="grand-est" id="grand-est">Grand
-              Est</label>
-          </li>
-          <li>
-            <label for="hauts-de-france"><input type="radio" name="localisation" value="hauts-de-france"
-                id="hauts-de-france">Hauts-de-France</label>
-          </li>
-          <li>
-            <label for="ile-de-france"><input type="radio" name="localisation" value="ile-de-france"
-                id="ile-de-france">Île-de-France</label>
-          </li>
-          <li>
-            <label for="nouvelle-aquitaine"><input type="radio" name="localisation" value="nouvelle-aquitaine"
-                id="nouvelle-aquitaine">Nouvelle-Aquitaine</label>
-          </li>
-          <li>
-            <label for="occitanie"><input type="radio" name="localisation" value="occitanie"
-                id="occitanie">Occitanie</label>
-          </li>
-          <li>
-            <label for="pays-de-la-loire"><input type="radio" name="localisation" value="pays-de-la-loire"
-                id="pays-de-la-loire">Pays de la Loire</label>
-          </li>
-          <li>
-            <label for="provence-alpes-côte-dazur"><input type="radio" name="localisation"
-                value="provence-alpes-côte-dazur" id="provence-alpes-côte-dazur">Provence-Alpes-Côte d'Azur</label>
-          </li>
-        </ul>
-      </div>
-      <div class="validation" id="validation">
-        <ul id="bulletpoint">
-          <h4 id='Viincent'>Validation des acquis :</h4>
-          <li>
-            <label for="oui"> <input type="radio" name="validation" value="oui" id="oui">Oui</label>
-          </li>
-          <li>
-            <label for="non"><input type="radio" name="validation" value="non" id="non">Non</label>
-          </li>
-        </ul>
-      </div>
-      <div class="duree" id="duree">
-        <ul id="bulletpoint_long">
-          <h4 id='Viincent'>Durée de la formation/intervention (en j) :</h4>
-          <li>
-            <label for="0.5-duree"> <input type="checkbox" name="duree" value="0.5-duree" id="0.5-duree">0,5</label>
-          </li>
-          <li>
-            <label for="1-duree"> <input type="checkbox" name="duree" value="1-duree" id="1-duree">1</label>
-          </li>
-          <li>
-            <label for="1.5-duree"> <input type="checkbox" name="duree" value="1.5-duree" id="1.5-duree">1,5</label>
-          </li>
-          <li>
-            <label for="2-duree"> <input type="checkbox" name="duree" value="2-duree" id="2-duree">2</label>
-          </li>
-          <li>
-            <label for="3-duree"> <input type="checkbox" name="duree" value="3-duree" id="3-duree">3</label>
-          </li>
-          <li>
-            <label for="5-duree"> <input type="checkbox" name="duree" value="5-duree" id="5-duree">5</label>
-          </li>
-          <li>
-            <label for="8-duree"> <input type="checkbox" name="duree" value="8-duree" id="8-duree">8</label>
-          </li>
-          <li>
-            <label for="10.5-duree"> <input type="checkbox" name="duree" value="10.5-duree" id="10.5-duree">10,5</label>
-          </li>
-          <li>
-            <label for="58-duree"> <input type="checkbox" name="duree" value="58-duree" id="58-duree">58</label>
-          </li>
-        </ul>
-      </div>
-      <div class="modacces" id="modacces">
-        <ul id="bulletpoint">
-          <h4 id='Viincent'>Modalité d'accès :</h4>
-          <li>
-            <label for="presentiel"> <input type="checkbox" name="modacces" value="presentiel"
-                id="presentiel">Présentiel</label>
-          </li>
-          <li>
-            <label for="distanciel"><input type="checkbox" name="modacces" value="distanciel"
-                id="distanciel">Distanciel</label>
-          </li>
-          <li>
-            <label for="hybride"> <input type="checkbox" name="modacces" value="hybride" id="hybride">Hybride</label>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="flex">
-      <input type="button" class="flex-child" onclick="filter()" value="Filtrer résultat">
-      <input type="reset" class="flex-child" value="Reset" />
-    </div>
     </form>
     <div class="centralblock">
       <div class="mapblock">
