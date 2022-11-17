@@ -76,6 +76,14 @@
     margin-left: 90% ;
 }
 
+.addButton{
+    border: 2px solid #000;
+    border-radius: 50%;
+    overflow: hidden;
+    color: #000;
+    background-color: #156531;
+}
+
 /* css de chaque région */
 #Auvergne-Rhône-Alpes {
     display: block;
@@ -283,8 +291,6 @@
 .filter {
     display: flex;
     align-content: center;
-    padding-right: 2.5%;
-    padding-left: 2.5%;
 }
 
 .filter>div {
@@ -296,8 +302,7 @@
 
 #bulletpoint, #bulletpoint_long {
     list-style-type: none;
-    text-align: center;
-    padding: 0%;
+    text-align: left;
 }
 
 #bulletpoint_long {
