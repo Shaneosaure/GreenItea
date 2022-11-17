@@ -79,3 +79,19 @@
 #basket.show-menu{
     transform:translateY(51px);
 }
+
+.filter{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.localisation {
+    grid-row: span 2;
+}
+  
+.duree{
+    grid-column: span 2;
+}
