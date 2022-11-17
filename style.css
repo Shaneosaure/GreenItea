@@ -165,6 +165,27 @@
     transform:translateY(51px);
 }
 
+/**Bouton filter résultat Reset*/
+.flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.flex-child {
+    -webkit-box-flex: 1 1 auto;
+    -moz-box-flex:  1 1 auto;
+    -webkit-flex:  1 1 auto;
+    -ms-flex:  1 1 auto;
+    flex:  1 1 auto;
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
 /**Pour le filtre*/
 
 .filter {
@@ -177,7 +198,7 @@
   }
   
 .filter > div {
-    background-color: #ffffff;
+    /** background-color: #ffffff;*/
     width: 33%;
     text-align: center;
     line-height: 100%;
@@ -186,11 +207,13 @@
 
 #bulletpoint{
     list-style-type: none;
-    text-align: left;
+    text-align: center;
+    padding: 0%;
 }
 
 #bulletpoint_long{
     columns: 2;
     list-style-type: none;
-    text-align: left;
+    text-align: center;
+    padding: 0%;
 }
