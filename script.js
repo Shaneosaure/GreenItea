@@ -1650,8 +1650,8 @@ function filter() {
         values.push(checkbox.value);
     });
     values.push("\nValidation:")
-    cbvalidation.forEach((checkbox) => {
-        values.push(checkbox.value);
+    cbvalidation.forEach((radio) => {
+        values.push(radio.value);
     });
     values.push("\nDurée:")
     cbduree.forEach((checkbox) => {
