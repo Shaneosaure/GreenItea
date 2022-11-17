@@ -2064,8 +2064,12 @@ function downloadBasket() {
 const SubjectVariable = "Demande de Devis de Formation";
 /**const BodyVariable = "Bonjour,\n Je souhaiterais avoir un devi sur ces formations suivantes:"+basketList;*/
 function sendMail(){
-    var aaa = document.getElementById('basket-list');
-    var body= "Bonjour, %0D%0AJe souhaiterai un devis sur ces formations suivante:%0D%0A"+aaa.innerText+"%0D%0AMerci de votre retour%0D%0ACordialement,";
+    var aaa = "";
+    for (var i = 0; i < basketList.length; i++) {
+        aaa=aaa+document.getElementById('b_'+i).innerText+"%0D%0A";
+        console.log(aaa);
+    }    
+    var body= "Bonjour,%0D%0AJe souhaiterai un devis sur ces formations suivante:%0D%0A"+aaa+"%0D%0AMerci de votre retour%0D%0ACordialement,";
     window.location.href = "mailto:vvoisin.ing2024@esaip.org ?subject=Demande de Devis de Formation &body="+body;
 }
 /**function SendMail(){
@@ -2130,14 +2134,14 @@ function modifyRegionParameters(elm, locx, locy) {
 
     const vh = window.innerHeight;
 
-    var transX = -locx
-    var transY = -locy
+    var transX = (116-locx)*(vw/1080)
+    var transY = (-(locy))*(vh/1080)
 
     var scalevar = vw / 540;
     
 
     var reg = document.getElementById("g_" + elm);
-    var gcarte = document.getElementById("carteloc");
+    
 
     /*var styleTranslate = translateX(transX) translateY(transY) scale(scale.toString());*/
     console.log("translateX(" + transX + "px) translateY(" + transY + "px) scale(" + scalevar + ")");
@@ -2145,7 +2149,7 @@ function modifyRegionParameters(elm, locx, locy) {
 
     console.log(reg.style.transform);
     reg.style.transform = "translateX(" + transX.toString() + "px) translateY(" + transY.toString() + "px) scale(" + scalevar.toString() + ")";
-    gcarte.style.transform = "translate("+0+","+0+") scale("+1+")";
+    
 
 
     /*changer le css des classes .g_nom-de-la-region*/
