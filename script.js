@@ -1920,6 +1920,39 @@ function afficheFilterList() {
     }
 }
 
+function search(){
+    const result = document.getElementById("searchBar").value.toLowerCase();
+    if(result!=""){
+        for (let i = 0; i < formationsList.formationsList.length; i++) {
+            let position1=formationsList.formationsList[i].intitule.toLowerCase().search(result);
+            if(position1!=(-1)){
+                filtersList.filtersList.push(formationsList.formationsList[i]);
+            }else{
+                let position2=formationsList.formationsList[i].nom.toLowerCase().search(result);
+                if(position2!=(-1)){
+                    filtersList.filtersList.push(formationsList.formationsList[i]);
+                }else{
+                        let position3=formationsList.formationsList[i].ville.toLowerCase().search(result);
+                    if(position3!=(-1)){
+                        filtersList.filtersList.push(formationsList.formationsList[i]);
+                    }else{
+                        let position4=formationsList.formationsList[i].structure.toLowerCase().search(result);
+                        if(position4!=(-1)){
+                            filtersList.filtersList.push(formationsList.formationsList[i]);
+                        }else{
+                            let position5=formationsList.formationsList[i].type_formation.toLowerCase().search(result);
+                            if(position5!=(-1)){
+                                filtersList.filtersList.push(formationsList.formationsList[i]);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        afficheFilterList();
+    }
+}
+
 var basketList = [];
 
 /**fonction d'ajout dans le panier */
