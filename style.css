@@ -2,6 +2,15 @@
     --vh: 100vh;
 }
 
+.filter, .flex-child, .footer, .header{
+    background-color: #156531;
+    box-shadow: 1px 1px 1px 1px #0e4321;
+}
+
+.body{
+    background-color: #1D8742
+}
+
 /** Basket burger menu */
 .nav #basket {
     display: none;
@@ -33,26 +42,38 @@
 
 .dotdetail {
     position: relative;
+    font-weight:bold;
     display: inline-block;
     border-bottom: 1px dotted black;
+}
+.dotdetailtext{
+    font-weight: normal;
 }
 
 .dotdetail .dotdetailtext {
     visibility: hidden;
-    width: 500px;
-    background-color: black;
-    color: #fff;
+    width: 35vw;
+    background-color: #156531;
+    box-shadow: 1px 1px 1px 1px #0e4321;
+    color: #000;
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
+    
+
 
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
+    right:50%;
 }
 
 .dotdetail:hover .dotdetailtext {
     visibility: visible;
+}
+
+.dotdetail, .addButton{
+    margin-left: 90% ;
 }
 
 /* css de chaque région */
@@ -186,21 +207,27 @@
     display: none;
 }
 
-
-.bouton-menu {
+#searchBar{
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 50px;
-    height: 50px;
-    overflow: hidden;
-    background: #fff;
-    color: #000;
-    line-height: 50px;
-    text-align: center;
-    font-size: 40px;
-    cursor: pointer;
-    transition: all .5s;
+    top:0;
+    right:52px;
+    height: 44px;
+    font-size:17px;
+}
+.bouton-panier{
+    position:absolute;
+    top:0;
+    right:0;
+    width:50px;
+    height:50px;
+    overflow:hidden;
+    background:#fff;
+    color:#000;
+    line-height:50px;
+    text-align:center;
+    font-size:40px;
+    cursor:pointer;
+    transition:all .5s;
 }
 
 #close-menu {
@@ -236,6 +263,7 @@
     display: -webkit-flex;
     display: flex;
     flex-direction: column;
+    padding: 1%;
 }
 
 .flex-child {
@@ -247,7 +275,6 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 10px;
-    background-color: #ffffff;
     padding: 10px;
 }
 
@@ -255,22 +282,19 @@
 
 .filter {
     display: flex;
-    /** flex-wrap: wrap; */
     align-content: center;
     padding-right: 2.5%;
     padding-left: 2.5%;
-    background-color: #ffffff;
 }
 
 .filter>div {
-    /** background-color: #ffffff;*/
     width: 33%;
     text-align: center;
     line-height: 100%;
     font-size: 100%;
 }
 
-#bulletpoint {
+#bulletpoint, #bulletpoint_long {
     list-style-type: none;
     text-align: center;
     padding: 0%;
@@ -278,7 +302,4 @@
 
 #bulletpoint_long {
     columns: 2;
-    list-style-type: none;
-    text-align: center;
-    padding: 0%;
 }

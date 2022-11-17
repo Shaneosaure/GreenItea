@@ -1115,7 +1115,7 @@ let formationsList = {
             nom: "Audencia",
             intitule: "#NumériqueTraining",
             ville: "Nantes",
-            region:"Pays-de-la-Loire",
+            region: "Pays-de-la-Loire",
             acquis: "",
             duree: 0.5,
             modalites: "Distanciel",
@@ -1133,7 +1133,7 @@ let formationsList = {
             nom: "IMT Atlantique",
             intitule: " Face cachée du numérique : impacts environnementaux, sociaux et sociétaux de l'essor des nouvelles technologies",
             ville: "Nantes",
-            region:"Pays-de-la-Loire",
+            region: "Pays-de-la-Loire",
             acquis: "",
             duree: 8,
             modalites: "Présentiel",
@@ -1151,7 +1151,7 @@ let formationsList = {
             nom: "Agence Lucie",
             intitule: "Introduction à l’éco-conception de services numériques",
             ville: "Paris",
-            region:"Île-de-France",
+            region: "Île-de-France",
             acquis: "",
             duree: 1,
             modalites: "Distanciel",
@@ -1169,7 +1169,7 @@ let formationsList = {
             nom: "Octo Academy",
             intitule: "(Éco)conception responsable de service numérique",
             ville: "Paris",
-            region:"Île-de-France",
+            region: "Île-de-France",
             acquis: "Certificat de connaissance GreenIT",
             duree: 3,
             modalites: "Présentiel",
@@ -1187,7 +1187,7 @@ let formationsList = {
             nom: "Ecoles des Mines de Nantes",
             intitule: "GreenIT : A practical study from IoT to the Cloud",
             ville: "Nantes",
-            region:"Pays-de-la-Loire",
+            region: "Pays-de-la-Loire",
             acquis: "",
             duree: 5,
             modalites: "Présentiel",
@@ -1205,7 +1205,7 @@ let formationsList = {
             nom: "PLB Consultant",
             intitule: "Formation Éco-Conception de Services Numériques",
             ville: "Levallois-Perret\n",
-            region:"Île-de-France",
+            region: "Île-de-France",
             acquis: "Certification \"Eco Conception Web\"\nIl se présente sous la forme d'un QCM de 60 questions auxquelles il vous faudra répondre en 60 minutes. Il vous faut un score de 65% afin d'obtenir votre certification.",
             duree: 3,
             modalites: "Présentiel et distanciel",
@@ -1241,7 +1241,7 @@ let formationsList = {
             nom: "CETIM",
             intitule: "Innover sur vos produits : comprendre et mettre en place une démarche éco-conception",
             ville: "Mulhouse",
-            region:"Grand-Est",
+            region: "Grand-Est",
             acquis: "",
             duree: 2,
             modalites: "Distanciel",
@@ -1259,7 +1259,7 @@ let formationsList = {
             nom: "CETIM",
             intitule: "Savoir réaliser une Analyse du cycle de vie (ACV) d'un produit",
             ville: "Paris",
-            region:"Île-de-France",
+            region: "Île-de-France",
             acquis: "",
             duree: 2,
             modalites: "Présentiel et distanciel",
@@ -1277,7 +1277,7 @@ let formationsList = {
             nom: "ESIEE[IT]",
             intitule: "ESIEE (CCI Paris)",
             ville: "Pontoise",
-            region:"Île-de-France",
+            region: "Île-de-France",
             acquis: "QCM - Certificat ESIEE-IT",
             duree: 2,
             modalites: "Distanciel",
@@ -1295,7 +1295,7 @@ let formationsList = {
             nom: "TEMESIS",
             intitule: "Sensibilisation au numérique responsable et à l’écoconception",
             ville: "Paris",
-            region:"Île-de-France",
+            region: "Île-de-France",
             acquis: "",
             duree: 0.5,
             modalites: "Présentiel et distanciel",
@@ -1313,7 +1313,7 @@ let formationsList = {
             nom: "TEMESIS",
             intitule: "Atelier de bonnes pratiques d’écoconception et de numérique responsable",
             ville: "Paris",
-            region:"Île-de-France",
+            region: "Île-de-France",
             acquis: "",
             duree: 0.5,
             modalites: "Présentiel et distanciel",
@@ -1331,7 +1331,7 @@ let formationsList = {
             nom: "TEMESIS",
             intitule: "Comprendre le numérique responsable & la démarche d’écoconception numérique (1 jour)",
             ville: "Paris",
-            region:"Île-de-France",
+            region: "Île-de-France",
             acquis: "",
             duree: 1,
             modalites: "Présentiel et distanciel",
@@ -1349,7 +1349,7 @@ let formationsList = {
             nom: "TEMESIS",
             intitule: "Comprendre le numérique responsable & la démarche d’écoconception numérique (2 jours avec atelier)",
             ville: "Paris",
-            region:"Île-de-France",
+            region: "Île-de-France",
             acquis: "",
             duree: 2,
             modalites: "Présentiel et distanciel",
@@ -1367,7 +1367,7 @@ let formationsList = {
             nom: "TEMESIS",
             intitule: "Formation en lligne",
             ville: "Paris",
-            region:"Île-de-France",
+            region: "Île-de-France",
             acquis: "",
             duree: 3,
             modalites: "Distanciel",
@@ -1385,7 +1385,7 @@ let formationsList = {
             nom: "",
             intitule: "EPF Ecole d'ingénieur.e.s",
             ville: "Montpellier",
-            region:"Occitanie",
+            region: "Occitanie",
             acquis: "Skill-based evaluation",
             duree: 3,
             modalites: "",
@@ -1438,7 +1438,7 @@ let formationsList = {
             nom: "",
             intitule: "",
             ville: "Rouen",
-            region:"Normandie",
+            region: "Normandie",
             acquis: "",
             duree: 0.5,
             modalites: "distanciel",
@@ -1456,7 +1456,7 @@ let formationsList = {
             nom: "Competens",
             intitule: "Numérique responsable",
             ville: "Rennes",
-            region:"Bretagne",
+            region: "Bretagne",
             acquis: "",
             duree: 5,
             modalites: "présentiel et distanciel",
@@ -1474,7 +1474,7 @@ let formationsList = {
             nom: "Entreprise Orange Business Services",
             intitule: "Sensibilisation à l’écoconception de services numériques – conception logicielle web et mobile",
             ville: "Nantes et Rennes",
-            region:"Pays-de-la-Loire et Bretagne",
+            region: "Pays-de-la-Loire et Bretagne",
             acquis: "non",
             duree: 0.5,
             modalites: "présentiel et distanciel",
@@ -1492,7 +1492,7 @@ let formationsList = {
             nom: "Orange Carré",
             intitule: "Eco-conception web",
             ville: "Saint-Etienne-de-Montluc",
-            region:"Bretagne",
+            region: "Bretagne",
             acquis: "Non",
             duree: 3,
             modalites: "présentiel",
@@ -1510,7 +1510,7 @@ let formationsList = {
             nom: "Corymbe",
             intitule: "Eco-conception de site web",
             ville: "Nantes",
-            region:"Pays-de-la-Loire",
+            region: "Pays-de-la-Loire",
             acquis: "",
             duree: 10.5,
             modalites: "présentiel et distanciel",
@@ -1528,7 +1528,7 @@ let formationsList = {
             nom: "",
             intitule: "Le numérique responsable pour les familles zéro déchets",
             ville: "Morlaix",
-            region:"Bratagne",
+            region: "Bratagne",
             acquis: "Non",
             duree: 0.5,
             modalites: "présentiel et distanciel",
@@ -1546,7 +1546,7 @@ let formationsList = {
             nom: "Ping",
             intitule: "Aligner ses pratiques numériques (outils, usages) avec les valeurs de son activité professionnelle",
             ville: "Nantes",
-            region:"Pays-de-la-Loire",
+            region: "Pays-de-la-Loire",
             acquis: "Contrôle continu pendant la formation \/ Exercices de mise en pratique",
             duree: 2,
             modalites: "Présentiel",
@@ -1564,7 +1564,7 @@ let formationsList = {
             nom: "collectif digital green tourisme en partenariat avec Formanova",
             intitule: "Intégrer le Numérique Responsable  dans votre stratégie de tourisme durable & RSE",
             ville: "National",
-            region:"",
+            region: "",
             acquis: "Un QCM de connaissances avec une attestation de formation",
             duree: 1,
             modalites: "présentiel et distanciel",
@@ -1582,7 +1582,7 @@ let formationsList = {
             nom: "Jujotte",
             intitule: "Design numérique responsable",
             ville: "Nantes",
-            region:"Pays-de-la-Loire",
+            region: "Pays-de-la-Loire",
             acquis: "À l’issue de la formation, vous pourrez :\n- Acquérir les bases théoriques de la conception numérique responsable.\n- Connaître les leviers les plus impactants pour des interfaces plus respectueuses de l’environnement\n- Acquérir les bases théoriques des règles d’accessibilité web",
             duree: 1,
             modalites: "présentiel et distanciel",
@@ -1600,7 +1600,7 @@ let formationsList = {
             nom: "TEMESIS",
             intitule: "Comprendre le numérique responsable & la démarche d’écoconception numérique",
             ville: "Paris - France",
-            region:"Île-de-France",
+            region: "Île-de-France",
             acquis: "- Évaluation des acquis au cours de la formation sous forme de quiz ludo-interactif\n- Questionnaire d’évaluation en fin de session dans lequel le participant évalue les apports de la formation et sa capacité à les mettre en œuvre",
             duree: 1.5,
             modalites: "Présentiel et distanciel",
@@ -1618,7 +1618,7 @@ let formationsList = {
             nom: "Association d'intérêt général",
             intitule: "Atelier pro écoconception & design numérique",
             ville: "Paris",
-            region:"Île-de-France",
+            region: "Île-de-France",
             acquis: "- Compréhension des impacts environnementaux du numérique et le rôle du design sur ces enjeux\n- Découverte des concepts clés de la démarche d’écoconception\n- Capacité à estimer l’empreinte environnementale d’un parcours\n- Etre capable d’identifier des pistes d’amélioration et d’optimiser certains contenus web pour réduire l’impact environnemental d’un service numérique",
             duree: 0.5,
             modalites: "Présentiel et distanciel",
@@ -1636,7 +1636,7 @@ let formationsList = {
             nom: "Association d'intérêt général",
             intitule: "Formation à l'écoconception de services numériques par Designers Ethiques",
             ville: "Paris",
-            region:"Île-de-France",
+            region: "Île-de-France",
             acquis: "- Comprendre les enjeux environnementaux du numérique\n- Savoir en quoi consiste l'écoconception\n- Être capable d'estimer l'impact environnemental d'un parcours web\n- Acquérir les bonnes pratiques d'écoconception en tant que designer ou concepteur de service numérique\n- Identifier des leviers d'action au sein de son entreprise",
             duree: 1,
             modalites: "Présentiel et distanciel",
@@ -1654,7 +1654,7 @@ let formationsList = {
             nom: "",
             intitule: "Introduction au Numérique Responsable",
             ville: "Paris",
-            region:"Île-de-France",
+            region: "Île-de-France",
             acquis: "Connaissances sur l'impact environnemental du numérique, compréhension des enjeux de la DSI",
             duree: 1,
             modalites: "Présentiel et distanciel",
@@ -1672,7 +1672,7 @@ let formationsList = {
             nom: "",
             intitule: "La sobriété numérique et son application dans la stratégie de la DSI",
             ville: "Puteaux",
-            region:"Île-de-France",
+            region: "Île-de-France",
             acquis: "- Développer une compréhension poussée du numérique responsable et de l’environnement réglementaire\n- Comprendre les principes de la comptabilité carbone pour l’IT et savoir mesurer et identifier ses flux d’émissions\n- Bâtir un plan d’action et une stratégie Green IT, en embarquant les équipes et les parties prenantes",
             duree: 2,
             modalites: "Présentiel et distanciel",
@@ -1690,7 +1690,7 @@ let formationsList = {
             nom: "",
             intitule: "Achats IT responsables",
             ville: "Puteaux",
-            region:"Île-de-France",
+            region: "Île-de-France",
             acquis: "- connaissances pour des achats IT plus durables\n- labels, certifications",
             duree: 1,
             modalites: "Présentiel et distanciel",
@@ -1708,7 +1708,7 @@ let formationsList = {
             nom: "",
             intitule: "",
             ville: "",
-            region:"",
+            region: "",
             acquis: "",
             duree: "",
             modalites: "",
@@ -1764,7 +1764,7 @@ function filter() {
 
 
 /** au chargement de la page, la liste s'affiche*/
-window.onload = function affichagelist() {
+window.onload = function affichageload() {
     let list = document.getElementById("showinglist");
 
     for (let i = 0; i < formationsList.formationsList.length; i++) {
@@ -1781,6 +1781,17 @@ window.onload = function affichagelist() {
             h4.innerHTML = formationsList.formationsList[i].intitule;
         }
         li.appendChild(h4);
+
+        /**Pastille détail */
+        var dotdetail = document.createElement("div");
+        dotdetail.setAttribute('class', 'dotdetail');
+        dotdetail.innerHTML = "?";
+        var spandetail = document.createElement("span");
+        spandetail.setAttribute('class', 'dotdetailtext');
+        spandetail.innerHTML = formationsList.formationsList[i].contenu;
+        dotdetail.appendChild(spandetail)
+        li.appendChild(dotdetail);
+
 
         /** Nom organisme */
         let nom = document.createElement("p");
@@ -1840,6 +1851,100 @@ window.onload = function affichagelist() {
     }
 }
 
+function affichagelist() {
+    /**vidage filter list */
+    let list1 = document.getElementById("showinglist");
+    for (let i = 0; i < filtersList.filtersList.length; i++) {
+        list1.removeChild(list1.lastChild);
+    }
+
+    let list = document.getElementById("showinglist");
+
+    for (let i = 0; i < formationsList.formationsList.length; i++) {
+        /**on crée un li */
+        let li = document.createElement("li");
+        li.setAttribute('id', i);
+        list.appendChild(li);
+
+        /** Intitulé */
+        let h4 = document.createElement("h4");
+        if (formationsList.formationsList[i].intitule == "") {
+            h4.innerHTML = "Pas d'intitulé";
+        } else {
+            h4.innerHTML = formationsList.formationsList[i].intitule;
+        }
+        li.appendChild(h4);
+
+        /**Pastille détail */
+        var dotdetail = document.createElement("div");
+        dotdetail.setAttribute('class', 'dotdetail');
+        dotdetail.innerHTML = "?";
+        var spandetail = document.createElement("span");
+        spandetail.setAttribute('class', 'dotdetailtext');
+        spandetail.innerHTML = formationsList.formationsList[i].contenu;
+        dotdetail.appendChild(spandetail)
+        li.appendChild(dotdetail);
+
+
+        /** Nom organisme */
+        let nom = document.createElement("p");
+        if (formationsList.formationsList[i].nom == "") {
+            nom.innerHTML = "Organisme: non spécifié";
+        } else {
+            nom.innerHTML = "Organisme: " + formationsList.formationsList[i].nom;
+        }
+        li.appendChild(nom);
+
+        /** Ville */
+        let ville = document.createElement("p");
+        if (formationsList.formationsList[i].ville == "") {
+            ville.innerHTML = "Lieu: non spécifié";
+        } else {
+            ville.innerHTML = "Lieu: " + formationsList.formationsList[i].ville;
+        }
+        li.appendChild(ville);
+
+        /** Duree */
+        let duree = document.createElement("p");
+        if (formationsList.formationsList[i].duree == "") {
+            duree.innerHTML = "Durée: non spécifiée";
+        } else {
+            duree.innerHTML = "Durée: " + formationsList.formationsList[i].duree + " jour(s)";
+        }
+        li.appendChild(duree);
+
+        /** Structure */
+        let structure = document.createElement("p");
+        if (formationsList.formationsList[i].structure == "") {
+            structure.innerHTML = "Structure: non spécifiée";
+        } else {
+            structure.innerHTML = "Structure: " + formationsList.formationsList[i].structure;
+        }
+        li.appendChild(structure);
+
+        /** Type de formation */
+        let type_formation = document.createElement("p");
+        if (formationsList.formationsList[i].type_formation == "") {
+            type_formation.innerHTML = "Type de formation: spécifiée";
+        } else {
+            type_formation.innerHTML = "Type de formation: " + formationsList.formationsList[i].type_formation;
+        }
+        li.appendChild(type_formation);
+
+        var input = document.createElement("input");
+        input.setAttribute('class', 'addButton');
+        input.setAttribute('type', 'button');
+        input.setAttribute('onclick', 'addBasket(this.parentNode.id)');
+        input.setAttribute('value', '+');
+        li.appendChild(input);
+
+        /** ligne horizontal */
+        let horizontalline = document.createElement("hr");
+        li.appendChild(horizontalline);
+    }
+}
+
+
 function afficheFilterList() {
 
     let list = document.getElementById("showinglist");
@@ -1861,6 +1966,16 @@ function afficheFilterList() {
             h4.innerHTML = filtersList.filtersList[i].intitule;
         }
         li.appendChild(h4);
+
+        /**Pastille détail */
+        var dotdetail = document.createElement("div");
+        dotdetail.setAttribute('class', 'dotdetail');
+        dotdetail.innerHTML = "?";
+        var spandetail = document.createElement("span");
+        spandetail.setAttribute('class', 'dotdetailtext');
+        spandetail.innerHTML = filtersList.filtersList[i].contenu;
+        dotdetail.appendChild(spandetail)
+        li.appendChild(dotdetail);
 
         /** Nom organisme */
         let nom = document.createElement("p");
@@ -1920,6 +2035,44 @@ function afficheFilterList() {
     }
 }
 
+function searchList() {
+
+    const result = document.getElementById("searchBar").value.toLowerCase();
+    if (result != "") {
+        for (let i = 0; i < formationsList.formationsList.length; i++) {
+            let position1 = formationsList.formationsList[i].intitule.toLowerCase().search(result);
+            if (position1 != (-1)) {
+                filtersList.filtersList.push(formationsList.formationsList[i]);
+            } else {
+                let position2 = formationsList.formationsList[i].nom.toLowerCase().search(result);
+                if (position2 != (-1)) {
+                    filtersList.filtersList.push(formationsList.formationsList[i]);
+                } else {
+                    let position3 = formationsList.formationsList[i].ville.toLowerCase().search(result);
+                    if (position3 != (-1)) {
+                        filtersList.filtersList.push(formationsList.formationsList[i]);
+                    } else {
+                        let position4 = formationsList.formationsList[i].structure.toLowerCase().search(result);
+                        if (position4 != (-1)) {
+                            filtersList.filtersList.push(formationsList.formationsList[i]);
+                        } else {
+                            let position5 = formationsList.formationsList[i].type_formation.toLowerCase().search(result);
+                            if (position5 != (-1)) {
+                                filtersList.filtersList.push(formationsList.formationsList[i]);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        affichagelist();
+        afficheFilterList();
+        for (let i = 0; i < filtersList.filtersList.length; i++) {
+            filtersList.filtersList.pop();
+        }
+    }
+}
+
 var basketList = [];
 
 /**fonction d'ajout dans le panier */
@@ -1946,7 +2099,7 @@ function addBasket(btnId) {
         input.setAttribute('value', '-');
         basketList.push('b_' + btnId);
         li.appendChild(input);
-        
+
         /** On ajoute aussi des éléments cachés */
         for (let i = 0; i < basketList.length; i++) {
             if (basketList[i] == 'b_' + btnId) {
@@ -1954,37 +2107,64 @@ function addBasket(btnId) {
                 let ul = document.createElement("ul");
                 ul.setAttribute('id', 'details');
                 ul.setAttribute('class', 'details');
-                ul.style.display= 'none';
-                let il2 = document.createElement("li");
-                il2.innerHTML = "Durée: " + formationsList.formationsList[btnId].duree + "jour(s)";
-                ul.appendChild(il2);
-                let il3 = document.createElement("li");
-                il3.innerHTML = "Type de formation: " + formationsList.formationsList[btnId].type_formation;
-                ul.appendChild(il3);
-                let il4 = document.createElement("li");
-                il4.innerHTML = "Lieu: " + formationsList.formationsList[btnId].ville;
-                ul.appendChild(il4);
-                let il5 = document.createElement("li");
-                il5.innerHTML = "Type de structure: " + formationsList.formationsList[btnId].structure;
-                ul.appendChild(il5);
-                let il6 = document.createElement("li");
-                il6.innerHTML = "Type d'organisme: " + formationsList.formationsList[btnId].type_organisme;
-                ul.appendChild(il6);
-                let il7 = document.createElement("li");
-                il7.innerHTML = "Nom de l'organisme: " + formationsList.formationsList[btnId].nom;
-                ul.appendChild(il7);
-                let il8 = document.createElement("li");
-                il8.innerHTML = "Modalités de la formation: " + formationsList.formationsList[btnId].modalites;
-                ul.appendChild(il8);
-                let il9 = document.createElement("li");
-                il9.innerHTML = "Acquis: " + formationsList.formationsList[btnId].acquis;
-                ul.appendChild(il9);
-                let il10 = document.createElement("li");
-                il10.innerHTML = "Contenu de la formation: " + formationsList.formationsList[btnId].contenu;
-                ul.appendChild(il10);
-                let il11 = document.createElement("li");
-                il11.innerHTML = "URL de la formation: " + formationsList.formationsList[btnId].url;
-                ul.appendChild(il11);
+                ul.style.display = 'none';
+
+                if (formationsList.formationsList[btnId].duree != "") {
+                    let il2 = document.createElement("li");
+                    il2.innerHTML = "Durée: " + formationsList.formationsList[btnId].duree + "jour(s)";
+                    ul.appendChild(il2);
+                }
+                if (formationsList.formationsList[btnId].type_formation != "") {
+                    let il3 = document.createElement("li");
+                    il3.innerHTML = "Type de formation: " + formationsList.formationsList[btnId].type_formation;
+                    ul.appendChild(il3);
+                }
+                if (formationsList.formationsList[btnId].ville != "") {
+                    let il4 = document.createElement("li");
+                    il4.innerHTML = "Lieu: " + formationsList.formationsList[btnId].ville;
+                    ul.appendChild(il4);
+                }
+                if (formationsList.formationsList[btnId].structure != "") {
+                    let il5 = document.createElement("li");
+                    il5.innerHTML = "Type de structure: " + formationsList.formationsList[btnId].structure;
+                    ul.appendChild(il5);
+                }
+                if (formationsList.formationsList[btnId].type_organisme != "") {
+                    let il6 = document.createElement("li");
+                    il6.innerHTML = "Type d'organisme: " + formationsList.formationsList[btnId].type_organisme;
+                    ul.appendChild(il6);
+                }
+
+                if (formationsList.formationsList[btnId].nom != "") {
+                    let il7 = document.createElement("li");
+                    il7.innerHTML = "Nom de l'organisme: " + formationsList.formationsList[btnId].nom;
+                    ul.appendChild(il7);
+                }
+
+                if (formationsList.formationsList[btnId].modalites != "") {
+                    let il8 = document.createElement("li");
+                    il8.innerHTML = "Modalités de la formation: " + formationsList.formationsList[btnId].modalites;
+                    ul.appendChild(il8);
+                }
+
+                if (formationsList.formationsList[btnId].acquis != "") {
+                    let il9 = document.createElement("li");
+                    il9.innerHTML = "Acquis: " + formationsList.formationsList[btnId].acquis;
+                    ul.appendChild(il9);
+                }
+
+                if (formationsList.formationsList[btnId].contenu != "") {
+                    let il10 = document.createElement("li");
+                    il10.innerHTML = "Contenu de la formation: " + formationsList.formationsList[btnId].contenu;
+                    ul.appendChild(il10);
+                }
+
+                if (formationsList.formationsList[btnId].url != "") {
+                    let il11 = document.createElement("li");
+                    il11.innerHTML = "URL de la formation: " + formationsList.formationsList[btnId].url;
+                    ul.appendChild(il11);
+                }
+
                 li.appendChild(ul);
 
             }
@@ -2024,10 +2204,10 @@ function closeBasket() {
 
 
 /** fonction pour afficher les details du panier le temps de print */
-function setDetailsDisplay(elm,prop){
+function setDetailsDisplay(elm, prop) {
     var details = elm.getElementsByClassName("details");
     for (var i = 0; i < details.length; i++) {
-        details[i].style.display= prop;
+        details[i].style.display = prop;
     }
 }
 
@@ -2063,34 +2243,21 @@ function downloadBasket() {
 /**Argument pour Email */
 const SubjectVariable = "Demande de Devis de Formation";
 /**const BodyVariable = "Bonjour,\n Je souhaiterais avoir un devi sur ces formations suivantes:"+basketList;*/
-function sendMail(){
-    var aaa = document.getElementById('basket-list');
-    var body= "Bonjour,\nJe souhaiterai un devis sur ces formations suivante:"+aaa.innerText+"\nMerci de votre retour\nCordialement,";
-    window.location.href = "mailto:vvoisin.ing2024@esaip.org ?subject=Demande de Devis de Formation &body="+body;
-}
-/**function SendMail(){
-    var params={
-        from_name : document.getElementById("fullName").value,
-        email_id : document.getElementById("email_id").value,
-        message:  document.getElementById("message").value,
-        /**formationsList.formationsList[0].intitule,
-function SendMail() {
-    var params = {
-        from_name: document.getElementById("fullName").value,
-        email_id: document.getElementById("email_id").value,
-        message: document.getElementById("message").value,
-        /**formationsList.formationsList[0].intitule, 
+function sendMail() {
+    var aaa = "";
+    for (var i = 0; i < basketList.length; i++) {
+        aaa = aaa + document.getElementById('b_' + i).innerText + "%0D%0A";
+        console.log(aaa);
     }
-    emailjs.send("service_zfl00os", "template_mm1u33n", params).then(function (res) {
-        alert("Success" + res.status);
-    });
-}*/
+    var body = "Bonjour,%0D%0AJe souhaiterai un devis sur ces formations suivante:%0D%0A" + aaa + "%0D%0AMerci de votre retour%0D%0ACordialement,";
+    window.location.href = "mailto:vvoisin.ing2024@esaip.org ?subject=Demande de Devis de Formation &body=" + body;
+}
 
 
 //**Filter Region */
 function filterRegion(region) {
     for (let i = 0; i < formationsList.formationsList.length; i++) {
-        if (formationsList.formationsList[i].region == region && formationsList.formationsList[i].region != "" ) {
+        if (formationsList.formationsList[i].region == region && formationsList.formationsList[i].region != "") {
             filtersList.filtersList.push(formationsList.formationsList[i]);
         }
     }
@@ -2099,7 +2266,7 @@ function filterRegion(region) {
 }
 
 /**fonction pour faire afficher que la bonne région */
-const listRegion =["Auvergne-Rhône-Alpes", "Centre-Val-de-Loire", "Pays-de-la-Loire", "Occitanie", "Hauts-de-France", "Normandie", "Provence-Alpes-Côte-dAzur", "Île-de-France", "Bourgogne-Franche-Comté", "Bretagne", "Grand-Est", "Nouvelle-Aquitaine"]
+const listRegion = ["Auvergne-Rhône-Alpes", "Centre-Val-de-Loire", "Pays-de-la-Loire", "Occitanie", "Hauts-de-France", "Normandie", "Provence-Alpes-Côte-dAzur", "Île-de-France", "Bourgogne-Franche-Comté", "Bretagne", "Grand-Est", "Nouvelle-Aquitaine"]
 function showRegion(nameelm, locx, locy) {
     for (var i = 0; i < listRegion.length; i++) {
         if (nameelm != listRegion[i]) {
@@ -2110,9 +2277,7 @@ function showRegion(nameelm, locx, locy) {
     }
     modifyRegionParameters(nameelm, locx, locy);
     filterRegion(nameelm);
-   afficheFilterList();
-return
-
+    afficheFilterList();
 }
 
 
@@ -2125,24 +2290,21 @@ function setButtonsDisplayRegion(elm, prop) {
 function modifyRegionParameters(elm, locx, locy) {
     const vw = window.innerWidth;
     const vh = window.innerHeight;
-    var transX = (600-3*locx)*(vw/1920)
-    var transY = (650-3*(locy))*(vw/1920)
+    var transX = (600 - 3 * locx) * (vw / 1920)
+    var transY = (650 - 3 * (locy)) * (vw / 1920)
     var scalevar = vw / 540;
     var reg = document.getElementById("g_" + elm);
     /*var styleTranslate = translateX(transX) translateY(transY) scale(scale.toString());*/
-    reg.style.transform = "translateX(" + transX.toString() + "px) translateY(" + transY.toString() + "px) scale("+scalevar.toString()+")";
+    reg.style.transform = "translateX(" + transX.toString() + "px) translateY(" + transY.toString() + "px) scale(" + scalevar.toString() + ")";
 }
 
 function showFullMap() {
-    console.log("entrer dans la fonction");
+
+    affichagelist();
     for (var i = 0; i < listRegion.length; i++) {
         var temp = document.getElementById("g_" + listRegion[i])
-        console.log("entrer dans la fonction 1");
         temp.style.transform = "translateX(0px) translateY(0px) scale(1)";
-        console.log("entrer dans la fonction 2");
         setButtonsDisplayRegion(listRegion[i], '');
-        console.log("entrer dans la fonction 3");
-    
     }
 }
 

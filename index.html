@@ -18,12 +18,12 @@
 
 </head>
 
-<body>
-  <header>
+<body class="body">
+  <header class="header">
     <h1>Votre formation personnalisée !</h1>
-    <button style="font-size:24px" id="open-menu" class="bouton-menu" value="≡" onclick="openBasket()"><i class="fa fa-shopping-cart"></i></button>
-    
-    <input type="button" id="close-menu" class="bouton-menu" value="×" onclick="closeBasket()">
+    <button style="font-size:24px" id="open-menu" class="bouton-panier" value="basket-menu" onclick="openBasket()"><i class="fa fa-shopping-cart"></i></button>
+    <input type="text" id="searchBar" placeholder="Recherche" onchange="searchList()">
+    <input type="button" id="close-menu" class="bouton-panier" value="×" onclick="closeBasket()">
   </header>
   <nav id="basket">
     <h3>Vos choix de formations: </h3>
@@ -421,7 +421,7 @@
       <!--<a href="mailto:vvoisin.ing2024@esaip.org? &subject=Demande de Devis de Formation &body=Ici on mets les formations et tout">Send Mail</a>-->
     </div>
   </main>
-  <footer>
+  <footer class="footer">
     <h3 class="textFooter">Créé par l'équipe numéro 8</h3>
   </footer>
 </body>
