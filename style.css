@@ -103,7 +103,10 @@
     transform: translateX(0) translateY(0) scale(1);
 }
 
-
+.centralblock {
+    display: flex;
+    justify-content: space-evenly;
+}
 
 
 
@@ -172,6 +175,7 @@
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    flex-direction: column;
 }
 .flex-child {
     -webkit-box-flex: 1 1 auto;
