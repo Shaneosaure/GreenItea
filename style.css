@@ -65,15 +65,44 @@
 #Nouvelle-Aquitaine {
     display:visible;
 }
-/*
-.g_bretagne {
-    transform: translateX(calc(var(--vh, 100vh) * (1.05-(133/540))))  scale(calc(var(--vh, 100vh) / 540));
-}*/
-/*
-.g_Bourgogne-Franche-Comté {
- 
-    
-}*/
+
+#g_Bretagne {
+    transform: translateX(0) translateY(0) scale(1);
+}
+#g_Bourgogne-Franche-Comté {
+    transform: translateX(0) translateY(0) scale(1);
+}
+#g_Auvergne-Rhône-Alpes {
+    transform: translateX(0) translateY(0) scale(1);
+}
+#g_Centre-Val-de-Loire {
+    transform: translateX(0) translateY(0) scale(1);
+}
+#g_Pays-de-la-Loire {
+    transform: translateX(0) translateY(0) scale(1);
+}
+#g_Occitanie {
+    transform: translateX(0) translateY(0) scale(1);
+}
+#g_Hauts-de-France {
+    transform: translateX(0) translateY(0) scale(1);
+}
+#g_Normandie {
+    transform: translateX(0) translateY(0) scale(1);
+}
+#g_Provence-Alpes-Côte-dAzur {
+    transform: translateX(0) translateY(0) scale(1);
+}
+#g_Île-de-France {
+    transform: translateX(0) translateY(0) scale(1);
+}
+#g_Grand-Est {
+    transform: translateX(0) translateY(0) scale(1);
+}
+#g_Nouvelle-Aquitaine {
+    transform: translateX(0) translateY(0) scale(1);
+}
+
 
 
 
