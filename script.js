@@ -1646,8 +1646,8 @@ function filter() {
         values.push(checkbox.value);
     });
     values.push("\nLocalisation:")
-    cblocalisation.forEach((checkbox) => {
-        values.push(checkbox.value);
+    cblocalisation.forEach((radio) => {
+        values.push(radio.value);
     });
     values.push("\nValidation:")
     cbvalidation.forEach((radio) => {
@@ -1662,7 +1662,6 @@ function filter() {
         values.push(checkbox.value);
     });
     console.log(values);
-    console.log(formationsList.formationsList[5].duree);
 }
 
 
