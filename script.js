@@ -2030,7 +2030,7 @@ const SubjectVariable = "Demande de Devis de Formation";
 /**const BodyVariable = "Bonjour,\n Je souhaiterais avoir un devi sur ces formations suivantes:"+basketList;*/
 function sendMail(){
     var aaa = document.getElementById('basket');
-    var body= "test"+aaa.outerHTML;
+    var body= "test"+aaa.innerText;
     window.location.href = "mailto:vvoisin.ing2024@esaip.org ?subject=Demande de Devis de Formation &body="+body;
 }
 /**function SendMail(){
