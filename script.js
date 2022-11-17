@@ -989,7 +989,7 @@ let formationsList = {
             nom: "IMT - Telecom Sud Paris",
             intitule: "Numérique et consommation énergétique : agir du processeur au logiciel",
             ville: "Évry",
-            region: "Île-de-France",
+            region: "Centre-Val-de-Loire",
             acquis: "",
             duree: "",
             modalites: "Présentiel",
@@ -2038,6 +2038,8 @@ function afficheFilterList() {
     }
 }
 
+
+/**fonction pour la barre de recherche */
 function searchList() {
     let list1 = document.getElementById("showinglist");
     for (let i = 0; i < filtersList.filtersList.length; i++) {
@@ -2046,8 +2048,9 @@ function searchList() {
     filtersList = {
         filtersList: []
     };
-    
-    const result = document.getElementById("searchBar").value.toLowerCase();
+    /**trouve la valeur contenue dans la barre de recherche */
+    const result = document.getElementById("searchBar").value.toLowerCase();   
+    /**si valeur non nulle, chercher dans la liste formations; retourne la position du string value quand il le trouve, ou -1 sinon   */
     if (result != "") {
         for (let i = 0; i < formationsList.formationsList.length; i++) {
             let position1 = formationsList.formationsList[i].intitule.toLowerCase().search(result);
