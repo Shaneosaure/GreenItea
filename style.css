@@ -190,6 +190,7 @@
 
 .filter {
     display: flex;
+    justify-content: space-around;
     /** flex-wrap: wrap; */
     align-content: center;
     padding-right:2.5%;
