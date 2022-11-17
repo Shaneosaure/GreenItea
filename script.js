@@ -1831,23 +1831,6 @@ function downloadBasket() {
 /**fonction pour Email */
 const SubjectVariable = "Demande de Devis de Formation";
 const BodyVariable = "Ici on mets les formations et tout";
-/**function SendMail(){
-    var params={
-        from_name : document.getElementById("fullName").value,
-        email_id : document.getElementById("email_id").value,
-        message:  document.getElementById("message").value,
-        /**formationsList.formationsList[0].intitule,
-function SendMail() {
-    var params = {
-        from_name: document.getElementById("fullName").value,
-        email_id: document.getElementById("email_id").value,
-        message: document.getElementById("message").value,
-        /**formationsList.formationsList[0].intitule, 
-    }
-    emailjs.send("service_zfl00os", "template_mm1u33n", params).then(function (res) {
-        alert("Success" + res.status);
-    });
-}*/
 
 
 /**fonction pour calculer le translate*/
