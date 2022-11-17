@@ -1739,12 +1739,12 @@ function filter() {
         values.push(checkbox.value);
     });
     values.push("\nStructure:")
-    cblocalisation.forEach((radio) => {
-        values.push(radio.value);
+    cbstructure.forEach((checkbox) => {
+        values.push(checkbox.value);
     });
     values.push("\nLocalisation:")
-    cblocalisation.forEach((checkbox) => {
-        values.push(checkbox.value);
+    cblocalisation.forEach((radio) => {
+        values.push(radio.value);
     });
     values.push("\nValidation:")
     cbvalidation.forEach((radio) => {
@@ -1781,6 +1781,17 @@ window.onload = function affichagelist() {
             h4.innerHTML = formationsList.formationsList[i].intitule;
         }
         li.appendChild(h4);
+
+        /**Pastille détail */
+        var dotdetail = document.createElement("div");
+        dotdetail.setAttribute('class', 'dotdetail');
+        dotdetail.innerHTML = "?";
+        var spandetail = document.createElement("span");
+        spandetail.setAttribute('class','dotdetailtext');
+        spandetail.innerHTML= formationsList.formationsList[i].contenu;
+        dotdetail.appendChild(spandetail)
+        li.appendChild(dotdetail);
+
 
         /** Nom organisme */
         let nom = document.createElement("p");
@@ -1861,6 +1872,16 @@ function afficheFilterList() {
             h4.innerHTML = filtersList.filtersList[i].intitule;
         }
         li.appendChild(h4);
+
+        /**Pastille détail */
+        var dotdetail = document.createElement("div");
+        dotdetail.setAttribute('class', 'dotdetail');
+        dotdetail.innerHTML = "?";
+        var spandetail = document.createElement("span");
+        spandetail.setAttribute('class','dotdetailtext');
+        spandetail.innerHTML= filtersList.filtersList[i].contenu;
+        dotdetail.appendChild(spandetail)
+        li.appendChild(dotdetail);
 
         /** Nom organisme */
         let nom = document.createElement("p");
