@@ -1,4 +1,4 @@
-/**initiation variables*/
+
 :root {
     --vh: 100vh;
   }
@@ -190,7 +190,6 @@
 
 .filter {
     display: flex;
-    justify-content: space-around;
     /** flex-wrap: wrap; */
     align-content: center;
     padding-right:2.5%;
@@ -198,7 +197,7 @@
     background-color: #ffffff;
   }
   
-.filter form > div {
+.filter > div {
     /** background-color: #ffffff;*/
     width: 33%;
     text-align: center;
@@ -218,3 +217,5 @@
     text-align: center;
     padding: 0%;
 }
+
+

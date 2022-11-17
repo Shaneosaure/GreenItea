@@ -17,6 +17,7 @@ let formationsList = {
             nom: "The green Companion",
             intitule: "Développeur responsable",
             ville: "National",
+            region: "",
             acquis: "non",
             duree: "1.5",
             modalites: "Distanciel",
@@ -34,6 +35,7 @@ let formationsList = {
             nom: "The green Companion",
             intitule: "Designer responsable",
             ville: "National",
+            region: "",
             acquis: "non",
             duree: 1.5,
             modalites: "Distanciel",
@@ -51,6 +53,7 @@ let formationsList = {
             nom: "The green Companion",
             intitule: "Infrastructure responsable",
             ville: "National",
+            region: "",
             acquis: "non",
             duree: 1.5,
             modalites: "Distanciel",
@@ -68,6 +71,7 @@ let formationsList = {
             nom: "The green Companion",
             intitule: "Impact du numérique et concepts clés de l'éco-conception",
             ville: "National",
+            region: "",
             acquis: "non",
             duree: 0.5,
             modalites: "Distanciel",
@@ -85,6 +89,7 @@ let formationsList = {
             nom: "",
             intitule: "Appliquez les principes du GreenIT dans votre entreprise",
             ville: "National",
+            region: "",
             acquis: "non",
             duree: 0.5,
             modalites: "Distanciel",
@@ -102,6 +107,7 @@ let formationsList = {
             nom: "Pollen",
             intitule: "NUMÉRIQUE RESPONSABLE",
             ville: "Toulouse",
+            region: "Occitanie",
             acquis: "non mais les apprenants sont en mesure de passer le certificat de connaissance à l'issue de cette formation",
             duree: 2,
             modalites: "Présentiel et distanciel",
@@ -119,6 +125,7 @@ let formationsList = {
             nom: "Pollen",
             intitule: "Ecoconception de site Internet",
             ville: "Toulouse",
+            region: "Occitanie",
             acquis: "oui. Un certificat de connaissance délivré par l'INR",
             duree: 2,
             modalites: "Présentiel et distanciel",
@@ -136,6 +143,7 @@ let formationsList = {
             nom: "Pollen",
             intitule: "Accessibilité et assurance qualité web",
             ville: "Toulouse",
+            region: "Occitanie",
             acquis: "non",
             duree: 2,
             modalites: "Présentiel et distanciel",
@@ -153,6 +161,7 @@ let formationsList = {
             nom: "INFOGREEN FACTORY",
             intitule: "ECOCONCEPTION-  GESTION DE PROJETS",
             ville: "National",
+            region: "",
             acquis: "OBJECTIFS PÉDAGOGIQUES\nPrendre du recul par rapport au « business as usual » dans les projets informatiques.\nDéfinir les enjeux et contextes du numérique et pourquoi il est crucial d’intégrer une démarche d’écoconception.\nAcquérir et de mettre en pratique sous forme d’ateliers les connaissances socles sur le sujet du Numérique Responsable.\nS’appuyer sur une méthodologie pour déployer le Numérique Responsable dans les projets.\nIdentifier les référentiels et outils existants.\nComprendre l’écoconception appliquée aux services numériques.\nÊtre en mesure de concevoir un logiciel en intégrant les bonnes pratiques d’éco-conception numérique.",
             duree: 2,
             modalites: "Présentiel et distanciel",
@@ -170,6 +179,7 @@ let formationsList = {
             nom: "INFOGREEN FACTORY",
             intitule: "NUMÉRIQUE RESPONSABLE",
             ville: "National",
+            region: "",
             acquis: "Définir les enjeux et contextes du numérique et pourquoi il est crucial d’intégrer une démarche responsable.\nIdentifier dans l’ensemble du cycle de vie des équipements et services numériques les critères importants (achats, usage, fin de vie, conception).\nDécouvrir une méthodologie et des outils pour une mise en pratique du numérique responsable.\nValider la certification « Numérique responsable » portée par l’Université de la Rochelle et l’Institut du Numérique Responsable (INR).",
             duree: 2,
             modalites: "Présentiel et distanciel",
@@ -187,6 +197,7 @@ let formationsList = {
             nom: "The Green Compagnon",
             intitule: "Développeur responsable (front & back)",
             ville: "National",
+            region: "",
             acquis: "Non",
             duree: 1,
             modalites: "Distanciel",
@@ -204,6 +215,7 @@ let formationsList = {
             nom: "The Green Compagnon",
             intitule: "Designer Responsable",
             ville: "National",
+            region: "",
             acquis: "Non",
             duree: 1,
             modalites: "Distanciel",
@@ -221,6 +233,7 @@ let formationsList = {
             nom: "IHMISEN",
             intitule: "Ecoconception outils, GR 491 et RGESN",
             ville: "Toulouse",
+            region: "Occitanie",
             acquis: "Cette formation vise à fournir aux participants une connaissance du\nréférentiel de l’INR le GR491 et du RGESN (référentiel d'écoconception issu du GR491) pour mettre en pratique les recommandations dans\nchacune des étapes projet.\nLa formation permettra :\n• De préciser les objectifs du référentiel\n• De comprendre la structure des éléments proposés dans le référentiel\n• D’identifier les relations avec les Objectifs de Développement Durable\nde l’ONU\n• De préciser la méthodologie de mise en œuvre du référentiel dans une\norganisation\n• De comprendre les éléments exposés dans le référentiel\n• De relier le référentiel INR avec les autres référentiels disponibles\nLe module « Référentiel INR » a donc pour vocation de permettre aux acteurs\ndu numérique (Product Owner, Développeurs, Designers, Chefs de projet) de\nmettre en pratique l’écoconception de services numériques dans une\ndémarche Numérique Responsable et de sobriété numérique.",
             duree: 1,
             modalites: "Présentiel et distanciel",
@@ -238,6 +251,7 @@ let formationsList = {
             nom: "Ecologeek",
             intitule: "Initier une démarche Numérique Responsable dans mon entreprise",
             ville: "Rennes",
+            region: "Bretagne",
             acquis: "Possibilité de passer la certification numérique responsable de l'INR après la formation.",
             duree: 3,
             modalites: "Présentiel et distanciel",
@@ -255,6 +269,7 @@ let formationsList = {
             nom: "",
             intitule: "Green IT",
             ville: "Boulogne-Billancourt",
+            region: "Île-de-France",
             acquis: "Non",
             duree: 1.5,
             modalites: "Présentiel et distanciel",
@@ -272,6 +287,7 @@ let formationsList = {
             nom: "M.I.R",
             intitule: "S'orienter vers un numérique plus responsable",
             ville: "Paris",
+            region: "Île-de-France",
             acquis: "Certificat de connaissance de l’Institut du Numérique Responsable (optionnel)",
             duree: 2,
             modalites: "Présentiel et distanciel",
@@ -289,6 +305,7 @@ let formationsList = {
             nom: "Ihmisen Academy",
             intitule: "Sensibilisation au Numérique Responsable",
             ville: "Toulouse",
+            region: "Occitanie",
             acquis: "› Attestation de fin de formation.\n› Certification Numérique Responsable (NR).",
             duree: 2,
             modalites: "Présentiel et distanciel",
@@ -306,6 +323,7 @@ let formationsList = {
             nom: "Ihmisen Academy",
             intitule: "Numérique Responsable - Ecoconception pour les dirigeants",
             ville: "Toulouse",
+            region: "Occitanie",
             acquis: "› Attestation de fin de formation.",
             duree: 1,
             modalites: "Présentiel et distanciel",
@@ -323,6 +341,7 @@ let formationsList = {
             nom: "Ihmisen Academy",
             intitule: "Numérique Responsable - Ecoconception pour la gestion de projets",
             ville: "Toulouse",
+            region: "Occitanie",
             acquis: "› Attestation de fin de formation.",
             duree: 2,
             modalites: "Présentiel et distanciel",
@@ -340,6 +359,7 @@ let formationsList = {
             nom: "Ihmisen Academy",
             intitule: "Numérique Responsable - Ecoconception pour les développeurs",
             ville: "Toulouse",
+            region: "Occitanie",
             acquis: "› Attestation de fin de formation.",
             duree: 3,
             modalites: "Présentiel et distanciel",
@@ -357,6 +377,7 @@ let formationsList = {
             nom: "Ihmisen Academy",
             intitule: "Numérique Responsable – Référentiel « Conception responsable de Services Numériques » de l’INR",
             ville: "Toulouse",
+            region: "Occitanie",
             acquis: "› Attestation de fin de formation.",
             duree: 1,
             modalites: "Présentiel et distanciel",
@@ -374,6 +395,7 @@ let formationsList = {
             nom: "Ihmisen Academy",
             intitule: "Numérique Responsable – Ecoconception pour les Fonctionnels",
             ville: "Toulouse",
+            region: "Occitanie",
             acquis: "› Attestation de fin de formation.",
             duree: 2,
             modalites: "Présentiel et distanciel",
@@ -391,6 +413,7 @@ let formationsList = {
             nom: "Ihmisen Academy",
             intitule: "Numérique Responsable – Ecoconception pour les Lead Dev, Développeurs et UX Designers",
             ville: "Toulouse",
+            region: "Occitanie",
             acquis: "› Attestation de fin de formation.",
             duree: 3,
             modalites: "Présentiel et distanciel",
@@ -408,6 +431,7 @@ let formationsList = {
             nom: "Temesis",
             intitule: "Comprendre le numérique responsable & la démarche d’écoconception numérique, avec ateliers pratiques",
             ville: "Paris",
+            region: "Île-de-France",
             acquis: "Validation de participation",
             duree: 1,
             modalites: "Présentiel et distanciel",
@@ -425,6 +449,7 @@ let formationsList = {
             nom: "La Fresque Du Numérique",
             intitule: "La Fresque Du Numérique",
             ville: "Toute la France",
+            region: "",
             acquis: "Non",
             duree: 0.5,
             modalites: "Présentiel et distanciel",
@@ -442,6 +467,7 @@ let formationsList = {
             nom: "Agence Lucie",
             intitule: "Maitriser les enjeux et piloter une démarche Numérique Responsable avec le label NR",
             ville: "Paris",
+            region: "Île-de-France",
             acquis: "En route vers la labellisation\nOui, validation des compétences :\n-Comprendre les enjeux du numérique responsable et les comportements clefs à adopter pour les respecter.\n-Connaître le référentiel du Label du Numérique Responsable ainsi que les enjeux de cette thématique.\n-Savoir évaluer les enjeux, son niveau et ses axes d’amélioration sur le numérique responsable.\n\n-Identifier les priorités propres à son organisation dans le cadre de sa démarche NR. Se préparer à un audit NR externe.\n-Rédiger des engagements concrets, engageants, réalisables et conformes aux attentes d’un comité de labellisation.\n-Être capable de préparer l’auto-évaluation d’une organisation et de mener une démarche de labellisation LNR1 ou LNR2 dans une entreprise ou organisation.",
             duree: 3,
             modalites: "Présentiel et distanciel",
@@ -459,6 +485,7 @@ let formationsList = {
             nom: "TkPx",
             intitule: "Sobriété numérique et internet éco-responsable",
             ville: "La Bernardière",
+            region: "Pays-de-la-Loire",
             acquis: "Non",
             duree: 0.5,
             modalites: "Présentiel et distanciel",
@@ -476,6 +503,7 @@ let formationsList = {
             nom: "OM Conseil",
             intitule: "Atelier Trivial Numérique Responsable",
             ville: "Versailles",
+            region: "Île-de-France",
             acquis: "Non",
             duree: 0.5,
             modalites: "Présentiel et distanciel",
@@ -493,6 +521,7 @@ let formationsList = {
             nom: "Orsys",
             intitule: "Amorcer une transformation numérique responsable",
             ville: "Puteaux-La défense",
+            region: "Île-de-France",
             acquis: "Le formateur évalue la progression pédagogique du participant tout au long de la formation au moyen de QCM, mises en situation, travaux pratiques…\nLe participant complète également un test de positionnement en amont et en aval pour valider les compétences acquises.",
             duree: 1,
             modalites: "Présentiel et distanciel",
@@ -510,6 +539,7 @@ let formationsList = {
             nom: "Orsys",
             intitule: "Ecoconception des services numériques",
             ville: "Puteaux-La défense",
+            region: "Île-de-France",
             acquis: "Le formateur évalue la progression pédagogique du participant tout au long de la formation au moyen de QCM, mises en situation, travaux pratiques…\nLe participant complète également un test de positionnement en amont et en aval pour valider les compétences acquises.",
             duree: 2,
             modalites: "Présentiel et distanciel",
@@ -527,6 +557,7 @@ let formationsList = {
             nom: "Orsys",
             intitule: "Green IT, démarche et mise en œuvre",
             ville: "Puteaux-La défense",
+            region: "Île-de-France",
             acquis: "Le formateur évalue la progression pédagogique du participant tout au long de la formation au moyen de QCM, mises en situation, travaux pratiques…\nLe participant complète également un test de positionnement en amont et en aval pour valider les compétences acquises.",
             duree: 2,
             modalites: "Présentiel et distanciel",
@@ -544,6 +575,7 @@ let formationsList = {
             nom: "Orsys",
             intitule: "Green Data Center, optimiser sa performance énergétique",
             ville: "Puteaux-La défense",
+            region: "Île-de-France",
             acquis: "Le formateur évalue la progression pédagogique du participant tout au long de la formation au moyen de QCM, mises en situation, travaux pratiques…\nLe participant complète également un test de positionnement en amont et en aval pour valider les compétences acquises.",
             duree: 2,
             modalites: "Présentiel et distanciel",
@@ -561,6 +593,7 @@ let formationsList = {
             nom: "Orsys",
             intitule: "Sensibilisation à l'accessibilité numérique",
             ville: "Puteaux-La défense",
+            region: "Île-de-France",
             acquis: "Le formateur évalue la progression pédagogique du participant tout au long de la formation au moyen de QCM, mises en situation, travaux pratiques…\nLe participant complète également un test de positionnement en amont et en aval pour valider les compétences acquises.",
             duree: 1,
             modalites: "Présentiel et distanciel",
@@ -578,6 +611,7 @@ let formationsList = {
             nom: "Orsys",
             intitule: "L'accessibilité numérique dans un projet",
             ville: "Puteaux-La défense",
+            region: "Île-de-France",
             acquis: "Le formateur évalue la progression pédagogique du participant tout au long de la formation au moyen de QCM, mises en situation, travaux pratiques…\nLe participant complète également un test de positionnement en amont et en aval pour valider les compétences acquises.",
             duree: 1,
             modalites: "Présentiel et distanciel",
@@ -595,6 +629,7 @@ let formationsList = {
             nom: "Orsys",
             intitule: "RGAA, auditer l'accessibilité d'un site web ou d'une application mobile",
             ville: "Puteaux-La défense",
+            region: "Île-de-France",
             acquis: "Le formateur évalue la progression pédagogique du participant tout au long de la formation au moyen de QCM, mises en situation, travaux pratiques…\nLe participant complète également un test de positionnement en amont et en aval pour valider les compétences acquises.",
             duree: 5,
             modalites: "Présentiel et distanciel",
@@ -612,6 +647,7 @@ let formationsList = {
             nom: "ESAIP",
             intitule: "Comprendre les enjeux du numérique responsable",
             ville: "Saint-Barthélemy d'Anjou",
+            region: "Pays-de-la-Loire",
             acquis: "OUI \/\/ Crédits ECTS ?",
             duree: 2,
             modalites: "Présentiel et distanciel",
@@ -629,6 +665,7 @@ let formationsList = {
             nom: "ESAIP",
             intitule: "L’éco-conception logicielle",
             ville: "Saint-Barthélemy d'Anjou",
+            region: "Pays-de-la-Loire",
             acquis: "OUI \/\/ crédits ECTS",
             duree: 3,
             modalites: "Présentiel et distanciel",
@@ -646,6 +683,7 @@ let formationsList = {
             nom: "ESAIP",
             intitule: "Systèmes et Réseaux Eco-Responsables",
             ville: "Saint-Barthélemy d'Anjou",
+            region: "Pays-de-la-Loire",
             acquis: "OUI \/\/ Crédits ECTS",
             duree: 3,
             modalites: "Présentiel et distanciel",
@@ -663,6 +701,7 @@ let formationsList = {
             nom: "Ideance",
             intitule: "Découvrir l’accessibilité numérique",
             ville: "Rouen",
+            region: "Normandie",
             acquis: "Non",
             duree: 0.5,
             modalites: "Présentiel et distanciel",
@@ -680,6 +719,7 @@ let formationsList = {
             nom: "Ideance",
             intitule: "Piloter la prise en compte de l’accessibilité",
             ville: "Rouen",
+            region: "Normandie",
             acquis: "Non",
             duree: 0.5,
             modalites: "Présentiel et distanciel",
@@ -697,6 +737,7 @@ let formationsList = {
             nom: "Ideance",
             intitule: "Concevoir des interfaces accessibles",
             ville: "Rouen",
+            region: "Normandie",
             acquis: "Non",
             duree: 1,
             modalites: "Présentiel et distanciel",
@@ -714,6 +755,7 @@ let formationsList = {
             nom: "Ideance",
             intitule: "Rédiger et publier des contenus accessibles",
             ville: "Rouen",
+            region: "Normandie",
             acquis: "Non",
             duree: 1,
             modalites: "Présentiel et distanciel",
@@ -731,6 +773,7 @@ let formationsList = {
             nom: "Ideance",
             intitule: "Développer des sites et applications web accessibles",
             ville: "Rouen",
+            region: "Normandie",
             acquis: "Non",
             duree: 3,
             modalites: "Présentiel et distanciel",
@@ -748,6 +791,7 @@ let formationsList = {
             nom: "Ideance",
             intitule: "Développer des applications mobiles accessibles",
             ville: "Rouen",
+            region: "Normandie",
             acquis: "Non",
             duree: 2,
             modalites: "Présentiel et distanciel",
@@ -765,6 +809,7 @@ let formationsList = {
             nom: "Temesis",
             intitule: "Comprendre le numérique responsable & la démarche d’écoconception numérique",
             ville: "Paris",
+            region: "Île-de-France",
             acquis: "- Évaluation des acquis au cours de la formation sous forme de quiz ludo-interactif\n- Questionnaire d’évaluation en fin de session dans lequel le participant évalue les apports de la formation et sa capacité à les mettre en œuvre",
             duree: 2,
             modalites: "Présentiel et distanciel",
@@ -782,6 +827,7 @@ let formationsList = {
             nom: "",
             intitule: "",
             ville: "Anglet",
+            region: "Nouvelle-Aquitaine",
             acquis: "",
             duree: 1,
             modalites: "Présentiel",
@@ -799,6 +845,7 @@ let formationsList = {
             nom: "",
             intitule: "",
             ville: "Anglet",
+            region: "Nouvelle-Aquitaine",
             acquis: "",
             duree: 2,
             modalites: "Présentiel",
@@ -816,6 +863,7 @@ let formationsList = {
             nom: "Université de Pau et des Pays de l'Adour",
             intitule: "Green It",
             ville: "Anglet",
+            region: "Nouvelle-Aquitaine",
             acquis: "Crédits ECTS 2.0",
             duree: 2,
             modalites: "Présentiel",
@@ -833,6 +881,7 @@ let formationsList = {
             nom: "Université de Bordeaux",
             intitule: "",
             ville: "Bordeaux",
+            region: "Nouvelle-Aquitaine",
             acquis: "",
             duree: 0.5,
             modalites: "présentiel",
@@ -850,6 +899,7 @@ let formationsList = {
             nom: "Université de Bordeaux",
             intitule: "",
             ville: "Bordeaux",
+            region: "Nouvelle-Aquitaine",
             acquis: "",
             duree: 3,
             modalites: "présentiel",
@@ -867,6 +917,7 @@ let formationsList = {
             nom: "Université de Bordeaux",
             intitule: "",
             ville: "Bordeaux",
+            region: "Nouvelle-Aquitaine",
             acquis: "",
             duree: 1,
             modalites: "présentiel",
@@ -884,6 +935,7 @@ let formationsList = {
             nom: "Université de Bordeaux",
             intitule: "",
             ville: "Bordeaux",
+            region: "Nouvelle-Aquitaine",
             acquis: "",
             duree: 0.5,
             modalites: "présentiel",
@@ -901,6 +953,7 @@ let formationsList = {
             nom: "Polytech Lille",
             intitule: "\nInformatique et développement durable\n\n",
             ville: "Lille",
+            region: "Hauts-de-France",
             acquis: "",
             duree: 1,
             modalites: "présentiel",
@@ -918,6 +971,7 @@ let formationsList = {
             nom: "La Rochelle Université",
             intitule: "DUT Informatique - parcours Environnement Connecté Intelligent",
             ville: "La Rochelle",
+            region: "Nouvelle-Aquitaine",
             acquis: "",
             duree: "",
             modalites: "présentiel",
@@ -935,6 +989,7 @@ let formationsList = {
             nom: "IMT - Telecom Sud Paris",
             intitule: "Numérique et consommation énergétique : agir du processeur au logiciel",
             ville: "Évry",
+            region: "Île-de-France",
             acquis: "",
             duree: "",
             modalites: "Présentiel",
@@ -952,6 +1007,7 @@ let formationsList = {
             nom: "Université de La Rochelle",
             intitule: "Le numérique responsable",
             ville: "La Rochelle",
+            region: "Nouvelle-Aquitaine",
             acquis: "",
             duree: 2,
             modalites: "Présentiel et distanciel",
@@ -969,6 +1025,7 @@ let formationsList = {
             nom: "IMT Mines Albi",
             intitule: "",
             ville: "Albi",
+            region: "Occitanie",
             acquis: "",
             duree: "",
             modalites: "Présentiel",
@@ -986,6 +1043,7 @@ let formationsList = {
             nom: "Université Toulouse 1 Capitole",
             intitule: "",
             ville: "Toulouse",
+            region: "Occitanie",
             acquis: "",
             duree: "",
             modalites: "Présentiel",
@@ -1325,7 +1383,8 @@ let formationsList = {
             type_organisme: "Centre de Formation",
             nom: "EMERAUDE COMPETENCES MFR - CFA",
             intitule: "Titre de Responsable d'Espace de Médiation Numérique",
-            ville: "SAINT MALO",
+            ville: "Saint Malo",
+            region: "Bretagne",
             acquis: "\nLe Titre Professionnel de responsable d'espace de médiation numérique\nNiveau 5 (bac+2)",
             duree: 58,
             modalites: "Présentiel",
@@ -1623,7 +1682,10 @@ let formationsList = {
     ]
 }
 
-let filtersList = [];
+/** list temporaire pour les filtres */
+let filtersList = {
+    filtersList: []
+};
 
 
 /** ressors les checkbox pas sélectionné */
@@ -1642,16 +1704,16 @@ function filter() {
         values.push(checkbox.value);
     });
     values.push("\nStructure:")
-    cbstructure.forEach((checkbox) => {
-        values.push(checkbox.value);
+    cblocalisation.forEach((radio) => {
+        values.push(radio.value);
     });
     values.push("\nLocalisation:")
     cblocalisation.forEach((checkbox) => {
         values.push(checkbox.value);
     });
     values.push("\nValidation:")
-    cbvalidation.forEach((checkbox) => {
-        values.push(checkbox.value);
+    cbvalidation.forEach((radio) => {
+        values.push(radio.value);
     });
     values.push("\nDurée:")
     cbduree.forEach((checkbox) => {
@@ -1743,7 +1805,85 @@ window.onload = function affichagelist() {
     }
 }
 
+function afficheFilterList() {
 
+    let list = document.getElementById("showinglist");
+    for (let i = 0; i < formationsList.formationsList.length; i++) {
+        list.removeChild(list.lastChild);
+    }
+    console.log(list);
+    for (let i = 0; i < filtersList.filtersList.length; i++) {
+        /**on crée un li */
+        let li = document.createElement("li");
+        li.setAttribute('id', i);
+        list.appendChild(li);
+
+        /** Intitulé */
+        let h4 = document.createElement("h4");
+        if (filtersList.filtersList[i].intitule == "") {
+            h4.innerHTML = "Pas d'intitulé";
+        } else {
+            h4.innerHTML = filtersList.filtersList[i].intitule;
+        }
+        li.appendChild(h4);
+
+        /** Nom organisme */
+        let nom = document.createElement("p");
+        if (filtersList.filtersList[i].nom == "") {
+            nom.innerHTML = "Organisme: non spécifié";
+        } else {
+            nom.innerHTML = "Organisme: " + filtersList.filtersList[i].nom;
+        }
+        li.appendChild(nom);
+
+        /** Ville */
+        let ville = document.createElement("p");
+        if (filtersList.filtersList[i].ville == "") {
+            ville.innerHTML = "Lieu: non spécifié";
+        } else {
+            ville.innerHTML = "Lieu: " + filtersList.filtersList[i].ville;
+        }
+        li.appendChild(ville);
+
+        /** Duree */
+        let duree = document.createElement("p");
+        if (filtersList.filtersList[i].duree == "") {
+            duree.innerHTML = "Durée: non spécifiée";
+        } else {
+            duree.innerHTML = "Durée: " + filtersList.filtersList[i].duree + " jour(s)";
+        }
+        li.appendChild(duree);
+
+        /** Structure */
+        let structure = document.createElement("p");
+        if (filtersList.filtersList[i].structure == "") {
+            structure.innerHTML = "Structure: non spécifiée";
+        } else {
+            structure.innerHTML = "Structure: " + filtersList.filtersList[i].structure;
+        }
+        li.appendChild(structure);
+
+        /** Type de formation */
+        let type_formation = document.createElement("p");
+        if (filtersList.filtersList[i].type_formation == "") {
+            type_formation.innerHTML = "Type de formation: spécifiée";
+        } else {
+            type_formation.innerHTML = "Type de formation: " + filtersList.filtersList[i].type_formation;
+        }
+        li.appendChild(type_formation);
+
+        var input = document.createElement("input");
+        input.setAttribute('class', 'addButton');
+        input.setAttribute('type', 'button');
+        input.setAttribute('onclick', 'addBasket(this.parentNode.id)');
+        input.setAttribute('value', '+');
+        li.appendChild(input);
+
+        /** ligne horizontal */
+        let horizontalline = document.createElement("hr");
+        li.appendChild(horizontalline);
+    }
+}
 
 var basketList = [];
 
@@ -1752,7 +1892,7 @@ function addBasket(btnId) {
     let li = document.createElement("li");
     li.setAttribute('id', 'b_' + btnId);
     var verif = true;
-    li.innerText = document.getElementById(btnId).firstChild.innerText;
+    li.innerHTML = document.getElementById(btnId).firstChild.innerText;
 
     /** si pas empty, on verifie les doublons */
     for (let i = 0; i < basketList.length; i++) {
@@ -1771,6 +1911,49 @@ function addBasket(btnId) {
         input.setAttribute('value', '-');
         basketList.push('b_' + btnId);
         li.appendChild(input);
+        
+        /** On ajoute aussi des éléments cachés */
+        for (let i = 0; i < basketList.length; i++) {
+            if (basketList[i] == 'b_' + btnId) {
+
+                let ul = document.createElement("ul");
+                ul.setAttribute('id', 'details');
+                ul.setAttribute('class', 'details');
+                ul.style.display= 'none';
+                let il2 = document.createElement("il");
+                il2.innerHTML = "Durée: " + formationsList.formationsList[btnId].duree + "jour(s)";
+                ul.appendChild(il2);
+                let il3 = document.createElement("il");
+                il3.innerHTML = "Type de formation: " + formationsList.formationsList[btnId].type_formation;
+                ul.appendChild(il3);
+                let il4 = document.createElement("il");
+                il4.innerHTML = "Lieu: " + formationsList.formationsList[btnId].ville;
+                ul.appendChild(il4);
+                let il5 = document.createElement("il");
+                il5.innerHTML = "Type de structure: " + formationsList.formationsList[btnId].structure;
+                ul.appendChild(il5);
+                let il6 = document.createElement("il");
+                il6.innerHTML = "Type d'organisme: " + formationsList.formationsList[btnId].type_organisme;
+                ul.appendChild(il6);
+                let il7 = document.createElement("il");
+                il7.innerHTML = "Nom de l'organisme: " + formationsList.formationsList[btnId].nom;
+                ul.appendChild(il7);
+                let il8 = document.createElement("il");
+                il8.innerHTML = "Modalités de la formation: " + formationsList.formationsList[btnId].modalites;
+                ul.appendChild(il8);
+                let il9 = document.createElement("il");
+                il9.innerHTML = "Acquis: " + formationsList.formationsList[btnId].acquis;
+                ul.appendChild(il9);
+                let il10 = document.createElement("il");
+                il10.innerHTML = "Contenu de la formation: " + formationsList.formationsList[btnId].contenu;
+                ul.appendChild(il10);
+                let il11 = document.createElement("il");
+                il11.innerHTML = "URL de la formation: " + formationsList.formationsList[btnId].url;
+                ul.appendChild(il11);
+                li.appendChild(ul);
+
+            }
+        }
     }
 
 }
@@ -1804,6 +1987,16 @@ function closeBasket() {
     }, 10);
 }
 
+
+/** fonction pour afficher les details du panier le temps de print */
+function setDetailsDisplay(elm,prop){
+    var details = elm.getElementsByClassName("details");
+    for (var i = 0; i < details.length; i++) {
+        details[i].style.display= prop;
+    }
+}
+
+/** fonction pour afficher les details du panier le temps de print */
 function setButtonsDisplay(elm, prop) {
     var btns = elm.getElementsByClassName("subButton");
     var other = elm.getElementsByClassName("toolsBasket");
@@ -1819,6 +2012,7 @@ function setButtonsDisplay(elm, prop) {
 function downloadBasket() {
     var content = document.getElementById('basket');
     setButtonsDisplay(content, 'none')
+    setDetailsDisplay(content, 'block');
     var opt = {
         margin: 1,
         filename: 'MonPanier.pdf',
@@ -1828,9 +2022,10 @@ function downloadBasket() {
     };
     html2pdf().set(opt).from(content.innerHTML).save();
     setButtonsDisplay(content, '');
+    setDetailsDisplay(content, 'none');
 }
 
-/**fonction pour Email */
+/**Argument pour Email */
 const SubjectVariable = "Demande de Devis de Formation";
 /**const BodyVariable = "Bonjour,\n Je souhaiterais avoir un devi sur ces formations suivantes:"+basketList;*/
 function sendMail(){
@@ -1857,21 +2052,32 @@ function SendMail() {
 }*/
 
 
+//**Filter Region */
+function filterRegion(ville) {
+    for (let i = 0; i < formationsList.formationsList.length; i++) {
+        if (formationsList.formationsList[i].ville == ville && formationsList.formationsList[i].ville != "" ) {
+            filtersList.filtersList.push(formationsList.formationsList[i]);
+        }
+    }
+    console.log(filtersList);
 
+}
 
 /**fonction pour faire afficher que la bonne région */
-const listRegion = ["Auvergne-Rhône-Alpes", "Centre-Val-de-Loire", "Pays-de-la-Loire", "Occitanie", "Hauts-de-France", "Normandie", "Provence-Alpes-Côte-dAzur", "Île-de-France", "Bourgogne-Franche-Comté", "Bretagne", "Grand-Est", "Nouvelle-Aquitaine"]
-
+const listRegion =["Auvergne-Rhône-Alpes", "Centre-Val-de-Loire", "Pays-de-la-Loire", "Occitanie", "Hauts-de-France", "Normandie", "Provence-Alpes-Côte-dAzur", "Île-de-France", "Bourgogne-Franche-Comté", "Bretagne", "Grand-Est", "Nouvelle-Aquitaine"]
 function showRegion(nameelm, locx, locy) {
     for (var i = 0; i < listRegion.length; i++) {
-        if(nameelm != listRegion[i]) {
+        if (nameelm != listRegion[i]) {
             setButtonsDisplayRegion(listRegion[i], 'none');
         }
         else {
         }
     }
     modifyRegionParameters(nameelm, locx, locy);
-    
+    filterRegion("Rennes");
+    afficheFilterList();
+
+
 }
 
 
@@ -1888,24 +2094,26 @@ function modifyRegionParameters(elm, locx, locy) {
     const vw = window.innerWidth;
 
     const vh = window.innerHeight;
-    
-    var transX = vw*(1.05-((locx-50)/540));
-    var transY = (0.9 * vh / 2) - (locy-420) * 2 * vh / 540;
-   
-    var scalevar = vw/540 ;
+
+    var transX = vw * (1.05 - ((locx - 50) / 540));
+    var transY = (0.9 * vh / 2) - (locy - 420) * 2 * vh / 540;
+
+    var scalevar = vw / 540;
     console.log(vw)
-    
-    var reg = document.getElementById("g_"+elm);
-    
+
+    var reg = document.getElementById("g_" + elm);
+
     /*var styleTranslate = translateX(transX) translateY(transY) scale(scale.toString());*/
-    console.log("translateX("+transX+"px) translateY("+transY+"px) scale("+scalevar+")");
-   
-    
-     console.log(reg.style.transform);
-    reg.style.transform = "translateX("+transX.toString()+"px) translateY("+ transY.toString()+"px) scale("+scalevar.toString()+")";
-  
-    
+    console.log("translateX(" + transX + "px) translateY(" + transY + "px) scale(" + scalevar + ")");
+
+
+    console.log(reg.style.transform);
+    reg.style.transform = "translateX(" + transX.toString() + "px) translateY(" + transY.toString() + "px) scale(" + scalevar.toString() + ")";
+
+
     /*changer le css des classes .g_nom-de-la-region*/
 
 }
+
+
 
