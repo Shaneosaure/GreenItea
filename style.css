@@ -1,7 +1,7 @@
-
 :root {
     --vh: 100vh;
-  }
+}
+
 /** Basket burger menu */
 .nav #basket {
     display: none;
@@ -19,86 +19,135 @@
     margin-bottom: 70px;
     margin-right: 2%;
     height: 90vh;
-    display:inline-block;
-    width:45%;
+    display: inline-block;
+    width: 45%;
 }
-.mapblock::-webkit-scrollbar{
+
+.mapblock::-webkit-scrollbar {
     display: none;
 }
+
 .amcharts-chart-div {
     text-align: center;
 }
+
+.dotdetail {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.dotdetail .dotdetailtext {
+    visibility: hidden;
+    width: 500px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.dotdetail:hover .dotdetailtext {
+    visibility: visible;
+}
+
 /* css de chaque région */
 #Auvergne-Rhône-Alpes {
-    display:visible;
+    display: visible;
 }
+
 #Centre-Val-de-Loire {
-    display:visible;
+    display: visible;
 }
+
 #Pays-de-la-Loire {
-    display:visible;
+    display: visible;
 }
+
 #Occitanie {
-    display:visible;
+    display: visible;
 }
+
 #Hauts-de-France {
-    display:visible;
+    display: visible;
 }
+
 #Normandie {
-    display:visible;
+    display: visible;
 }
+
 #Provence-Alpes-Côte-dAzur {
-    display:visible;
+    display: visible;
 }
+
 #Île-de-France {
-    display:visible;
+    display: visible;
 }
+
 #Bourgogne-Franche-Comté {
-    display:visible;
+    display: visible;
 }
+
 #Bretagne {
-    display:visible;
+    display: visible;
 }
+
 #Grand-Est {
-    display:visible;
+    display: visible;
 }
+
 #Nouvelle-Aquitaine {
-    display:visible;
+    display: visible;
 }
 
 #g_Bretagne {
     transform: translateX(0) translateY(0) scale(1);
 }
+
 #g_Bourgogne-Franche-Comté {
     transform: translateX(0) translateY(0) scale(1);
 }
+
 #g_Auvergne-Rhône-Alpes {
     transform: translateX(0) translateY(0) scale(1);
 }
+
 #g_Centre-Val-de-Loire {
     transform: translateX(0) translateY(0) scale(1);
 }
+
 #g_Pays-de-la-Loire {
     transform: translateX(0) translateY(0) scale(1);
 }
+
 #g_Occitanie {
     transform: translateX(0) translateY(0) scale(1);
 }
+
 #g_Hauts-de-France {
     transform: translateX(0) translateY(0) scale(1);
 }
+
 #g_Normandie {
     transform: translateX(0) translateY(0) scale(1);
 }
+
 #g_Provence-Alpes-Côte-dAzur {
     transform: translateX(0) translateY(0) scale(1);
 }
+
 #g_Île-de-France {
     transform: translateX(0) translateY(0) scale(1);
 }
+
 #g_Grand-Est {
     transform: translateX(0) translateY(0) scale(1);
 }
+
 #g_Nouvelle-Aquitaine {
     transform: translateX(0) translateY(0) scale(1);
 }
@@ -106,7 +155,13 @@
 .centralblock {
     display: flex;
     justify-content: space-evenly;
+}#closebutton {
+    z-index: 1;
+    display:"visible";
 }
+
+
+
 
 
 
@@ -122,10 +177,11 @@
     margin-left: 2%;
     margin-bottom: 70px;
     height: 90vh;
-   display:inline-block;
-   width:45%;
+    display: inline-block;
+    width: 45%;
 }
-.listblock::-webkit-scrollbar{
+
+.listblock::-webkit-scrollbar {
     display: none;
 }
 
@@ -151,18 +207,20 @@
     cursor:pointer;
     transition:all .5s;
 }
-#close-menu{
+
+#close-menu {
     display: none;
 }
-#basket{
-    transition:transform .5s;
-    position:absolute;
+
+#basket {
+    transition: transform .5s;
+    position: absolute;
     top: 0;
     right: 0;
-    width:100%;
-    max-width:480px;
-    background:#fff;
-    transform:translateY(-300px);
+    width: 100%;
+    max-width: 480px;
+    background: #fff;
+    transform: translateY(-300px);
     box-sizing: border-box;
     border: 2px solid #000000;
     overflow-y: auto;
@@ -170,8 +228,9 @@
     scrollbar-width: auto;
     -ms-overflow-style: none;
 }
-#basket.show-menu{
-    transform:translateY(51px);
+
+#basket.show-menu {
+    transform: translateY(51px);
 }
 
 /**Bouton filter résultat Reset*/
@@ -183,13 +242,14 @@
     display: flex;
     flex-direction: column;
 }
+
 .flex-child {
     -webkit-box-flex: 1 1 auto;
-    -moz-box-flex:  1 1 auto;
-    -webkit-flex:  1 1 auto;
-    -ms-flex:  1 1 auto;
-    flex:  1 1 auto;
-    display:grid;
+    -moz-box-flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 10px;
     background-color: #ffffff;
@@ -202,12 +262,12 @@
     display: flex;
     /** flex-wrap: wrap; */
     align-content: center;
-    padding-right:2.5%;
+    padding-right: 2.5%;
     padding-left: 2.5%;
     background-color: #ffffff;
-  }
-  
-.filter > div {
+}
+
+.filter>div {
     /** background-color: #ffffff;*/
     width: 33%;
     text-align: center;
@@ -215,17 +275,15 @@
     font-size: 100%;
 }
 
-#bulletpoint{
+#bulletpoint {
     list-style-type: none;
     text-align: center;
     padding: 0%;
 }
 
-#bulletpoint_long{
+#bulletpoint_long {
     columns: 2;
     list-style-type: none;
     text-align: center;
     padding: 0%;
 }
-
-
