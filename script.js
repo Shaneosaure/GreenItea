@@ -1856,12 +1856,9 @@ function SendMail() {
 /**fonction pour faire afficher que la bonne région */
 const listRegion =["Auvergne-Rhône-Alpes", "Centre-Val-de-Loire", "Pays-de-la-Loire", "Occitanie", "Hauts-de-France", "Normandie", "Provence-Alpes-Côte-dAzur", "Île-de-France", "Bourgogne-Franche-Comté", "Bretagne", "Grand-Est", "Nouvelle-Aquitaine"]
 
-
-
-  function showRegion(nameelm, locx, locy) {
+function showRegion(nameelm, locx, locy) {
     for (var i = 0; i < listRegion.length; i++) {
         if(nameelm != listRegion[i]) {
-           
             setButtonsDisplayRegion(listRegion[i], 'none');
         }
         else{
@@ -1889,15 +1886,16 @@ function modifyRegionParameters(elm, locx, locy){
     var transY = (0.9 * vh / 2) - (locy-420) * 2 * vh / 540;
    
     var scalevar = vw/540 ;
+    console.log(vw)
     
     var reg = document.getElementById("g_"+elm);
     
     /*var styleTranslate = translateX(transX) translateY(transY) scale(scale.toString());*/
-    console.log("translateX("+transX+") translateY("+ transY+") scale("+scalevar+")");
+    console.log("translateX("+transX+"px) translateY("+transY+"px) scale("+scalevar+")");
    
     
      console.log(reg.style.transform);
-    reg.style.transform = translateX(transX+'px'), translateY(transY+'px'), scale(scalevar);
+    reg.style.transform = "translateX("+transX.toString()+"px) translateY("+ transY.toString()+"px) scale("+scalevar.toString()+")";
   
     
     /*changer le css des classes .g_nom-de-la-region*/
