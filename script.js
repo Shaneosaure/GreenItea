@@ -1646,12 +1646,12 @@ function filter() {
         values.push(checkbox.value);
     });
     values.push("\nLocalisation:")
-    cblocalisation.forEach((radio) => {
-        values.push(radio.value);
+    cblocalisation.forEach((checkbox) => {
+        values.push(checkbox.value);
     });
     values.push("\nValidation:")
-    cbvalidation.forEach((radio) => {
-        values.push(radio.value);
+    cbvalidation.forEach((checkbox) => {
+        values.push(checkbox.value);
     });
     values.push("\nDurée:")
     cbduree.forEach((checkbox) => {
@@ -1662,6 +1662,7 @@ function filter() {
         values.push(checkbox.value);
     });
     console.log(values);
+    console.log(formationsList.formationsList[5].duree);
 }
 
 
@@ -1751,7 +1752,7 @@ function addBasket(btnId) {
     let li = document.createElement("li");
     li.setAttribute('id', 'b_' + btnId);
     var verif = true;
-    li.innerHTML = document.getElementById(btnId).firstChild.innerText;
+    li.innerText = document.getElementById(btnId).firstChild.innerText;
 
     /** si pas empty, on verifie les doublons */
     for (let i = 0; i < basketList.length; i++) {
@@ -1770,49 +1771,6 @@ function addBasket(btnId) {
         input.setAttribute('value', '-');
         basketList.push('b_' + btnId);
         li.appendChild(input);
-
-        /** On ajoute aussi des éléments cachés */
-        for (let i = 0; i < basketList.length; i++) {
-            if (basketList[i] == 'b_' + btnId) {
-                
-                let ul = document.createElement("ul");
-                ul.setAttribute('id', 'details');
-                ul.setAttribute('class', 'details');
-                ul.style.display= 'none';
-                let il2 = document.createElement("il");
-                il2.innerHTML = "Durée: " + formationsList.formationsList[btnId].duree + "jour(s)";
-                ul.appendChild(il2);
-                let il3 = document.createElement("il");
-                il3.innerHTML = "Type de formation: " + formationsList.formationsList[btnId].type_formation;
-                ul.appendChild(il3);
-                let il4 = document.createElement("il");
-                il4.innerHTML = "Lieu: " + formationsList.formationsList[btnId].ville;
-                ul.appendChild(il4);
-                let il5 = document.createElement("il");
-                il5.innerHTML = "Type de structure: " + formationsList.formationsList[btnId].structure;
-                ul.appendChild(il5);
-                let il6 = document.createElement("il");
-                il6.innerHTML = "Type d'organisme: " + formationsList.formationsList[btnId].type_organisme;
-                ul.appendChild(il6);
-                let il7 = document.createElement("il");
-                il7.innerHTML = "Nom de l'organisme: " + formationsList.formationsList[btnId].nom;
-                ul.appendChild(il7);
-                let il8 = document.createElement("il");
-                il8.innerHTML = "Modalités de la formation: " + formationsList.formationsList[btnId].modalites;
-                ul.appendChild(il8);
-                let il9 = document.createElement("il");
-                il9.innerHTML = "Acquis: " + formationsList.formationsList[btnId].acquis;
-                ul.appendChild(il9);
-                let il10 = document.createElement("il");
-                il10.innerHTML = "Contenu de la formation: " + formationsList.formationsList[btnId].contenu;
-                ul.appendChild(il10);
-                let il11 = document.createElement("il");
-                il11.innerHTML = "URL de la formation: " + formationsList.formationsList[btnId].url;
-                ul.appendChild(il11);
-                li.appendChild(ul);
-
-            }
-        }
     }
 
 }
@@ -1846,15 +1804,6 @@ function closeBasket() {
     }, 10);
 }
 
-/** fonction pour afficher les details du panier le temps de print */
-function setDetailsDisplay(elm,prop){
-    var details = elm.getElementsByClassName("details");
-    for (var i = 0; i < details.length; i++) {
-        details[i].style.display= prop;
-    }
-}
-
-/** fonction pour afficher les details du panier le temps de print */
 function setButtonsDisplay(elm, prop) {
     var btns = elm.getElementsByClassName("subButton");
     var other = elm.getElementsByClassName("toolsBasket");
@@ -1869,7 +1818,6 @@ function setButtonsDisplay(elm, prop) {
 function downloadBasket() {
     var content = document.getElementById('basket');
     setButtonsDisplay(content, 'none')
-    setDetailsDisplay(content, 'block');
     var opt = {
         margin: 1,
         filename: 'MonPanier.pdf',
@@ -1879,12 +1827,28 @@ function downloadBasket() {
     };
     html2pdf().set(opt).from(content.innerHTML).save();
     setButtonsDisplay(content, '');
-    setDetailsDisplay(content, 'none');
 }
 
 /**fonction pour Email */
 const SubjectVariable = "Demande de Devis de Formation";
 const BodyVariable = "Ici on mets les formations et tout";
+/**function SendMail(){
+    var params={
+        from_name : document.getElementById("fullName").value,
+        email_id : document.getElementById("email_id").value,
+        message:  document.getElementById("message").value,
+        /**formationsList.formationsList[0].intitule,
+function SendMail() {
+    var params = {
+        from_name: document.getElementById("fullName").value,
+        email_id: document.getElementById("email_id").value,
+        message: document.getElementById("message").value,
+        /**formationsList.formationsList[0].intitule, 
+    }
+    emailjs.send("service_zfl00os", "template_mm1u33n", params).then(function (res) {
+        alert("Success" + res.status);
+    });
+}*/
 
 
 
@@ -1911,7 +1875,7 @@ function setButtonsDisplayRegion(elm, prop) {
     
     var reg = document.getElementById(elm);
     reg.style.display = prop;
-    console.log(reg);
+    
   
 }
 
@@ -1929,12 +1893,11 @@ function modifyRegionParameters(elm, locx, locy){
     var reg = document.getElementById("g_"+elm);
     
     /*var styleTranslate = translateX(transX) translateY(transY) scale(scale.toString());*/
-    console.log("translateX("+transX.toString()+") translateY("+ transY.toString()+") scale("+scalevar.toString()+")");
-   css = {
-transform: translateX(transX),
-   }
+    console.log("translateX("+transX+") translateY("+ transY+") scale("+scalevar+")");
+   
     
-    reg.style.transform.css=css;   /*Object.assign(reg.style,{transform: translateX(transX)});*/
+     console.log(reg.style.transform);
+    reg.style.transform = translateX(transX+'px'), translateY(transY+'px'), scale(scalevar);
   
     
     /*changer le css des classes .g_nom-de-la-region*/
