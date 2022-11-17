@@ -1854,7 +1854,7 @@ function SendMail() {
 
 
 /**fonction pour faire afficher que la bonne région */
-const listRegion = ["auvergne-rhone-alpes", "centre-val-de-loire", "pays-de-la-loire", "occitanie", "hauts-de-france", "normandie", "provence-alpes-côte-dazur", "ile-de-france", "bourgogne-franche-comté", "bretagne", "grand-est", "nouvelle-aquitaine"]
+const listRegion = ["auvergne-rhone-alpes", "centre-val-de-loire", "pays-de-la-loire", "occitanie", "hauts-de-france", "normandie", "provence-alpes-cote-dazur", "ile-de-france", "bourgogne-franche-comté", "bretagne", "grand-est", "nouvelle-aquitaine"]
 
 function showRegion(nameelm, locx, locy) {
     for (var i = 0; i < listRegion.length; i++) {
