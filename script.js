@@ -1739,12 +1739,12 @@ function filter() {
         values.push(checkbox.value);
     });
     values.push("\nStructure:")
-    cbstructure.forEach((checkbox) => {
-        values.push(checkbox.value);
-    });
-    values.push("\nLocalisation:")
     cblocalisation.forEach((radio) => {
         values.push(radio.value);
+    });
+    values.push("\nLocalisation:")
+    cblocalisation.forEach((checkbox) => {
+        values.push(checkbox.value);
     });
     values.push("\nValidation:")
     cbvalidation.forEach((radio) => {
@@ -1781,17 +1781,6 @@ window.onload = function affichagelist() {
             h4.innerHTML = formationsList.formationsList[i].intitule;
         }
         li.appendChild(h4);
-
-        /**Pastille détail */
-        var dotdetail = document.createElement("div");
-        dotdetail.setAttribute('class', 'dotdetail');
-        dotdetail.innerHTML = "?";
-        var spandetail = document.createElement("span");
-        spandetail.setAttribute('class','dotdetailtext');
-        spandetail.innerHTML= formationsList.formationsList[i].contenu;
-        dotdetail.appendChild(spandetail)
-        li.appendChild(dotdetail);
-
 
         /** Nom organisme */
         let nom = document.createElement("p");
@@ -1872,16 +1861,6 @@ function afficheFilterList() {
             h4.innerHTML = filtersList.filtersList[i].intitule;
         }
         li.appendChild(h4);
-
-        /**Pastille détail */
-        var dotdetail = document.createElement("div");
-        dotdetail.setAttribute('class', 'dotdetail');
-        dotdetail.innerHTML = "?";
-        var spandetail = document.createElement("span");
-        spandetail.setAttribute('class','dotdetailtext');
-        spandetail.innerHTML= filtersList.filtersList[i].contenu;
-        dotdetail.appendChild(spandetail)
-        li.appendChild(dotdetail);
 
         /** Nom organisme */
         let nom = document.createElement("p");
@@ -2071,7 +2050,7 @@ function downloadBasket() {
     setDetailsDisplay(content, 'block');
     var opt = {
         margin: 1,
-        filename: 'MaFormation.pdf',
+        filename: 'MonPanier.pdf',
         image: { type: 'jpeg', quality: 0.98 },
         html2canvas: { scale: 2 },
         jsPDF: { unit: 'in', format: 'A4', orientation: 'portrait' }
@@ -2085,12 +2064,8 @@ function downloadBasket() {
 const SubjectVariable = "Demande de Devis de Formation";
 /**const BodyVariable = "Bonjour,\n Je souhaiterais avoir un devi sur ces formations suivantes:"+basketList;*/
 function sendMail(){
-    var aaa = "";
-    for (var i = 0; i < basketList.length; i++) {
-        aaa=aaa+document.getElementById('b_'+i).innerText+"%0D%0A";
-        console.log(aaa);
-    }    
-    var body= "Bonjour,%0D%0AJe souhaiterai un devis sur ces formations suivante:%0D%0A"+aaa+"%0D%0AMerci de votre retour%0D%0ACordialement,";
+    var aaa = document.getElementById('basket-list');
+    var body= "Bonjour,\nJe souhaiterai un devis sur ces formations suivante:"+aaa.innerText+"\nMerci de votre retour\nCordialement,";
     window.location.href = "mailto:vvoisin.ing2024@esaip.org ?subject=Demande de Devis de Formation &body="+body;
 }
 /**function SendMail(){
@@ -2142,7 +2117,7 @@ return
 
 
 function setButtonsDisplayRegion(elm, prop) {
-    var reg = document.getElementById(elm);
+    var reg = document.getElementById("g_"+elm);
     reg.style.display = prop;
 }
 
