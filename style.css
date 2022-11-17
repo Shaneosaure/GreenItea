@@ -1,3 +1,7 @@
+/**initiation variables*/
+:root {
+    --vh: 100vh;
+  }
 /** Basket burger menu */
 .nav #basket {
     display: none;
@@ -14,13 +18,64 @@
     -ms-overflow-style: none;
     margin-bottom: 70px;
     margin-right: 2%;
-    height: 600px;
+    height: 90vh;
     display:inline-block;
     width:45%;
 }
 .mapblock::-webkit-scrollbar{
     display: none;
 }
+.amcharts-chart-div {
+    text-align: center;
+}
+/* css de chaque région */
+#Auvergne-Rhône-Alpes {
+    display:visible;
+}
+#Centre-Val-de-Loire {
+    display:visible;
+}
+#Pays-de-la-Loire {
+    display:visible;
+}
+#Occitanie {
+    display:visible;
+}
+#Hauts-de-France {
+    display:visible;
+}
+#Normandie {
+    display:visible;
+}
+#Provence-Alpes-Côte-dAzur {
+    display:visible;
+}
+#Île-de-France {
+    display:visible;
+}
+#Bourgogne-Franche-Comté {
+    display:visible;
+}
+#Bretagne {
+    display:visible;
+}
+#Grand-Est {
+    display:visible;
+}
+#Nouvelle-Aquitaine {
+    display:visible;
+}
+/*
+.g_bretagne {
+    transform: translateX(calc(var(--vh, 100vh) * (1.05-(133/540))))  scale(calc(var(--vh, 100vh) / 540));
+}*/
+/*
+.g_Bourgogne-Franche-Comté {
+ 
+    
+}*/
+
+
 
 
 .listblock {
@@ -34,13 +89,14 @@
     -ms-overflow-style: none;
     margin-left: 2%;
     margin-bottom: 70px;
-    height: 600px;
-    display:inline-block;
+    height: 90vh;
+   display:inline-block;
    width:45%;
 }
 .listblock::-webkit-scrollbar{
     display: none;
 }
+
 
 .bouton-menu{
     position:absolute;

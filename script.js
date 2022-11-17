@@ -1721,4 +1721,11 @@ function downloadBasket() {
 }
 
 
-/**fonction pour zoomer */
+/**fonction pour calculer le translate*/
+
+const appHeight = () => {
+    const vh = window.innerHeight;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+  window.addEventListener('resize', appHeight)
+  appHeight()
