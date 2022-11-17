@@ -1739,12 +1739,12 @@ function filter() {
         values.push(checkbox.value);
     });
     values.push("\nStructure:")
-    cbstructure.forEach((checkbox) => {
-        values.push(checkbox.value);
-    });
-    values.push("\nLocalisation:")
     cblocalisation.forEach((radio) => {
         values.push(radio.value);
+    });
+    values.push("\nLocalisation:")
+    cblocalisation.forEach((checkbox) => {
+        values.push(checkbox.value);
     });
     values.push("\nValidation:")
     cbvalidation.forEach((radio) => {
@@ -2236,7 +2236,7 @@ function downloadBasket() {
     setDetailsDisplay(content, 'block');
     var opt = {
         margin: 1,
-        filename: 'MaFormation.pdf',
+        filename: 'MonPanier.pdf',
         image: { type: 'jpeg', quality: 0.98 },
         html2canvas: { scale: 2 },
         jsPDF: { unit: 'in', format: 'A4', orientation: 'portrait' }
@@ -2288,7 +2288,7 @@ function showRegion(nameelm, locx, locy) {
 
 
 function setButtonsDisplayRegion(elm, prop) {
-    var reg = document.getElementById(elm);
+    var reg = document.getElementById("g_"+elm);
     reg.style.display = prop;
 }
 
