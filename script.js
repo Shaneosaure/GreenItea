@@ -1772,7 +1772,7 @@ function addBasket(btnId) {
         basketList.push('b_' + btnId);
         li.appendChild(input);
     }
-    
+
 }
 
 
@@ -1804,10 +1804,20 @@ function closeBasket() {
     }, 10);
 }
 
+function setButtonsDisplay(elm, prop) {
+    var btns = elm.getElementsByClassName("subButton");
+    var other = elm.getElementsByClassName("toolsBasket");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].style.display = prop;
+    }
+    for (var i = 0; i < other.length; i++) {
+        other[i].style.display = prop;
+    }
+}
 /**fonction pour download le panier en pdf */
 function downloadBasket() {
-
-    var element = document.getElementById("basket-list");
+    var content = document.getElementById('basket');
+    setButtonsDisplay(content, 'none')
     var opt = {
         margin: 1,
         filename: 'MonPanier.pdf',
@@ -1815,7 +1825,8 @@ function downloadBasket() {
         html2canvas: { scale: 2 },
         jsPDF: { unit: 'in', format: 'A4', orientation: 'portrait' }
     };
-    html2pdf().set(opt).from(element).save();
+    html2pdf().set(opt).from(content.innerHTML).save();
+    setButtonsDisplay(content, '');
 }
 
 /**fonction pour Email */
