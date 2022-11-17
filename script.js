@@ -1984,8 +1984,7 @@ function filterRegion(ville) {
 }
 
 /**fonction pour faire afficher que la bonne région */
-const listRegion = ["auvergne-rhone-alpes", "centre-val-de-loire", "pays-de-la-loire", "occitanie", "hauts-de-france", "normandie", "provence-alpes-cote-dazur", "ile-de-france", "bourgogne-franche-comté", "bretagne", "grand-est", "nouvelle-aquitaine"]
-
+const listRegion =["Auvergne-Rhône-Alpes", "Centre-Val-de-Loire", "Pays-de-la-Loire", "Occitanie", "Hauts-de-France", "Normandie", "Provence-Alpes-Côte-dAzur", "Île-de-France", "Bourgogne-Franche-Comté", "Bretagne", "Grand-Est", "Nouvelle-Aquitaine"]
 function showRegion(nameelm, locx, locy) {
     for (var i = 0; i < listRegion.length; i++) {
         if (nameelm != listRegion[i]) {

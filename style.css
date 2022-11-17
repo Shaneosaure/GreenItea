@@ -29,77 +29,77 @@
     text-align: center;
 }
 /* css de chaque région */
-#auvergne-rhone-alpes {
+#Auvergne-Rhône-Alpes {
     display:visible;
 }
-#centre-val-de-loire {
+#Centre-Val-de-Loire {
     display:visible;
 }
-#pays-de-la-loire {
+#Pays-de-la-Loire {
     display:visible;
 }
-#occitanie {
+#Occitanie {
     display:visible;
 }
-#hauts-de-hrance {
+#Hauts-de-France {
     display:visible;
 }
-#normandie {
+#Normandie {
     display:visible;
 }
-#provence-alpes-cote-dazur {
+#Provence-Alpes-Côte-dAzur {
     display:visible;
 }
-#ile-de-france {
+#Île-de-France {
     display:visible;
 }
-#bourgogne-franche-comté {
+#Bourgogne-Franche-Comté {
     display:visible;
 }
-#bretagne {
+#Bretagne {
     display:visible;
 }
-#grand-est {
+#Grand-Est {
     display:visible;
 }
-#nouvelle-aquitaine {
+#Nouvelle-Aquitaine {
     display:visible;
 }
 
-#g_bretagne {
+#g_Bretagne {
     transform: translateX(0) translateY(0) scale(1);
 }
-#g_bourgogne-franche-comte {
+#g_Bourgogne-Franche-Comté {
     transform: translateX(0) translateY(0) scale(1);
 }
-#g_auvergne-rhone-alpes {
+#g_Auvergne-Rhône-Alpes {
     transform: translateX(0) translateY(0) scale(1);
 }
-#g_centre-val-de-loire {
+#g_Centre-Val-de-Loire {
     transform: translateX(0) translateY(0) scale(1);
 }
-#g_pays-de-la-loire {
+#g_Pays-de-la-Loire {
     transform: translateX(0) translateY(0) scale(1);
 }
-#g_occitanie {
+#g_Occitanie {
     transform: translateX(0) translateY(0) scale(1);
 }
-#g_hauts-de-france {
+#g_Hauts-de-France {
     transform: translateX(0) translateY(0) scale(1);
 }
-#g_normandie {
+#g_Normandie {
     transform: translateX(0) translateY(0) scale(1);
 }
-#g_provence-alpes-cote-dazur {
+#g_Provence-Alpes-Côte-dAzur {
     transform: translateX(0) translateY(0) scale(1);
 }
-#g_ile-de-france {
+#g_Île-de-France {
     transform: translateX(0) translateY(0) scale(1);
 }
-#g_grand-est {
+#g_Grand-Est {
     transform: translateX(0) translateY(0) scale(1);
 }
-#g_nouvelle-aquitaine {
+#g_Nouvelle-Aquitaine {
     transform: translateX(0) translateY(0) scale(1);
 }
 
