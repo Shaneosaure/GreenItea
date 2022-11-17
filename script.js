@@ -1941,8 +1941,11 @@ function afficheFilterList() {
     }
 }
 
+/**fonction pour la barre de recherche */
 function search(){
-    const result = document.getElementById("searchBar").value.toLowerCase();
+    /**trouve la valeur contenue dans la barre de recherche */
+    var result = document.getElementById("searchBar").value.toLowerCase();
+    /**si valeur non nulle, chercher dans la liste formations; retourne la position du string value quand il le trouve, ou -1 sinon   */
     if(result!=""){
         for (let i = 0; i < formationsList.formationsList.length; i++) {
             let position1=formationsList.formationsList[i].intitule.toLowerCase().search(result);
