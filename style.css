@@ -6,10 +6,14 @@
     background-color: #156531;
     box-shadow: 1px 1px 1px 1px #0e4321;
 }
+.header, .footer{
+    border-radius: 5%;
+}
 
 .body{
     background-color: #1D8742
 }
+
 
 /** Basket burger menu */
 .nav #basket {
@@ -42,12 +46,14 @@
 
 .dotdetail {
     position: relative;
-    font-weight:bold;
+    font-weight:bolder;
+    font-size:larger;
     display: inline-block;
-    border-bottom: 1px dotted black;
+    border-bottom: 2px dotted black;
 }
 .dotdetailtext{
     font-weight: normal;
+    font-size: normal;
 }
 
 .dotdetail .dotdetailtext {
@@ -76,53 +82,61 @@
     margin-left: 90% ;
 }
 
+.addButton{
+    border: 2px solid #000;
+    border-radius: 50%;
+    overflow: hidden;
+    color: #000;
+    background-color: #156531;
+}
+
 /* css de chaque région */
 #Auvergne-Rhône-Alpes {
-    display: block;
+    display: visible;
 }
 
 #Centre-Val-de-Loire {
-    display: block;
+    display: visible;
 }
 
 #Pays-de-la-Loire {
-    display: block;
+    display: visible;
 }
 
 #Occitanie {
-    display: block;
+    display: visible;
 }
 
 #Hauts-de-France {
-    display: block;
+    display: visible;
 }
 
 #Normandie {
-    display: block;
+    display: visible;
 }
 
 #Provence-Alpes-Côte-dAzur {
-    display: block;
+    display: visible;
 }
 
 #Île-de-France {
-    display: block;
+    display: visible;
 }
 
 #Bourgogne-Franche-Comté {
-    display: block;
+    display: visible;
 }
 
 #Bretagne {
-    display: block;
+    display: visible;
 }
 
 #Grand-Est {
-    display: block;
+    display: visible;
 }
 
 #Nouvelle-Aquitaine {
-    display: block;
+    display: visible;
 }
 
 #g_Bretagne {
@@ -134,7 +148,6 @@
 }
 
 #g_Auvergne-Rhône-Alpes {
-    display:block;
     transform: translateX(0) translateY(0) scale(1);
 }
 
@@ -283,8 +296,7 @@
 .filter {
     display: flex;
     align-content: center;
-    padding-right: 2.5%;
-    padding-left: 2.5%;
+    border-radius: 2%;
 }
 
 .filter>div {
@@ -296,8 +308,7 @@
 
 #bulletpoint, #bulletpoint_long {
     list-style-type: none;
-    text-align: center;
-    padding: 0%;
+    text-align: left;
 }
 
 #bulletpoint_long {
