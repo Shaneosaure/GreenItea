@@ -196,9 +196,12 @@
 }
 
 
-
-
-
+.mapblock{
+    background-color:#1E433C
+}
+.listblock{
+    background-color:#24A854
+}
 
 .listblock {
     box-sizing: border-box;
@@ -218,6 +221,10 @@
 
 .listblock::-webkit-scrollbar {
     display: none;
+}
+
+.showinglist{
+    font-size:5% ;
 }
 
 #searchBar{
@@ -299,7 +306,7 @@
     border-radius: 2%;
 }
 
-.filter_six{
+.filter_five{
     font-size: large;
     font-weight: bold;
     text-decoration: underline; 
