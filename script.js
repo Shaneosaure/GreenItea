@@ -1955,34 +1955,34 @@ function addBasket(btnId) {
                 ul.setAttribute('id', 'details');
                 ul.setAttribute('class', 'details');
                 ul.style.display= 'none';
-                let il2 = document.createElement("il");
+                let il2 = document.createElement("li");
                 il2.innerHTML = "Durée: " + formationsList.formationsList[btnId].duree + "jour(s)";
                 ul.appendChild(il2);
-                let il3 = document.createElement("il");
+                let il3 = document.createElement("li");
                 il3.innerHTML = "Type de formation: " + formationsList.formationsList[btnId].type_formation;
                 ul.appendChild(il3);
-                let il4 = document.createElement("il");
+                let il4 = document.createElement("li");
                 il4.innerHTML = "Lieu: " + formationsList.formationsList[btnId].ville;
                 ul.appendChild(il4);
-                let il5 = document.createElement("il");
+                let il5 = document.createElement("li");
                 il5.innerHTML = "Type de structure: " + formationsList.formationsList[btnId].structure;
                 ul.appendChild(il5);
-                let il6 = document.createElement("il");
+                let il6 = document.createElement("li");
                 il6.innerHTML = "Type d'organisme: " + formationsList.formationsList[btnId].type_organisme;
                 ul.appendChild(il6);
-                let il7 = document.createElement("il");
+                let il7 = document.createElement("li");
                 il7.innerHTML = "Nom de l'organisme: " + formationsList.formationsList[btnId].nom;
                 ul.appendChild(il7);
-                let il8 = document.createElement("il");
+                let il8 = document.createElement("li");
                 il8.innerHTML = "Modalités de la formation: " + formationsList.formationsList[btnId].modalites;
                 ul.appendChild(il8);
-                let il9 = document.createElement("il");
+                let il9 = document.createElement("li");
                 il9.innerHTML = "Acquis: " + formationsList.formationsList[btnId].acquis;
                 ul.appendChild(il9);
-                let il10 = document.createElement("il");
+                let il10 = document.createElement("li");
                 il10.innerHTML = "Contenu de la formation: " + formationsList.formationsList[btnId].contenu;
                 ul.appendChild(il10);
-                let il11 = document.createElement("il");
+                let il11 = document.createElement("li");
                 il11.innerHTML = "URL de la formation: " + formationsList.formationsList[btnId].url;
                 ul.appendChild(il11);
                 li.appendChild(ul);
@@ -2064,8 +2064,8 @@ function downloadBasket() {
 const SubjectVariable = "Demande de Devis de Formation";
 /**const BodyVariable = "Bonjour,\n Je souhaiterais avoir un devi sur ces formations suivantes:"+basketList;*/
 function sendMail(){
-    var aaa = document.getElementById('basket');
-    var body= "test"+aaa.outerHTML;
+    var aaa = document.getElementById('basket-list');
+    var body= "Bonjour,\nJe souhaiterai un devis sur ces formations suivante:"+aaa.innerText+"\nMerci de votre retour\nCordialement,";
     window.location.href = "mailto:vvoisin.ing2024@esaip.org ?subject=Demande de Devis de Formation &body="+body;
 }
 /**function SendMail(){
