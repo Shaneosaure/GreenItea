@@ -299,6 +299,13 @@
     border-radius: 2%;
 }
 
+.filter_six{
+    font-size: large;
+    font-weight: bold;
+    text-decoration: underline; 
+
+}
+
 .filter>div {
     width: 33%;
     text-align: center;
