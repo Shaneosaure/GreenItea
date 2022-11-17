@@ -1764,7 +1764,7 @@ function filter() {
 
 
 /** au chargement de la page, la liste s'affiche*/
-window.onload = function affichagelist() {
+window.onload = function affichageload() {
     let list = document.getElementById("showinglist");
 
     for (let i = 0; i < formationsList.formationsList.length; i++) {
@@ -1850,6 +1850,100 @@ window.onload = function affichagelist() {
         li.appendChild(horizontalline);
     }
 }
+
+function affichagelist() {
+    /**vidage filter list */
+    let list1 = document.getElementById("showinglist");
+    for (let i = 0; i < filtersList.filtersList.length; i++) {
+        list1.removeChild(list1.lastChild);
+    }
+
+    let list = document.getElementById("showinglist");
+
+    for (let i = 0; i < formationsList.formationsList.length; i++) {
+        /**on crée un li */
+        let li = document.createElement("li");
+        li.setAttribute('id', i);
+        list.appendChild(li);
+
+        /** Intitulé */
+        let h4 = document.createElement("h4");
+        if (formationsList.formationsList[i].intitule == "") {
+            h4.innerHTML = "Pas d'intitulé";
+        } else {
+            h4.innerHTML = formationsList.formationsList[i].intitule;
+        }
+        li.appendChild(h4);
+
+        /**Pastille détail */
+        var dotdetail = document.createElement("div");
+        dotdetail.setAttribute('class', 'dotdetail');
+        dotdetail.innerHTML = "?";
+        var spandetail = document.createElement("span");
+        spandetail.setAttribute('class', 'dotdetailtext');
+        spandetail.innerHTML = formationsList.formationsList[i].contenu;
+        dotdetail.appendChild(spandetail)
+        li.appendChild(dotdetail);
+
+
+        /** Nom organisme */
+        let nom = document.createElement("p");
+        if (formationsList.formationsList[i].nom == "") {
+            nom.innerHTML = "Organisme: non spécifié";
+        } else {
+            nom.innerHTML = "Organisme: " + formationsList.formationsList[i].nom;
+        }
+        li.appendChild(nom);
+
+        /** Ville */
+        let ville = document.createElement("p");
+        if (formationsList.formationsList[i].ville == "") {
+            ville.innerHTML = "Lieu: non spécifié";
+        } else {
+            ville.innerHTML = "Lieu: " + formationsList.formationsList[i].ville;
+        }
+        li.appendChild(ville);
+
+        /** Duree */
+        let duree = document.createElement("p");
+        if (formationsList.formationsList[i].duree == "") {
+            duree.innerHTML = "Durée: non spécifiée";
+        } else {
+            duree.innerHTML = "Durée: " + formationsList.formationsList[i].duree + " jour(s)";
+        }
+        li.appendChild(duree);
+
+        /** Structure */
+        let structure = document.createElement("p");
+        if (formationsList.formationsList[i].structure == "") {
+            structure.innerHTML = "Structure: non spécifiée";
+        } else {
+            structure.innerHTML = "Structure: " + formationsList.formationsList[i].structure;
+        }
+        li.appendChild(structure);
+
+        /** Type de formation */
+        let type_formation = document.createElement("p");
+        if (formationsList.formationsList[i].type_formation == "") {
+            type_formation.innerHTML = "Type de formation: spécifiée";
+        } else {
+            type_formation.innerHTML = "Type de formation: " + formationsList.formationsList[i].type_formation;
+        }
+        li.appendChild(type_formation);
+
+        var input = document.createElement("input");
+        input.setAttribute('class', 'addButton');
+        input.setAttribute('type', 'button');
+        input.setAttribute('onclick', 'addBasket(this.parentNode.id)');
+        input.setAttribute('value', '+');
+        li.appendChild(input);
+
+        /** ligne horizontal */
+        let horizontalline = document.createElement("hr");
+        li.appendChild(horizontalline);
+    }
+}
+
 
 function afficheFilterList() {
 
@@ -1941,6 +2035,44 @@ function afficheFilterList() {
     }
 }
 
+function searchList() {
+
+    const result = document.getElementById("searchBar").value.toLowerCase();
+    if (result != "") {
+        for (let i = 0; i < formationsList.formationsList.length; i++) {
+            let position1 = formationsList.formationsList[i].intitule.toLowerCase().search(result);
+            if (position1 != (-1)) {
+                filtersList.filtersList.push(formationsList.formationsList[i]);
+            } else {
+                let position2 = formationsList.formationsList[i].nom.toLowerCase().search(result);
+                if (position2 != (-1)) {
+                    filtersList.filtersList.push(formationsList.formationsList[i]);
+                } else {
+                    let position3 = formationsList.formationsList[i].ville.toLowerCase().search(result);
+                    if (position3 != (-1)) {
+                        filtersList.filtersList.push(formationsList.formationsList[i]);
+                    } else {
+                        let position4 = formationsList.formationsList[i].structure.toLowerCase().search(result);
+                        if (position4 != (-1)) {
+                            filtersList.filtersList.push(formationsList.formationsList[i]);
+                        } else {
+                            let position5 = formationsList.formationsList[i].type_formation.toLowerCase().search(result);
+                            if (position5 != (-1)) {
+                                filtersList.filtersList.push(formationsList.formationsList[i]);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        affichagelist();
+        afficheFilterList();
+        for (let i = 0; i < filtersList.filtersList.length; i++) {
+            filtersList.filtersList.pop();
+        }
+    }
+}
+
 var basketList = [];
 
 /**fonction d'ajout dans le panier */
@@ -1997,37 +2129,37 @@ function addBasket(btnId) {
                     il5.innerHTML = "Type de structure: " + formationsList.formationsList[btnId].structure;
                     ul.appendChild(il5);
                 }
-                if (formationsList.formationsList[btnId].type_organisme!= "" ) {
+                if (formationsList.formationsList[btnId].type_organisme != "") {
                     let il6 = document.createElement("li");
                     il6.innerHTML = "Type d'organisme: " + formationsList.formationsList[btnId].type_organisme;
                     ul.appendChild(il6);
                 }
-                
-                if (formationsList.formationsList[btnId].nom != "" ) {
+
+                if (formationsList.formationsList[btnId].nom != "") {
                     let il7 = document.createElement("li");
                     il7.innerHTML = "Nom de l'organisme: " + formationsList.formationsList[btnId].nom;
                     ul.appendChild(il7);
                 }
-                
-                if (formationsList.formationsList[btnId].modalites !="" ) {
+
+                if (formationsList.formationsList[btnId].modalites != "") {
                     let il8 = document.createElement("li");
                     il8.innerHTML = "Modalités de la formation: " + formationsList.formationsList[btnId].modalites;
                     ul.appendChild(il8);
                 }
-                
-                if (formationsList.formationsList[btnId].acquis!="" ) {
+
+                if (formationsList.formationsList[btnId].acquis != "") {
                     let il9 = document.createElement("li");
                     il9.innerHTML = "Acquis: " + formationsList.formationsList[btnId].acquis;
                     ul.appendChild(il9);
                 }
-                
-                if (formationsList.formationsList[btnId].contenu!="" ) {
+
+                if (formationsList.formationsList[btnId].contenu != "") {
                     let il10 = document.createElement("li");
                     il10.innerHTML = "Contenu de la formation: " + formationsList.formationsList[btnId].contenu;
                     ul.appendChild(il10);
                 }
-                
-                if (formationsList.formationsList[btnId].url!="" ) {
+
+                if (formationsList.formationsList[btnId].url != "") {
                     let il11 = document.createElement("li");
                     il11.innerHTML = "URL de la formation: " + formationsList.formationsList[btnId].url;
                     ul.appendChild(il11);
@@ -2167,15 +2299,12 @@ function modifyRegionParameters(elm, locx, locy) {
 }
 
 function showFullMap() {
-    console.log("entrer dans la fonction");
+
+    affichagelist();
     for (var i = 0; i < listRegion.length; i++) {
         var temp = document.getElementById("g_" + listRegion[i])
-        console.log("entrer dans la fonction 1");
         temp.style.transform = "translateX(0px) translateY(0px) scale(1)";
-        console.log("entrer dans la fonction 2");
         setButtonsDisplayRegion(listRegion[i], '');
-        console.log("entrer dans la fonction 3");
-
     }
 }
 

@@ -13,16 +13,14 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <title>Team N°8</title>
 
-  </script>
-
 </head>
 
 <body class="body">
   <header class="header">
     <h1>Votre formation personnalisée !</h1>
-    <button style="font-size:24px" id="open-menu" class="bouton-menu" value="≡" onclick="openBasket()"><i class="fa fa-shopping-cart"></i></button>
-    
-    <input type="button" id="close-menu" class="bouton-menu" value="×" onclick="closeBasket()">
+    <button style="font-size:24px" id="open-menu" class="bouton-panier" value="basket-menu" onclick="openBasket()"><i class="fa fa-shopping-cart"></i></button>
+    <input type="text" id="searchBar" placeholder="Recherche" onchange="searchList()">
+    <input type="button" id="close-menu" class="bouton-panier" value="×" onclick="closeBasket()">
   </header>
   <nav id="basket">
     <h3>Vos choix de formations: </h3>
