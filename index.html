@@ -16,11 +16,10 @@
   <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
 
   <!-- pour EmailJS-->
-  <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
   </script>
   <script type="text/javascript">
-    (function(){
+    (function () {
       emailjs.init("rGRUQ8TDq-1JT7Gr-");
     })();
   </script>
@@ -36,8 +35,13 @@
   <nav id="basket">
     <h3>Vos choix de formations: </h3>
     <ul id="basket-list"></ul>
-    <a href="#" onclick="javascript:window.location='mailto:vvoisin.ing2024@esaip.org'+'?subject='+SubjectVariable+'&body='+BodyVariable">Demande de devis</a>
-    <input type="button" id="download-basket" class="bouton-download" value="⇩" onclick="downloadBasket()">
+    <div class="toolsBasket">
+      <a href="#" class="mailtoclick"
+        onclick="javascript:window.location='mailto:vvoisin.ing2024@esaip.org'+'?subject='+SubjectVariable+'&body='+BodyVariable">Demande
+        de devis</a>
+      <input type="button" id="download-basket" class="bouton-download" value="⇩" onclick="downloadBasket()">
+    </div>
+
   </nav>
   <main>
 
@@ -363,7 +367,7 @@
       <input type="text" id="email" placeholder="Email ID"><br />
       <input id="message" placeholder="Message"><br />
       <button onclick="SendMail()">Send</button> -->
-      
+
       <!--<a href="mailto:vvoisin.ing2024@esaip.org? &subject=Demande de Devis de Formation &body=Ici on mets les formations et tout">Send Mail</a>-->
     </div>
   </main>
