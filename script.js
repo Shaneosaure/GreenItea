@@ -1724,34 +1724,19 @@ let filtersList = {
 
 function filter() {
     let values = [];
-
     /**query de chaque colonne du tableau*/
-    let cbformation = document.querySelectorAll('input[name="formation"]:not(:checked)');
-    let cbstructure = document.querySelectorAll('input[name="structure"]:not(:checked)');
-    let cblocalisation = document.querySelectorAll('input[name="localisation"]:not(:checked)');
-    let cbduree = document.querySelectorAll('input[name="duree"]:not(:checked)');
-    let cbmodacces = document.querySelectorAll('input[name="modacces"]:not(:checked)');
-    cbformation.forEach((checkbox) => {
-        values.push(checkbox.value);
-    });
-    values.push(";")
-    cbstructure.forEach((checkbox) => {
-        values.push(checkbox.value);
-    });
-    values.push(";")
-    cblocalisation.forEach((radio) => {
-        values.push(radio.value);
-    });
-    values.push(";")
-    cbduree.forEach((checkbox) => {
-        values.push(checkbox.value);
-    });
-    values.push(";")
-    cbmodacces.forEach((checkbox) => {
-        values.push(checkbox.value);
-    });
-    values.push(";")
+    let formation = document.getElementById("formation").value;
+    let structure = document.getElementById("structure").value;
+    let localisation = document.getElementById("localisation").value;
+    let duree = document.getElementById("duree").value;
+    let modacces = document.getElementById("modacces").value;
+    values.push(formation);
+    values.push(structure);
+    values.push(localisation);
+    values.push(duree);
+    values.push(modacces);
     console.log(values);
+    
 }
 
 /** au chargement de la page, la liste s'affiche*/
