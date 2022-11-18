@@ -1,7 +1,4 @@
 /**ficher pour java script */
-
-
-
 /**liste des formations**/
 let formationsList = {
     formationsList: [
@@ -1722,8 +1719,6 @@ let formationsList = {
 let filtersList = {
     filtersList: []
 };
-
-
 
 /**ressors les checkbox pas sélectionné*/
 
