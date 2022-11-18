@@ -2101,37 +2101,42 @@ function searchList() {
         filtersList: []
     };
     /**trouve la valeur contenue dans la barre de recherche */
-    const result = document.getElementById("searchBar").value.toLowerCase();
-    /**si valeur non nulle, chercher dans la liste formations; retourne la position du string value quand il le trouve, ou -1 sinon   */
-    if (result != "") {
-        for (let i = 0; i < formationsList.formationsList.length; i++) {
-            let position1 = formationsList.formationsList[i].intitule.toLowerCase().search(result);
-            if (position1 != (-1)) {
-                filtersList.filtersList.push(formationsList.formationsList[i]);
-            } else {
-                let position2 = formationsList.formationsList[i].nom.toLowerCase().search(result);
-                if (position2 != (-1)) {
+    if (document.getElementById("searchBar").value.toLowerCase()!="") {
+        let result = document.getElementById("searchBar").value.toLowerCase();
+        /**si valeur non nulle, chercher dans la liste formations; retourne la position du string value quand il le trouve, ou -1 sinon   */
+        if (result != "") {
+            for (let i = 0; i < formationsList.formationsList.length; i++) {
+                let position1 = formationsList.formationsList[i].intitule.toLowerCase().search(result);
+                if (position1 != (-1)) {
                     filtersList.filtersList.push(formationsList.formationsList[i]);
                 } else {
-                    let position3 = formationsList.formationsList[i].ville.toLowerCase().search(result);
-                    if (position3 != (-1)) {
+                    let position2 = formationsList.formationsList[i].nom.toLowerCase().search(result);
+                    if (position2 != (-1)) {
                         filtersList.filtersList.push(formationsList.formationsList[i]);
                     } else {
-                        let position4 = formationsList.formationsList[i].structure.toLowerCase().search(result);
-                        if (position4 != (-1)) {
+                        let position3 = formationsList.formationsList[i].ville.toLowerCase().search(result);
+                        if (position3 != (-1)) {
                             filtersList.filtersList.push(formationsList.formationsList[i]);
                         } else {
-                            let position5 = formationsList.formationsList[i].type_formation.toLowerCase().search(result);
-                            if (position5 != (-1)) {
+                            let position4 = formationsList.formationsList[i].structure.toLowerCase().search(result);
+                            if (position4 != (-1)) {
                                 filtersList.filtersList.push(formationsList.formationsList[i]);
+                            } else {
+                                let position5 = formationsList.formationsList[i].type_formation.toLowerCase().search(result);
+                                if (position5 != (-1)) {
+                                    filtersList.filtersList.push(formationsList.formationsList[i]);
+                                }
                             }
                         }
                     }
                 }
             }
+            afficheFilterList();
         }
-        afficheFilterList();
-    }
+    }else{
+        affichagelist();
+    } 
+        
 }
 
 var basketList = [];
@@ -2303,7 +2308,6 @@ function downloadBasket() {
 
 /**Argument pour Email */
 const SubjectVariable = "Demande de Devis de Formation";
-/**const BodyVariable = "Bonjour,\n Je souhaiterais avoir un devi sur ces formations suivantes:"+basketList;*/
 function sendMail() {
     var aaa = "";
     for (var i = 0; i < basketList.length; i++) {
