@@ -1725,11 +1725,11 @@ let filtersList = {
 
 
 
-/** ressors les checkbox pas sélectionné */
+/** ressors les checkbox pas sélectionné 
 function filter() {
     let values = [];
 
-    /**query de chaque colonne du tableau */
+    /**query de chaque colonne du tableau
     let cbformation = document.querySelectorAll('input[name="formation"]:not(:checked)');
     let cbstructure = document.querySelectorAll('input[name="structure"]:not(:checked)');
     let cblocalisation = document.querySelectorAll('input[name="localisation"]:not(:checked)');
@@ -1757,7 +1757,63 @@ function filter() {
     values.push(";")
     console.log(values);
 }
+ */
 
+/***************************************test */
+
+var formation = "",
+    structure = "",
+    localisation = "",
+    duree = "",
+    modalites = "";
+
+for (var i = 0; i < formationsList.formationsList.length; i++) {
+    var formation = formationsList.formationsList[i].type_formation,
+        structure = formationsList.formationsList[i].structure,
+        localisation = formationsList.formationsList[i].region,
+        duree = formationsList.formationsList[i].duree,
+        modalites = formationsList.formationsList[i].modalites;
+}
+
+$("#products").html(products);
+$(".filter-make").append(makes);
+$(".filter-model").append(models);
+$(".filter-type").append(types);
+
+var filtersObject = {};
+
+//on filter change
+$(".filter").on("change", function () {
+    var filterName = $(this).data("filter"),
+        filterVal = $(this).val();
+
+    if (filterVal == "") {
+        delete filtersObject[filterName];
+    } else {
+        filtersObject[filterName] = filterVal;
+    }
+
+    var filters = "";
+
+    for (var key in filtersObject) {
+        if (filtersObject.hasOwnProperty(key)) {
+            filters += "[data-" + key + "='" + filtersObject[key] + "']";
+        }
+    }
+
+    if (filters == "") {
+        $(".product").show();
+    } else {
+        $(".product").hide();
+        $(".product").hide().filter(filters).show();
+    }
+});
+
+
+
+
+
+/******************************************** */
 
 /** au chargement de la page, la liste s'affiche*/
 window.onload = function affichageload() {
