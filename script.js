@@ -1720,23 +1720,48 @@ let filtersList = {
     filtersList: []
 };
 
-/**ressors les checkbox pas sélectionné*/
 
-function filter() {
+function filtrerChoix() {
+    let list1 = document.getElementById("showinglist");
+    for (let i = 0; i < filtersList.filtersList.length; i++) {
+        list1.removeChild(list1.lastChild);
+    }
+    filtersList = {
+        filtersList: []
+    };
     let values = [];
     /**query de chaque colonne du tableau*/
-    let formation = document.getElementById("formation").value;
-    let structure = document.getElementById("structure").value;
-    let localisation = document.getElementById("localisation").value;
-    let duree = document.getElementById("duree").value;
-    let modacces = document.getElementById("modacces").value;
-    values.push(formation);
-    values.push(structure);
-    values.push(localisation);
-    values.push(duree);
-    values.push(modacces);
+    values.push(document.getElementById("formation").value);
+    values.push(document.getElementById("structure").value);
+    values.push(document.getElementById("localisation").value);
+    values.push(document.getElementById("duree").value);
+    values.push(document.getElementById("modacces").value);
     console.log(values);
-    
+    for (let i = 0; i < formationsList.formationsList.length; i++) {
+        if (formationsList.formationsList[i].type_formation == values[0] || values[0] == "select-all") {
+            if (formationsList.formationsList[i].structure == values[1] || values[1] == "select-all") {
+                if (formationsList.formationsList[i].region == values[2] || values[2] == "select-all") {
+                    if (formationsList.formationsList[i].duree <= values[3] || values[3] == "select-all") {
+                        if (formationsList.formationsList[i].modalites == values[5] || values[4] == "select-all") {
+                            filtersList.filtersList.push(formationsList.formationsList[i]);
+                            console.log(formationsList.formationsList[i])
+                        } else {
+                            continue;
+                        }
+                    } else {
+                        continue;
+                    }
+                } else {
+                    continue;
+                }
+            } else {
+                continue;
+            }
+        } else {
+            continue;
+        }
+    }
+    afficheFilterList();
 }
 
 /** au chargement de la page, la liste s'affiche*/
@@ -2025,7 +2050,7 @@ function searchList() {
         filtersList: []
     };
     /**trouve la valeur contenue dans la barre de recherche */
-    if (document.getElementById("searchBar").value.toLowerCase()!="") {
+    if (document.getElementById("searchBar").value.toLowerCase() != "") {
         let result = document.getElementById("searchBar").value.toLowerCase();
         /**si valeur non nulle, chercher dans la liste formations; retourne la position du string value quand il le trouve, ou -1 sinon   */
         if (result != "") {
@@ -2057,10 +2082,10 @@ function searchList() {
             }
             afficheFilterList();
         }
-    }else{
+    } else {
         affichagelist();
-    } 
-        
+    }
+
 }
 
 var basketList = [];

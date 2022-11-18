@@ -36,49 +36,49 @@
     <form class="filter" id="filter">
       <select class="formation" id="formation" name="Formation">
         <option value="select-all">Type de Formation</option>
-        <option value="formation-continue" id="formation-continue">Formation Continue</option>
-        <option value="formation-continue" id="formation-initiale">Formation Initiale</option>
+        <option value="Formation Continue" id="formation-continue">Formation Continue</option>
+        <option value="Formation Initiale" id="formation-initiale">Formation Initiale</option>
       </select>
       <select class="structure" id="structure" name="Structure">
         <option value="select-all">Type de Structure</option>
-        <option value="mooc" id="mooc">MOOC</option>
-        <option value="prive" id="prive">Prive</option>
-        <option value="public" id="public">Public</option>
+        <option value="MOOC" id="mooc">MOOC</option>
+        <option value="Prive" id="prive">Prive</option>
+        <option value="Public" id="public">Public</option>
       </select>
       <select class="localisation" id="localisation" name="Localisation">
         <option value="select-all">Localisation</option>
-        <option value="auvergne-rhône-alpes" id="auvergne-rhône-alpes">Auvergne-Rhône-Alpes</option>
-        <option value="bourgogne-franche-comté" id="bourgogne-franche-comté">Bourgogne-Franche-Comté</option>
-        <option value="bretagne" id="bretagne">Bretagne</option>
-        <option value="centre-val-de-loire" id="centre-val-de-loire">Centre-Val de Loire</option>
-        <option value="grand-est" id="grand-est">Grand Est</option>
-        <option value="hauts-de-france" id="hauts-de-france">Hauts-de-France</option>
-        <option value="ile-de-france" id="ile-de-france">Île-de-France</option>
-        <option value="nouvelle-aquitaine" id="nouvelle-aquitaine">Nouvelle-Aquitaine</option>
-        <option value="occitanie" id="occitanie">Occitanie</option>
-        <option value="pays-de-la-loire" id="pays-de-la-loire">Pays de la Loire</option>
-        <option value="provence-alpes-côte-dazur" id="provence-alpes-côte-dazur">Provence-Alpes-Côte d'Azur</option>
+        <option value="Auvergne-Rhône-Alpes" id="auvergne-rhône-alpes">Auvergne-Rhône-Alpes</option>
+        <option value="Bourgogne-Franche-Comté" id="bourgogne-franche-comté">Bourgogne-Franche-Comté</option>
+        <option value="Bretagne" id="bretagne">Bretagne</option>
+        <option value="Centre Val de Loire" id="centre-val-de-loire">Centre-Val de Loire</option>
+        <option value="Grand Est" id="grand-est">Grand Est</option>
+        <option value="Hauts-de-France" id="hauts-de-france">Hauts-de-France</option>
+        <option value="Île-de-France" id="ile-de-france">Île-de-France</option>
+        <option value="Nouvelle-Aquitaine" id="nouvelle-aquitaine">Nouvelle-Aquitaine</option>
+        <option value="Occitanie" id="occitanie">Occitanie</option>
+        <option value="Pays de la Loire" id="pays-de-la-loire">Pays de la Loire</option>
+        <option value="Provence-Alpes-Côte d'Azur" id="provence-alpes-côte-dazur">Provence-Alpes-Côte d'Azur</option>
       </select>
       <select class="duree" id="duree" name="Durée de la formation/intervention (en j)">
         <option value="select-all">Durée (en jours)</option>
-        <option value="0.5-duree" id="0.5-duree">0,5</option>
-        <option value="1-duree" id="1-duree">1</option>
-        <option value="1.5-duree" id="1.5-duree">1,5</option>
-        <option value="2-duree" id="2-duree">2</option>
-        <option value="3-duree" id="3-duree">3</option>
-        <option value="5-duree" id="5-duree">5</option>
-        <option value="8-duree" id="8-duree">8</option>
-        <option value="10.5-duree" id="10.5-duree">10,5</option>
-        <option value="58-duree" id="58-duree">58</option>
+        <option value="0.5" id="0.5-duree">0,5</option>
+        <option value="1" id="1-duree">1</option>
+        <option value="1.5" id="1.5-duree">1,5</option>
+        <option value="2" id="2-duree">2</option>
+        <option value="3" id="3-duree">3</option>
+        <option value="5" id="5-duree">5</option>
+        <option value="8" id="8-duree">8</option>
+        <option value="10.5" id="10.5-duree">10,5</option>
+        <option value="58" id="58-duree">58</option>
       </select>
       <select class="modacces" id="modacces" name="Modalité d'accés">
         <option value="select-all">Modalités d'accés</option>
-        <option value="presentiel" id="presentiel">Présentiel</option>
-        <option value="distanciel" id="distanciel">Distanciel</option>
-        <option value="hybride" id="hybride">Hybride</option>
+        <option value="Présentiel" id="presentiel">Présentiel</option>
+        <option value="Distanciel" id="distanciel">Distanciel</option>
+        <option value="Hybride" id="hybride">Hybride</option>
       </select>
       <div class="flex">
-        <input type="button" class="flex-child" onclick="filter()" value="Filtrer résultat">
+        <input type="button" class="flex-child" onclick="filtrerChoix()" value="Filtrer résultat">
         <input type="reset" class="flex-child" value="Reset" />
       </div>
     </form>
