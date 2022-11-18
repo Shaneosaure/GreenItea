@@ -28,6 +28,7 @@
 .mapblock {
     box-sizing: border-box;
     border: 5px solid #000000;
+    background-color: #1E433C;
     -webkit-border-radius: 18px / 20px;
     -moz-border-radius: 18px / 20px;
     border-radius: 18px / 20px;
@@ -93,9 +94,11 @@
     border-radius: 50%;
     overflow: hidden;
     color: #000;
+    background-color: #ffffff;
+}
+.addButton:hover{
     background-color: #156531;
 }
-
 /* css de chaque région */
 #Auvergne-Rhône-Alpes {
     display: visible;
@@ -196,9 +199,7 @@
 .centralblock {
     display: flex;
     justify-content: space-evenly;
-}
-
-#closebutton {
+}#closebutton {
     z-index: 1;
     display: "visible";
 }
@@ -212,6 +213,23 @@
     touch-action: none;
 }
 
+.pindetail:hover .pindetailtext {
+    visibility: visible;
+}
+
+[id^="pin_"] {
+	position: absolute;
+	padding: 1em;
+
+  display: none;
+  pointer-events: none;
+}
+
+
+.mapblock{
+    background-color:#1E433C
+
+}
 .amcharts-main-div {
     position: relative;
 }
@@ -222,12 +240,38 @@
     text-align: left;
 }
 
-.mapblock {
-    background-color: #1E433C
+/*hover css */
+.pindetail .pindetailtext {
+    visibility: hidden;
+    width: 35vw;
+    background-color: #156531;
+    box-shadow: 1px 1px 1px 1px #0e4321;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    right:50%;
 }
 
-.listblock {
-    background-color: #24A854
+.pindetail:hover .pindetailtext {
+    visibility: visible;
+}
+
+[id^="pin_"] {
+	position: absolute;
+	padding: 1em;
+
+  display: none;
+  pointer-events: none;
+}
+
+
+.mapblock {
+    background-color: #1E433C
 }
 
 .listblock {
@@ -310,7 +354,6 @@
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    flex-direction: column;
     padding: 1%;
 }
 
@@ -326,12 +369,24 @@
     padding: 10px;
 }
 
+.flex-child:hover{
+    background-color: #24A854;
+    box-shadow: 3px 3px 3px 3px #1E433C;
+}
+
+.flex-child:active{
+    background-color: #0b7431;
+    box-shadow: 3px 3px 3px 3px #0b1f1b;
+}
+
 /**Pour le filtre*/
 
 .filter {
-    display: flex;
-    align-content: center;
+    display: flex; 
     border-radius: 2%;
+    justify-content: center;
+    align-content: center;
+    justify-content: space-evenly;
 }
 
 .filter_five {
