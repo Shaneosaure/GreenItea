@@ -2239,7 +2239,7 @@ function sendMail() {
         console.log(aaa);
     }
     var body = "Bonjour,%0D%0AJe souhaiterai un devis sur ces formations suivante:%0D%0A" + aaa + "%0D%0AMerci de votre retour%0D%0ACordialement,";
-    window.location.href = "mailto:vvoisin.ing2024@esaip.org ?subject=Demande de Devis de Formation &body=" + body;
+    window.location.href = "mailto:design4green@etik.com ?subject=Demande de Devis de Formation &body=" + body;
 }
 
 
