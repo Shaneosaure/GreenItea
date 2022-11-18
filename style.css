@@ -93,9 +93,11 @@
     border-radius: 50%;
     overflow: hidden;
     color: #000;
+    background-color: #ffffff;
+}
+.addButton:hover{
     background-color: #156531;
 }
-
 /* css de chaque région */
 #Auvergne-Rhône-Alpes {
     display: visible;
@@ -196,9 +198,7 @@
 .centralblock {
     display: flex;
     justify-content: space-evenly;
-}
-
-#closebutton {
+}#closebutton {
     z-index: 1;
     display: "visible";
 }
@@ -212,6 +212,23 @@
     touch-action: none;
 }
 
+.pindetail:hover .pindetailtext {
+    visibility: visible;
+}
+
+[id^="pin_"] {
+	position: absolute;
+	padding: 1em;
+
+  display: none;
+  pointer-events: none;
+}
+
+
+.mapblock{
+    background-color:#1E433C
+
+}
 .amcharts-main-div {
     position: relative;
 }
@@ -222,12 +239,38 @@
     text-align: left;
 }
 
-.mapblock {
-    background-color: #1E433C
+/*hover css */
+.pindetail .pindetailtext {
+    visibility: hidden;
+    width: 35vw;
+    background-color: #156531;
+    box-shadow: 1px 1px 1px 1px #0e4321;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    right:50%;
 }
 
-.listblock {
-    background-color: #24A854
+.pindetail:hover .pindetailtext {
+    visibility: visible;
+}
+
+[id^="pin_"] {
+	position: absolute;
+	padding: 1em;
+
+  display: none;
+  pointer-events: none;
+}
+
+
+.mapblock {
+    background-color: #1E433C
 }
 
 .listblock {
@@ -310,7 +353,7 @@
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     padding: 1%;
 }
 
@@ -329,9 +372,12 @@
 /**Pour le filtre*/
 
 .filter {
+    width: 33%;
     display: flex;
     align-content: center;
     border-radius: 2%;
+    margin-right: 36vw;
+    margin-left: 31vw;
 }
 
 .filter_five {
