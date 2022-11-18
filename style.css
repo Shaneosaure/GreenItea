@@ -199,9 +199,7 @@
 .centralblock {
     display: flex;
     justify-content: space-evenly;
-}
-
-#closebutton {
+}#closebutton {
     z-index: 1;
     display: "visible";
 }
@@ -215,6 +213,23 @@
     touch-action: none;
 }
 
+.pindetail:hover .pindetailtext {
+    visibility: visible;
+}
+
+[id^="pin_"] {
+	position: absolute;
+	padding: 1em;
+
+  display: none;
+  pointer-events: none;
+}
+
+
+.mapblock{
+    background-color:#1E433C
+
+}
 .amcharts-main-div {
     position: relative;
 }
@@ -225,8 +240,38 @@
     text-align: left;
 }
 
-.listblock {
-    background-color: #24A854
+/*hover css */
+.pindetail .pindetailtext {
+    visibility: hidden;
+    width: 35vw;
+    background-color: #156531;
+    box-shadow: 1px 1px 1px 1px #0e4321;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    right:50%;
+}
+
+.pindetail:hover .pindetailtext {
+    visibility: visible;
+}
+
+[id^="pin_"] {
+	position: absolute;
+	padding: 1em;
+
+  display: none;
+  pointer-events: none;
+}
+
+
+.mapblock {
+    background-color: #1E433C
 }
 
 .listblock {

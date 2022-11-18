@@ -33,10 +33,6 @@
   </nav>
 
   <main>
-
-    <div class="accessibility">
-
-    </div>
     <form class="filter" id="filter">
       <select class="formation" id="formation" name="Formation">
         <option value="select-all">Type de Formation</option>
@@ -93,37 +89,69 @@
           <div id="chartdiv">
             <div class="amcharts-main-div">
               <div class="amcharts-chart-div">
-                <svg id='map' class="svg" version="1.1" style=" width: 100%; height: 90vh;">
+                <div id="pin_albi"><h2>Albi</h2></div>
+                <div id="pin_ales"><h2>Ales</h2></div>
+                <div id="pin_anglet"><h2>Anglet</h2></div>
+                <div id="pin_bordeaux"><h2>Bordeaux</h2></div>
+                <div id="pin_boulogne_billancourt"><h2>Boulogne_Billancourt</h2></div>
+                <div id="pin_evry"><h2>Evry</h2></div>
+                <div id="pin_la_bernardiere"><h2>La Bernardière</h2></div>
+                <div id="pin_la_rochelle"><h2>La Rochelle</h2></div>
+                <div id="pin_levallois_perret"><h2>Levallois Perret</h2></div>
+                <div id="pin_lille"><h2>Lille</h2></div>
+                <div id="pin_lyon"><h2>Lyon</h2></div>
+                <div id="pin_montpellier"><h2>Montpellier</h2></div>
+                <div id="pin_morlais"><h2>Morlais</h2></div>
+                <div id="pin_mulhouse"><h2>Mulhouse</h2></div>
+                <div id="pin_nantes"><h2>Nantes</h2></div>
+                <div id="pin_paris"><h2>Paris</h2></div>
+                <div id="pin_pontoise"><h2>Pontoise</h2></div>
+                <div id="pin_puteaux"><h2>Puteaux</h2></div>
+                <div id="pin_rennes"><h2>Rennes</h2></div>
+                <div id="pin_rouen"><h2>Rouen</h2></div>
+                <div id="pin_saint_malo"><h2>Saint Malo</h2></div>
+                <div id="pin_saint_barthelemy_danjou"><h2>Saint Barthélémy d'Anjou</h2></div>
+                <div id="pin_saint_etienne"><h2>Saint Etienne</h2></div>
+                <div id="pin_saint_etienne_de_montluc"><h2>Saint Etienne de Montluc</h2></div>
+                <div id="pin_toulouse"><h2>Toulouse</h2></div> 
+                <div id="pin_versailles"><h2>Versailles</h2></div>
+                
+
+
+                
+
+               <svg id='map' class="svg" version="1.1" style=" width: 100%; height: 90vh;">
                   <desc>JavaScript chart by amCharts 3.21.15</desc>
-                  <g id="cartloc" transform="translate(140,100) scale(1)">
+                  <g id="cartloc" transform="translate(120,100) scale(1)">
                     <g id="g_Auvergne-Rhône-Alpes">
-
-
-
-
                       <path id="Auvergne-Rhône-Alpes" cs="100,100"
                         d="M510.476,352.168l-0.61,-2.147l-2.101,-0.154l0.224,-1.322l-2.258,-0.614l-0.191,-4.1l-0.768,-0.804l0.946,-3.07l-1.403,-0.853l-2.109,0.148l-4.491,-4.383l0.548,-6.609l5.011,-0.6l2.304,-1.491l0.258,-1.665l1.727,-1.398l-0.273,-1.851l-1.162,-0.928l0.639,-0.482l-3.653,-5.089l-1.931,1.229l-0.714,-0.537l1.055,-4.344l-4.205,-0.776l0.286,-3.95l2.52,-4.583l-3.897,-4.464l1.453,-1.458l0.602,-2.844l-5.729,-1.651l-6.774,-0.144l-11.072,5.815l-1.333,2.889l1.138,0.503l-0.428,1.569l0.959,1.55l2.026,-0.281l-0.59,1.849l-2.624,1.154l-4.309,3.95l-3.172,-0.723l-0.652,1.009l-1.76,-0.585l-1.511,0.974l1.54,-3.172l-1.246,-0.902l0.644,-1.202l5.991,-2.058l-0.926,-2.042l2.814,-4.908l-4.372,-2.952l0,0l-8.107,9.063l-5.986,0.233l-0.478,-2.898l-2.794,-0.893l-0.149,-1.229l-1.96,2.924l-1.241,0.09l-1.116,1.545l-2.707,0.251l-0.697,-0.605l0.402,-2.958l-1.232,0.503l-0.527,-1.948l-0.847,2.242l-0.038,-1.684l-1.727,-1.9l0.655,-0.72l-3.233,-1.848l1.025,-0.918l-0.382,-1.075l-3.264,-0.697l-1.398,-3.047l-1.412,-0.625l-0.05,0.908l-1.299,-0.277l-3.264,1.473l-3.014,-1.846l-1.395,0.842l-0.361,-1.077l-6.729,20.527l-2.246,-0.221l0.39,-1.937l-0.659,-0.903l0.697,-0.347l-2.35,-1.532l1.295,-1.179l-1.278,-1.647l-1.769,0.305l-0.789,2.126l-1.444,-0.228l-0.627,-1.473l-1.237,1.396l-1.437,0.179l-1.881,-1.772l-2.204,0.083l-0.739,4.943l-1.066,0.825l0.436,0.807l-1.864,0.048l-1.938,1.673l-1.3,-0.09l0.191,-1.733l-1.184,0.585l-0.751,-0.998l-1.225,1.231l-1.881,-0.203l-1.245,-1.285l-3.052,1.757l-1.656,0.006l-0.693,-1.997l-3.417,-0.7l0.789,-1.92l-0.756,-2.317l2.2,-0.922l0.092,-1.264l1.702,0.413l0.714,-0.761l-0.826,-0.084l-0.357,-4.18l0.977,-3.801l-1.943,-0.943l-0.116,-0.926l-3.358,0.294l-1.25,-2.604l-1.395,0.758l-2.632,-1.191l-0.232,-3.823l-0.955,-0.403l0.345,-1.097l-1.005,-1.929l-2.471,-2.908l-0.56,-2.886l-1.503,-0.417l-0.536,0.761l0.876,1.491l-2.051,0.097l0.548,2.04l-0.631,0.634l-0.631,-0.676l-1.827,2.255l-1.229,0.048l-0.179,-2.316l-1.328,-1.454l-1.719,0.072l-1.341,1.738l-1.387,-0.332l-0.531,-1.599l-1.304,-0.061l-2.881,2.45l-2.943,-3.078l-2.943,-1.431l-1.104,-2.641l0,0l-2.811,-0.568l-1.777,0.689l-2.955,2.852l-0.138,1.201l-1.984,-0.543l-1.561,1.074l-1.138,-1.835l-0.743,0.127l-0.585,1.606l-3.209,1.714l0.153,1.906l-0.951,-0.766l-1.453,0.754l1.071,1.188l-1.221,1.844l1.545,0.855l0.456,2.48l-3.246,2.063l-2.06,-0.812l-5.234,0.957l-1.562,2.771l-1.029,0.006l-0.743,3.039l0,0l0.291,2.298l1.935,0.552l-1.316,1.739l2.604,1.966l0.946,-1.264l1.407,2.899l0.419,-0.779l2.105,0.952l1.81,5.552l1.661,1.906l-0.652,4.137l0.893,2.314l1.25,0.733l-0.361,2.61l0.768,1.144l-1.951,0.911l-0.834,1.452l0.507,1.106l-2.346,1.611l-0.315,1.343l-1.313,-0.178l0,0l-0.187,0.042l0,0l-1.084,1.883l-1.153,-0.244l-0.586,0.79l2.283,3.935l1.723,0.611l1.607,2.288l-0.079,4.027l-1.479,0.083l-1.033,2.645l1.162,2.081l1.18,0.396l-1.254,7.974l1.689,1.597l-1.988,1.302l-3.891,-2.457l-1.59,-0.012l0.839,1.45l-0.369,2.985l-1.811,0.889l-1.121,1.959l-0.83,-0.171l-1.184,2.505l-1.942,1.598l0.286,2.366l1.304,0.933l-2.188,1.667l-0.274,3.225l-1.241,-0.252l-1.847,1.553l1.843,3.425l-1.383,1.153l0,0l-0.344,-0.088l0,0l-1.657,0.427l0,0l0.64,2.42l1.083,0.812l-0.748,0.976l0.258,1.764l3.342,4.941l-1.744,5.359l1.216,0.052l0.531,3.42l1.499,1.163l0.706,-0.384l-0.395,-1.494l3.313,-1.117l1.316,-0.117l1.063,1.739l5.463,-0.593l0.648,-2.223l2.52,-1.811l-0.424,-1.939l2.097,-2.255l0.175,-3.132l5.496,-5.583l1.553,1.707L330.242,386l1.325,-1.086l2.271,0.006l1.191,4.965l1.337,-0.256l0.693,1.143l-1.063,0.74l0.977,0.997l0.07,3.744l1.864,2.065l1.474,-4.021l0.904,-0.122l-0.519,-0.74l0.813,-4.184l1.092,-2.193l1.101,0.233l0.19,-1.874l0,0h0.237l0,0l-0.245,-1.185l1.166,-1.022l2.504,2.4l1.839,-1.471l-0.527,-1.262l1.084,-0.415l-0.32,-1.116l1.042,-0.409l0.781,0.918l3.545,-2.824l0.021,0.889l1.811,1.058l0.07,2.548l2.886,5.357l0.81,-1.038l2.669,-0.677l0.769,0.578l0.203,-2.9l2.512,-0.012l0.855,1.272l-0.328,1.482l3.188,-0.542l2.744,4.286l1.033,-0.694l0.059,1.672l1.652,0.443l-0.606,1.683l0.959,0.844l-0.606,1.071l1.191,1.931l0.208,2.953l1.083,1.452l0.976,-0.087l1.479,5.716l3.351,3.87l-1.184,0.811l0.727,1.604l-0.889,1.944l0.478,0.636l3.396,-1.018l0.536,1.354l1.478,-0.278l3.271,3.063l1.304,-1.577l-0.033,-1.318l1.599,-1.342l2.728,-0.475l0.149,3.238l1.756,0.416l0.631,-3.191l2.163,-0.307l0.278,0.874l1.527,0.19l0.403,1.336l3.77,1.832l0,0l0.05,-3.439l5.729,0.966l1.262,4.957l2.528,-1.929l1.757,0.058l5.716,-2.763l0.686,1.37l1.332,0.37l1.761,-1.85l0,0l0.664,-0.313l0,0l-0.606,4.796l3.218,1.201l0.806,-1.155l2.03,1.403l2.37,-0.416l1.233,0.809l-0.075,2.602l2.176,0.201l0.813,1.874l2.009,0.207l1.582,-0.974l1.715,-1.436l-0.764,-0.762l0.423,-0.911l1.125,-0.277l1.569,1.356l-0.349,0.997l1.964,0.236l0.17,-0.985l-1.367,-0.629l0.089,-0.865l1.437,-0.393l0.008,-4.088h-1.636l-0.436,-1.948l-1.191,-0.323l0.884,-1.579l-3.383,0.186l-1.101,-1.186l-1.166,0.758l-2.607,-2.147l0.531,-0.949l-1.001,-1.963l0.798,-0.47l1.598,0.806l0.872,-1.031l-1.395,-0.608l-0.271,-2.98l6.477,1.606l0.603,-1.658l1.469,-0.128l-2.777,-2.414l2.113,-3.938l-0.203,-2.319l3.574,0.744l0.843,-1.338l1.665,0.501l1.702,-2.153l-1.308,-0.931l1.166,-3.093l2.316,0.757l2.836,-0.815l1.212,-1.23l-1.278,-1.358l2.831,-1.796l1.611,1.143l3.217,-2.818l4.708,0.724l1.831,-1.284l1.855,1.506l0.813,-0.397l0.104,-4.936l-1.475,-0.848l0.046,-2.626l-3.001,0.135l-1.96,-1.153l0.644,-2.829l1.017,-0.363l-0.572,-1.834l0.622,-1.096l0.731,-0.352l1.278,1.079l1.632,-0.886l1.282,1.208l0.025,1.898l3.578,1.066l1.479,-0.182l-0.262,-2.221l1.249,-0.961l1.3,0.563l1.507,-1.413l2.188,0.868l0,0l2.042,-1.795l2.57,0.147l1.063,-1.261l3.371,1.9l1.835,-0.563l0.008,-1.86l2.18,-0.082l2.329,-2.965l3.334,0.2l2.212,-2.309l-1.033,-4.205l2.196,-1.955l0.494,-2.887L510.476,352.168z"
                         stroke-width="0.5839461669921875" fill="#FFFFFF" fill-opacity="0.8" stroke="#000000"
                         stroke-opacity="0.5" class="" role="menuitem" aria-label="Auvergne-Rhône-Alpes" cursor="pointer"
                         onclick="showRegion('Auvergne-Rhône-Alpes', 555,534)"></path>
 
-                      <g transform="translate(435,340) scale(0.2)">
+                      <g class="pindetail" transform="translate(435,340) scale(0.2)">
+                        <a href="#" onMouseOver="document.getElementById('pin_lyon').style.display='block';" onMouseOut="document.getElementById('pin_lyon').style.display='none';">
+
                         <path id="lyon" class="at-176__pin"
                           d="M24,0A24,24,0,0,0,0,24C0,37.25,20,72,24,72S48,37.25,48,24A24,24,0,0,0,24,0Zm0,33a9,9,0,1,1,9-9A9,9,0,0,1,24,34Z" />
                       </g>
-                      <g transform="translate(420,352) scale(0.2)">
+                      <g class="pindetail" transform="translate(420,352) scale(0.2)">
+                        <a href="#" onMouseOver="document.getElementById('pin_saint_etienne').style.display='block';" onMouseOut="document.getElementById('pin_saint_etienne').style.display='none';">
+
                         <path id="saint-etienne" class="at-176__pin"
                           d="M24,0A24,24,0,0,0,0,24C0,37.25,20,72,24,72S48,37.25,48,24A24,24,0,0,0,24,0Zm0,33a9,9,0,1,1,9-9A9,9,0,0,1,24,34Z" />
                       </g>
                     </g>
                     <g id="g_Centre-Val-de-Loire">
-                      <path id="Centre-Val-de-Loire" cs="100,100"
+                       <path id="Centre-Val-de-Loire" cs="100,100"
                         d="M277.46,138.463L280.03,141.612L279.308,142.878L280.919,143.532L280.599,144.488L281.487,144.815L280.699,145.362L280.786,149.749L282.671,150.646L280.599,153.407L282.064,154.292L281.637,155.783L283.306,156.729L284.29,158.966L286.324,158.947L286.075,161.294L288.068,161.463L289.309,162.757L288.835,165.283L289.907,168.193L291.331,168.162L291.654,169.435L292.738,169.828L294.291,169.853L295.246,168.786L295.15,171.974L297.205,172.248L296.719,173.557L297.653,174.616L296.832,175.98L297.213,177.755L296.392,177.923L297.001,179.279L299.841,179.509L302.49,178.109L304.927,178.626L304.441,177.543L305.666,177.83L306.571,175.793L308.34,176.547L308.318,178.632L309.224,177.593L310.54,177.767L310.54,177.767L310.756,177.356L310.756,177.356L311.752,176.479L313.052,178.047L314.928,177.556L315.741,181.039L317.676,181.356L319.615,183.14L319.636,186.785L319.183,187.442L318.212,186.928L316.567,189.458L319.802,189.44L321.367,188.404L327.437,189.489L329.462,188.131L328.719,186.803L329.819,187.629L331.317,186.679L331.413,188.981L332.165,189.093L334.111,187.461L337.047,187.033L337.047,187.033L340.887,188.882L340.335,189.948L341.148,189.893L341.726,192.601L344.844,195.288L343.789,195.925L344.864,196.717L344.977,198.82L343.598,200.433L343.598,200.433L343.349,200.637L343.349,200.637L341.746,202.645L340.049,202.941L340.198,204.953L339.488,205.342L341.016,206.415L340.215,207.42L340.721,210.298L333.514,212.115L333.348,214.614L334.622,214.405L334.639,215.432L336.603,216.772L336.3,217.59L337.731,219.028L336.855,220.17L337.03,221.871L338.687,223.681L333.884,225.055L333.884,225.055L333.884,224.834L333.884,224.834L333.364,225.601L336.789,231.719L334.17,237.813L334.66,239.139L338.898,242.495L338.758,244.519L340.933,251.045L340.401,254.51L342.888,256.97L342.307,259.943L342.963,261.102L341.713,264.022L342.527,267.401L340.962,270.842L340.962,270.842L340.962,270.842L340.962,270.842L338.151,270.274L336.374,270.963L333.419,273.815L333.281,275.017L331.297,274.474L329.736,275.548L328.599,273.712L327.855,273.839L327.271,275.445L324.062,277.159L324.215,279.065L323.264,278.299L321.811,279.053L322.882,280.241L321.661,282.084L323.206,282.94L323.662,285.42L320.416,287.483L318.356,286.671L313.122,287.628L311.561,290.399L310.531,290.405L309.788,293.444L309.788,293.444L309.788,293.444L309.788,293.444L306.305,292.922L301.821,294.026L297.271,292.045L295.324,292.753L293.369,292.123L291.468,293.084L289.143,291.234L287.669,291.606L288.188,293.102L286.901,295.208L285.099,293.516L282.733,295.34L281.94,293.342L279.258,295.07L278.474,293.024L273.878,297.859L271.333,294.638L269.639,294.932L269.236,296.336L267.376,295.934L265.708,296.678L265.322,295.22L264.537,296.03L264.03,295.532L264.03,295.532L264.79,294.518L264.79,294.518L265.434,292.604L264.217,292.802L264.217,292.802L264.217,292.802L264.217,292.802L264.259,292.64L264.259,292.64L264.259,292.64L264.259,292.64L262.233,290.345L263.167,290.429L262,287.586L260.485,286.425L257.455,286.449L257.226,284.596L255.122,284.343L252.921,282.542L252.17,280.843L253.174,279.572L252.655,277.817L253.627,276.942L253.025,274.962L248.973,271.199L248.188,267.54L246.37,266.935L244.381,264.295L243.85,260.022L241.459,259.276L240.782,257.972L238.715,258.057L239.977,261.029L236.132,260.926L233.347,262.708L230.308,261.496L228.581,262.635L227.244,259.003L228.128,258.518L227.734,255.306L226.29,255.828L226.244,254.316L225.334,254.073L224.002,255.136L222.562,254.826L223.458,252.845L222.698,251.41L221.88,252.273L220.747,251.891L220.967,250.808L218.48,251.167L218.439,249.542L217.393,248.441L217.393,248.441L217.945,246.907L217.343,246.517L218.418,245.183L218.339,241.281L221.216,237.301L220.921,236.403L222.698,235.174L221.478,234.086L224.33,227.923L224.525,226.256L223.192,225.533L224.845,222.012L224.845,222.012L224.795,221.49L224.795,221.49L225.787,221.066L231.076,223.632L231.881,223.117L230.279,220.6L231.06,219.126L232.762,220.803L233.795,220.631L234.405,219.046L239.894,217.393L240.836,216.09L239.877,216.385L239.462,214.571L241.164,212.484L244.273,211.555L243.888,210.551L247.047,207.544L246.715,203.317L247.918,202.626L248.807,204.077L248.977,201.378L250.368,200.891L249.11,198.047L250.085,195.35L248.222,194.892L248.072,192.824L250.119,192.675L250.21,191.299L248.886,191.008L250.044,190.742L250.447,188.913L253.141,188.572L248.238,185.127L248.238,185.127L249.592,183.929L247.844,180.989L248.591,179.235L246.482,178.583L247.088,177.164L247.819,175.993L253.075,174.024L255.636,169.797L254.154,168.811L253.98,167.544L254.793,167.175L254.241,166.07L255.25,164.602L253.498,163.771L254.129,162.976L253.573,162.307L250.476,160.918L250.297,159.222L249.135,159.072L249.667,157.707L248.99,155.445L248.99,155.445L248.99,155.445L248.99,155.445L250.991,154.329L251.518,152.585L253.419,152.993L256.188,151.971L256.188,151.971L257.048,151.971L257.048,151.971L258.098,151.801L259.281,149.899L261.444,150.64L261.697,147.952L265.895,149.924L266.774,149.165L267.327,149.962L270.453,149.724L272.113,148.467L271.682,145.117L275.758,142.765L276.215,141.19L275.248,139.509z"
                         stroke-width="0.5839461669921875" fill="#FFFFFF" fill-opacity="0.8" stroke="#000000"
                         stroke-opacity="0.5" class="" role="menuitem" aria-label="Centre-Val de Loire" cursor="pointer"
                         onclick="showRegion('Centre-Val-de-Loire', 414, 384)"></path>
-                      <g transform="translate(310,195) scale(0.2)">
-                        <path id="evry" class="at-176__pin"
+                      <g class="pindetail" transform="translate(310,195) scale(0.2)">
+                        <a href="#" onMouseOver="document.getElementById('pin_evry').style.display='block';" onMouseOut="document.getElementById('pin_evry').style.display='none';">
+                          <path id="evry" class="at-176__pin"
                           d="M24,0A24,24,0,0,0,0,24C0,37.25,20,72,24,72S48,37.25,48,24A24,24,0,0,0,24,0Zm0,33a9,9,0,1,1,9-9A9,9,0,0,1,24,34Z" />
                       </g>
                     </g>
@@ -133,20 +161,23 @@
                         stroke-width="0.5839461669921875" fill="#FFFFFF" fill-opacity="0.8" stroke="#000000"
                         stroke-opacity="0.5" class="" role="menuitem" aria-label="Pays de la Loire"
                         onclick="showRegion('Pays-de-la-Loire', 277,372)" cursor="pointer"></path>
-                      <g transform="translate(155,240) scale(0.2)">
-                        <path id="la-bernardière" class="at-176__pin"
+                      <g class="pindetail" transform="translate(155,240) scale(0.2)">
+                        <a href="#" onMouseOver="document.getElementById('pin_la_bernardiere').style.display='block';" onMouseOut="document.getElementById('pin_la_bernardiere').style.display='none';">
+                          <path id="la-bernardière" class="at-176__pin"
                           d="M24,0A24,24,0,0,0,0,24C0,37.25,20,72,24,72S48,37.25,48,24A24,24,0,0,0,24,0Zm0,33a9,9,0,1,1,9-9A9,9,0,0,1,24,34Z" />
                       </g>
-                      <g transform="translate(145,230) scale(0.2)">
-                        <path id="nantes" class="at-176__pin"
+                      <g class="pindetail" transform="translate(145,230) scale(0.2)">
+                        <a href="#" onMouseOver="document.getElementById('pin_nantes').style.display='block';" onMouseOut="document.getElementById('pin_nantes').style.display='none';">
+                          <path id="nantes" class="at-176__pin"
                           d="M24,0A24,24,0,0,0,0,24C0,37.25,20,72,24,72S48,37.25,48,24A24,24,0,0,0,24,0Zm0,33a9,9,0,1,1,9-9A9,9,0,0,1,24,34Z" />
                       </g>
-                      <g transform="translate(138,227) scale(0.2)">
-                        <path id="saint-etienne-de-montluc" class="at-176__pin"
-                          d="M24,0A24,24,0,0,0,0,24C0,37.25,20,72,24,72S48,37.25,48,24A24,24,0,0,0,24,0Zm0,33a9,9,0,1,1,9-9A9,9,0,0,1,24,34Z" />
-                      </g>
-                      <g transform="translate(190,215) scale(0.2)">
-                        <path id="saint-barthelemy-danjou" class="at-176__pin"
+                            <g class="pindetail"transform="translate(138,227) scale(0.2)">
+                        <a href="#" onMouseOver="document.getElementById('pin_saint_etienne_de_montluc').style.display='block';" onMouseOut="document.getElementById('pin_saint_etienne_de_montluc').style.display='none';">
+                          <path id="saint-etienne-de-montluc" class="at-176__pin" d="M24,0A24,24,0,0,0,0,24C0,37.25,20,72,24,72S48,37.25,48,24A24,24,0,0,0,24,0Zm0,33a9,9,0,1,1,9-9A9,9,0,0,1,24,34Z"/>
+                              </g>
+                      <g class="pindetail" transform="translate(190,215) scale(0.2)">
+                        <a href="#" onMouseOver="document.getElementById('pin_saint_barthelemy_danjou').style.display='block';" onMouseOut="document.getElementById('pin_saint_barthelemy_danjou').style.display='none';">
+                          <path id="saint-barthelemy-danjou" class="at-176__pin"
                           d="M24,0A24,24,0,0,0,0,24C0,37.25,20,72,24,72S48,37.25,48,24A24,24,0,0,0,24,0Zm0,33a9,9,0,1,1,9-9A9,9,0,0,1,24,34Z" />
                       </g>
                     </g>
@@ -156,27 +187,34 @@
                         stroke-width="0.5839461669921875" fill="#FFFFFF" fill-opacity="0.8" stroke="#000000"
                         stroke-opacity="0.5" class="" role="menuitem" aria-label="Occitanie" cursor="pointer"
                         onclick="showRegion('Occitanie', 440,636)"></path>
-                      <g transform="translate(290,450) scale(0.2)">
-                        <path id="toulouse" class="at-176__pin"
+<!-- exemple de pin avec un effet hover-->
+                      <g class="pindetail" transform="translate(290,450) scale(0.2)">
+                        <a href="#" onMouseOver="document.getElementById('pin_toulouse').style.display='block';" onMouseOut="document.getElementById('pin_toulouse').style.display='none';">
+                            <path id="toulouse" class="at-176__pin"
+                          d="M24,0A24,24,0,0,0,0,24C0,37.25,20,72,24,72S48,37.25,48,24A24,24,0,0,0,24,0Zm0,33a9,9,0,1,1,9-9A9,9,0,0,1,24,34Z" />
+                        </a>
+                      </g>
+
+                      <g class="pindetail" transform="translate(300,440) scale(0.2)">
+                        <a href="#" onMouseOver="document.getElementById('pin_albi').style.display='block';" onMouseOut="document.getElementById('pin_albi').style.display='none';">
+                        <path id="albi" class="at-176_"
                           d="M24,0A24,24,0,0,0,0,24C0,37.25,20,72,24,72S48,37.25,48,24A24,24,0,0,0,24,0Zm0,33a9,9,0,1,1,9-9A9,9,0,0,1,24,34Z" />
                       </g>
-                      <g transform="translate(300,440) scale(0.2)">
-                        <path id="albi" class="at-176__pin"
-                          d="M24,0A24,24,0,0,0,0,24C0,37.25,20,72,24,72S48,37.25,48,24A24,24,0,0,0,24,0Zm0,33a9,9,0,1,1,9-9A9,9,0,0,1,24,34Z" />
-                      </g>
-                      <g transform="translate(380,440) scale(0.2)">
-                        <path id="montpellier" class="at-176__pin"
+                      <g class="pindetail" transform="translate(380,440) scale(0.2)">
+                        <a href="#" onMouseOver="document.getElementById('pin_montpellier').style.display='block';" onMouseOut="document.getElementById('pin_montpellier').style.display='none';">
+                          <path id="montpellier" class="at-176__pin"
                           d="M24,0A24,24,0,0,0,0,24C0,37.25,20,72,24,72S48,37.25,48,24A24,24,0,0,0,24,0Zm0,33a9,9,0,1,1,9-9A9,9,0,0,1,24,34Z" />
                       </g>
                     </g>
                     <g id="g_Hauts-de-France">
-                      <path id="Hauts-de-France" cs="100,100"
+                       <path id="Hauts-de-France" cs="100,100"
                         d="M389.314,73.741L389.193,72.833L387.288,72.447L387.965,70.889L386.886,69.697L387.948,67.783L390.792,66.487L389.422,64.158L389.538,62.375L386.558,62.331L387.662,60.418L387.483,57.198L390.406,54.616L389.879,53.366L387.961,52.258L387.441,53.178L388.164,54.259L386.936,54.279L386.076,51.331L384.391,50.852L382.24,47.731L377.15,49.808L374.996,48.179L370.732,48.238L369.088,51.228L367.021,47.043L367.71,44.881L367.087,41.411L364.924,38.848L360.44,39.42L361.196,37.057L359.365,36.432L358.228,38.17L355.268,39.167L351.76,37.005L351.241,32.391L349.593,28.299L350.672,27.097L350.481,25.45L347.604,23.914L345.943,19.672L344.324,19.397L343.315,20.786L340.306,20.7L337.707,22.167L335.793,26.078L333.314,24.07L332.11,24.528L330.94,23.815L328.188,18.33L325.934,17.563L324.551,18.192L323.068,15.753L323.455,12.571L322.683,11.153L324.41,9.333L323.385,6.513L321.998,5.703L320.752,0L313.985,2.787L312.835,1.957L306.679,4.071L305.222,4.459L304.371,4.479L302.295,5.559L292.771,7.834L287.544,9.53L284.074,13.359L280.745,14.336L282.094,18.755L281.276,23.429L280.524,24.456L280.146,22.886L279.977,23.848L280.549,34.08L282.986,37.734L280.977,36.1L279.636,45.063L282.546,47.238L279.686,47.589L278.935,52.705L279.536,54.279L281.155,54.415L282.479,57.114L284.747,57.45L285.211,58.802L283.999,59.681L282.027,58.466L281.043,58.886L279.765,57.47L278.336,57.593L276.705,59.746L275.406,63.958L272.325,66.81L272.325,66.81L273.6,67.28L275.281,66.436L275.426,68.402L286.204,78.229L287.121,82.839L289.271,86.206L287.748,86.142L287.619,87.699L286.258,87.987L286.312,89.748L285.245,90.529L285.955,91.425L287.532,90.055L287.839,90.529L285.593,93.766L286.585,95.107L285.457,96.526L286.532,97.637L285.734,97.72L285.734,97.72L285.552,97.72L286.934,99.067L286.739,100.19L287.723,100.547L286.436,102.741L287.574,103.659L288.18,102.244L289.462,102.748L288.703,104.908L288.703,104.908L288.304,105.169L288.304,105.169L286.756,106.787L286.291,108.887L287.362,109.001L286.598,109.784L288.242,111.52L288.711,116.258L289.761,116.372L290.023,117.35L289.404,119.157L288.109,117.489L286.087,117.978L285.855,120.07L285.855,120.07L286.262,119.487L287.354,120.546L286.303,121.648L286.831,122.409L286.831,122.409L287.208,122.396L287.208,122.396L287.96,123.631L289.994,123.01L290.351,123.757L291.372,123.555L291.31,124.346L293.074,123.644L293.298,124.435L297.151,123.124L298.23,123.612L301.514,121.427L302.146,122.712L303.503,122.478L303.806,123.409L304.292,122.808L305.234,124.391L307.223,123.39L307.912,124.232L307.156,124.954L307.82,125.169L309.996,124.631L311.171,122.94L312.989,125.365L313.711,124.631L316.41,125.46L316.165,126.283L317.244,125.814L319.059,127.27L318.502,127.991L320.241,128.401L321.08,126.839L322.367,129.659L324.422,127.852L326.847,130.5L328.055,129.918L328.615,130.847L330.408,130.241L330.048,129.451L331.704,128.585L333.514,130.253L335.527,129.375L337.217,129.824L338.367,128.907L339.147,130.203L340.036,128.907L342.428,129.312L342.568,127.301L345.408,127.991L346.491,128.465L346.022,129.482L347.566,131.529L346.596,133.922L350.083,136.433L350.635,138.551L352.3,137.927L353.296,140.485L354.902,139.213L355.538,142.765L358.137,143.494L358.784,144.922L359.784,143.998L359.784,143.998L361.558,140.233L363.317,140.07L363.459,138.514L364.68,138.287L364.136,137.203L365.418,136.818L366.27,134.427L367.78,133.796L366.655,131.972L363.937,132.363L364.011,130.892L366.137,129.824L364.588,127.143L365.477,125.194L368.138,124.96L368.918,125.707L370.724,124.656L370.753,123.251L369.333,123.523L368.665,121.617L367.976,122.244L366.801,121.243L367.806,119.848L366.726,118.631L367.295,117.686L366.443,114.849L371.948,112.13L374.996,112.86L375.179,110.61L378.014,108.925L379.496,110.789L382.701,111.882L382.759,106.907L384.029,106.449L382.938,105.035L382.904,102.537L384.478,101.409L384.341,100.299L383.253,100.107L384.42,98.429L382.161,95.178L382.888,94.168L385.964,94.469L386.429,91.591L388.874,90.247L391.561,86.533L389.742,85.059L391.701,79.392L391.797,77.104L390.219,76.468L390.817,73.574z"
                         stroke-width="0.5839461669921875" fill="#FFFFFF" fill-opacity="0.8" stroke="#000000"
                         stroke-opacity="0.5" class="" role="menuitem" aria-label="Hauts-de-France" cursor="pointer"
                         onclick="showRegion('Hauts-de-France', 457, 189)"></path>
-                      <g transform="translate(340,15) scale(0.2)">
-                        <path id="lille" class="at-176__pin"
+                      <g class="pindetail" transform="translate(340,15) scale(0.2)">
+                        <a href="#" onMouseOver="document.getElementById('pin_lille').style.display='block';" onMouseOut="document.getElementById('pin_lille').style.display='none';">
+                          <path id="lille" class="at-176__pin"
                           d="M24,0A24,24,0,0,0,0,24C0,37.25,20,72,24,72S48,37.25,48,24A24,24,0,0,0,24,0Zm0,33a9,9,0,1,1,9-9A9,9,0,0,1,24,34Z" />
                       </g>
                     </g>
@@ -186,8 +224,9 @@
                         stroke-width="0.5839461669921875" fill="#FFFFFF" fill-opacity="0.8" stroke="#000000"
                         stroke-opacity="0.5" class="" role="menuitem" aria-label="Normandie" cursor="pointer"
                         onclick="showRegion('Normandie', 326, 260)"></path>
-                      <g transform="translate(235,100) scale(0.2)">
-                        <path id="Rouen" class="at-176__pin"
+                      <g class="pindetail" transform="translate(235,100) scale(0.2)">
+                        <a href="#" onMouseOver="document.getElementById('pin_rouen').style.display='block';" onMouseOut="document.getElementById('pin_rouen').style.display='none';">
+                          <path id="Rouen" class="at-176__pin"
                           d="M24,0A24,24,0,0,0,0,24C0,37.25,20,72,24,72S48,37.25,48,24A24,24,0,0,0,24,0Zm0,33a9,9,0,1,1,9-9A9,9,0,0,1,24,34Z" />
                       </g>
                     </g>
@@ -197,8 +236,9 @@
                         stroke-width="0.5839461669921875" fill="#FFFFFF" fill-opacity="0.8" stroke="#000000"
                         stroke-opacity="0.5" class="" role="menuitem" aria-label="Provence-Alpes-Côte d'Azur"
                         cursor="pointer" onclick="showRegion('Provence-Alpes-Côte-dAzur', 632,636)"></path>
-                      <g transform="translate(420,420) scale(0.2)">
-                        <path id="ales" class="at-176__pin"
+                      <g class="pindetail" transform="translate(420,420) scale(0.2)">
+                        <a href="#" onMouseOver="document.getElementById('pin_ales').style.display='block';" onMouseOut="document.getElementById('pin_ales').style.display='none';">
+                          <path id="ales" class="at-176__pin"
                           d="M24,0A24,24,0,0,0,0,24C0,37.25,20,72,24,72S48,37.25,48,24A24,24,0,0,0,24,0Zm0,33a9,9,0,1,1,9-9A9,9,0,0,1,24,34Z" />
                       </g>
                     </g>
@@ -208,24 +248,29 @@
                         stroke-width="0.5839461669921875" fill="#FFFFFF" fill-opacity="0.8" stroke="#000000"
                         stroke-opacity="0.5" class="" role="menuitem" aria-label="Île-de-France" cursor="pointer"
                         onclick="showRegion('Île-de-France', 443, 265)"></path>
-                      <g transform="translate(300,140) scale(0.2)">
-                        <path id="boulogne-billancourt" class="at-176__pin"
+                      <g class="pindetail" transform="translate(300,140) scale(0.2)">
+                        <a href="#" onMouseOver="document.getElementById('pin_boulogne_billancourt').style.display='block';" onMouseOut="document.getElementById('pin_boulogne_billancourt').style.display='none';">
+                          <path id="boulogne-billancourt" class="at-176__pin"
                           d="M24,0A24,24,0,0,0,0,24C0,37.25,20,72,24,72S48,37.25,48,24A24,24,0,0,0,24,0Zm0,33a9,9,0,1,1,9-9A9,9,0,0,1,24,34Z" />
                       </g>
-                      <g transform="translate(310,135) scale(0.2)">
-                        <path id="levallois-perret" class="at-176__pin"
+                      <g class="pindetail" transform="translate(310,135) scale(0.2)">
+                        <a href="#" onMouseOver="document.getElementById('pin_levallois_perret').style.display='block';" onMouseOut="document.getElementById('pin_levallois_perret').style.display='none';">
+                          <path id="levallois-perret" class="at-176__pin"
                           d="M24,0A24,24,0,0,0,0,24C0,37.25,20,72,24,72S48,37.25,48,24A24,24,0,0,0,24,0Zm0,33a9,9,0,1,1,9-9A9,9,0,0,1,24,34Z" />
                       </g>
-                      <g transform="translate(315,145) scale(0.2)">
-                        <path id="paris" class="at-176__pin"
+                      <g class="pindetail" transform="translate(315,145) scale(0.2)">
+                        <a href="#" onMouseOver="document.getElementById('pin_paris').style.display='block';" onMouseOut="document.getElementById('pin_paris').style.display='none';">
+                          <path id="paris" class="at-176__pin"
                           d="M24,0A24,24,0,0,0,0,24C0,37.25,20,72,24,72S48,37.25,48,24A24,24,0,0,0,24,0Zm0,33a9,9,0,1,1,9-9A9,9,0,0,1,24,34Z" />
                       </g>
-                      <g transform="translate(305,130) scale(0.2)">
-                        <path id="puteaux" class="at-176__pin"
+                      <g class="pindetail" transform="translate(305,130) scale(0.2)">
+                        <a href="#" onMouseOver="document.getElementById('pin_puteaux').style.display='block';" onMouseOut="document.getElementById('pin_puteaux').style.display='none';">
+                          <path id="puteaux" class="at-176__pin"
                           d="M24,0A24,24,0,0,0,0,24C0,37.25,20,72,24,72S48,37.25,48,24A24,24,0,0,0,24,0Zm0,33a9,9,0,1,1,9-9A9,9,0,0,1,24,34Z" />
                       </g>
-                      <g transform="translate(295,150) scale(0.2)">
-                        <path id="versailles" class="at-176__pin"
+                      <g class="pindetail" transform="translate(295,150) scale(0.2)">
+                        <a href="#" onMouseOver="document.getElementById('pin_versailles').style.display='block';" onMouseOut="document.getElementById('pin_versailles').style.display='none';">
+                          <path id="versailles" class="at-176__pin"
                           d="M24,0A24,24,0,0,0,0,24C0,37.25,20,72,24,72S48,37.25,48,24A24,24,0,0,0,24,0Zm0,33a9,9,0,1,1,9-9A9,9,0,0,1,24,34Z" />
                       </g>
                     </g>
@@ -242,16 +287,19 @@
                         stroke-width="0.5839461669921875" fill="#FFFFFF" fill-opacity="0.8" stroke="#000000"
                         stroke-opacity="0.5" class="" role="menuitem" aria-label="Bretagne" cursor="pointer"
                         onclick="showRegion('Bretagne', 173, 323)"></path>
-                      <g transform="translate(60,150) scale(0.2)">
-                        <path id="morlaix" class="at-176__pin"
+                      <g class="pindetail" transform="translate(60,150) scale(0.2)">
+                        <a href="#" onMouseOver="document.getElementById('pin_morlais').style.display='block';" onMouseOut="document.getElementById('pin_morlais').style.display='none';">
+                          <path id="morlaix" class="at-176__pin"
                           d="M24,0A24,24,0,0,0,0,24C0,37.25,20,72,24,72S48,37.25,48,24A24,24,0,0,0,24,0Zm0,33a9,9,0,1,1,9-9A9,9,0,0,1,24,34Z" />
                       </g>
-                      <g transform="translate(130,180) scale(0.2)">
-                        <path id="rennes" class="at-176__pin"
+                      <g class="pindetail"transform="translate(140,180) scale(0.2)">
+                        <a href="#" onMouseOver="document.getElementById('pin_rennes').style.display='block';" onMouseOut="document.getElementById('pin_rennes').style.display='none';">
+                          <path id="rennes" class="at-176__pin"
                           d="M24,0A24,24,0,0,0,0,24C0,37.25,20,72,24,72S48,37.25,48,24A24,24,0,0,0,24,0Zm0,33a9,9,0,1,1,9-9A9,9,0,0,1,24,34Z" />
                       </g>
-                      <g transform="translate(130,145) scale(0.2)">
-                        <path id="saint-malo" class="at-176__pin"
+                      <g class="pindetail"transform="translate(130,145) scale(0.2)">
+                        <a href="#" onMouseOver="document.getElementById('pin_saint_malo').style.display='block';" onMouseOut="document.getElementById('pin_saint_malo').style.display='none';">
+                          <path id="saint-malo" class="at-176__pin"
                           d="M24,0A24,24,0,0,0,0,24C0,37.25,20,72,24,72S48,37.25,48,24A24,24,0,0,0,24,0Zm0,33a9,9,0,1,1,9-9A9,9,0,0,1,24,34Z" />
                       </g>
                     </g>
@@ -261,8 +309,9 @@
                         stroke-width="0.5839461669921875" fill="#FFFFFF" fill-opacity="0.8" stroke="#000000"
                         stroke-opacity="0.5" class="" role="menuitem" aria-label="Grand Est" cursor="pointer"
                         onclick="showRegion('Grand-Est', 598, 286)"></path>
-                      <g transform="translate(520,190) scale(0.2)">
-                        <path id="mulhouse" class="at-176__pin"
+                      <g class="pindetail"transform="translate(520,190) scale(0.2)">
+                        <a href="#" onMouseOver="document.getElementById('pin_mulhouse').style.display='block';" onMouseOut="document.getElementById('pin_mulhouse').style.display='none';">
+                          <path id="mulhouse" class="at-176__pin"
                           d="M24,0A24,24,0,0,0,0,24C0,37.25,20,72,24,72S48,37.25,48,24A24,24,0,0,0,24,0Zm0,33a9,9,0,1,1,9-9A9,9,0,0,1,24,34Z" />
                       </g>
                     </g>
@@ -272,16 +321,19 @@
                         stroke-width="0.5839461669921875" fill="#FFFFFF" fill-opacity="0.8" stroke="#000000"
                         stroke-opacity="0.5" class="" role="menuitem" aria-label="Nouvelle-Aquitaine" cursor="pointer"
                         onclick="showRegion('Nouvelle-Aquitaine', 351, 542)" />
-                      <g id="anglet" transform="translate(160,440) scale(0.2)">
-                        <path class="at-176__pin"
+                      <g class="pindetail" id="anglet" transform="translate(160,440) scale(0.2)">
+                        <a href="#" onMouseOver="document.getElementById('pin_anglet').style.display='block';" onMouseOut="document.getElementById('pin_anglet').style.display='none';">
+                          <path id="anglets" class="at-176__pin"
                           d="M24,0A24,24,0,0,0,0,24C0,37.25,20,72,24,72S48,37.25,48,24A24,24,0,0,0,24,0Zm0,33a9,9,0,1,1,9-9A9,9,0,0,1,24,34Z" />
                       </g>
-                      <g transform="translate(185,370) scale(0.2)">
-                        <path id="bordeaux" class="at-176__pin"
+                      <g class="pindetail" transform="translate(185,370) scale(0.2)">
+                        <a href="#" onMouseOver="document.getElementById('pin_bordeaux').style.display='block';" onMouseOut="document.getElementById('pin_bordeaux').style.display='none';">
+                          <path id="bordeaux" class="at-176__pin"
                           d="M24,0A24,24,0,0,0,0,24C0,37.25,20,72,24,72S48,37.25,48,24A24,24,0,0,0,24,0Zm0,33a9,9,0,1,1,9-9A9,9,0,0,1,24,34Z" />
                       </g>
-                      <g transform="translate(163,292) scale(0.2)">
-                        <path id="la-rochelle" class="at-176__pin"
+                      <g class="pindetail"transform="translate(163,292) scale(0.2)">
+                        <a href="#" onMouseOver="document.getElementById('pin_la_rochelle').style.display='block';" onMouseOut="document.getElementById('pin_la_rochelle').style.display='none';">
+                          <path id="la-rochelle" class="at-176__pin"
                           d="M24,0A24,24,0,0,0,0,24C0,37.25,20,72,24,72S48,37.25,48,24A24,24,0,0,0,24,0Zm0,33a9,9,0,1,1,9-9A9,9,0,0,1,24,34Z" />
                       </g>
                     </g>
