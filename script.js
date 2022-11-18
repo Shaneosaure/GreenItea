@@ -1724,6 +1724,41 @@ let filtersList = {
 };
 
 
+
+/**ressors les checkbox pas sélectionné*/
+
+function filter() {
+    let values = [];
+
+    /**query de chaque colonne du tableau*/
+    let cbformation = document.querySelectorAll('input[name="formation"]:not(:checked)');
+    let cbstructure = document.querySelectorAll('input[name="structure"]:not(:checked)');
+    let cblocalisation = document.querySelectorAll('input[name="localisation"]:not(:checked)');
+    let cbduree = document.querySelectorAll('input[name="duree"]:not(:checked)');
+    let cbmodacces = document.querySelectorAll('input[name="modacces"]:not(:checked)');
+    cbformation.forEach((checkbox) => {
+        values.push(checkbox.value);
+    });
+    values.push(";")
+    cbstructure.forEach((checkbox) => {
+        values.push(checkbox.value);
+    });
+    values.push(";")
+    cblocalisation.forEach((radio) => {
+        values.push(radio.value);
+    });
+    values.push(";")
+    cbduree.forEach((checkbox) => {
+        values.push(checkbox.value);
+    });
+    values.push(";")
+    cbmodacces.forEach((checkbox) => {
+        values.push(checkbox.value);
+    });
+    values.push(";")
+    console.log(values);
+}
+
 /** au chargement de la page, la liste s'affiche*/
 window.onload = function affichageload() {
     let list = document.getElementById("showinglist");
