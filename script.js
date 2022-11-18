@@ -2252,7 +2252,6 @@ function downloadBasket() {
 
 /**Argument pour Email */
 const SubjectVariable = "Demande de Devis de Formation";
-/**const BodyVariable = "Bonjour,\n Je souhaiterais avoir un devi sur ces formations suivantes:"+basketList;*/
 function sendMail() {
     var aaa = "";
     for (var i = 0; i < basketList.length; i++) {
