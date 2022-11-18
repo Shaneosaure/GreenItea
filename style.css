@@ -90,8 +90,10 @@
     margin-left: 90%;
 }
 
+
 .addButton,
-.subButton {
+.subButton,
+#download-basket {
     border: 2px solid #000;
     border-radius: 50%;
     overflow: hidden;
@@ -99,7 +101,8 @@
     background-color: #ffffff;
 }
 .addButton:hover,
-.subButton:hover{
+.subButton:hover,
+#download-basket:hover{
     background-color: #156531;
 }
 /* css de chaque région */
@@ -418,4 +421,10 @@
 
 #bulletpoint_long {
     columns: 2;
+}
+
+
+.submit{
+    text-decoration: underline;
+    font-weight: bold;
 }
