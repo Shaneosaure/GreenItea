@@ -12,16 +12,17 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <title>Team N°8</title>
-  
 
-  
+
+
 
 </head>
 
 <body class="body">
   <header class="header">
     <h1>Votre formation personnalisée !</h1>
-    <button style="font-size:24px" id="open-menu" class="bouton-panier" value="basket-menu" onclick="openBasket()"><i class="fa fa-shopping-cart"></i></button>
+    <button style="font-size:24px" id="open-menu" class="bouton-panier" value="basket-menu" onclick="openBasket()"><i
+        class="fa fa-shopping-cart"></i></button>
     <input type="text" id="searchBar" placeholder="Recherche" oninput="searchList()">
     <input type="button" id="close-menu" class="bouton-panier" value="×" onclick="closeBasket()">
   </header>
@@ -39,140 +40,49 @@
     <div class="accessibility">
 
     </div>
-    <div class="filter" id="filter">
-      <div class="formation" id="formation">
-        <h4 class="filter_five">Formation:</h4>
-        <ul id="bulletpoint">
-          <form>
-            <li>
-              <label for="formation-continue"> <input type="checkbox" name="formation" value="formation-continue"
-                  id="formation-continue">Formation Continue</label>
-            </li>
-            <li>
-              <label for="formation-initiale"><input type="checkbox" name="formation" value="formation-initiale"
-                  id="formation-initiale">Formation initiale</label>
-            </li>
-        </ul>
+    <form class="filter" id="filter">
+      <select class="formation" id="formation" name="Formation">
+        <option value="formation-continue" id="formation-continue">Formation Continue</option>
+        <option value="formation-continue" id="formation-initiale">Formation Initiale</option>
+      </select>
+      <select class="structure" id="structure" name="Structure">
+        <option value="mooc" id="mooc">MOOC</option>
+        <option value="prive" id="prive">Prive</option>
+        <option value="public" id="public">Public</option>
+      </select>
+      <select class="localisation" id="localisation" name="Localisation">
+        <option value="auvergne-rhône-alpes" id="auvergne-rhône-alpes">Auvergne-Rhône-Alpes</option>
+        <option value="bourgogne-franche-comté" id="bourgogne-franche-comté">Bourgogne-Franche-Comté</option>
+        <option value="bretagne" id="bretagne">Bretagne</option>
+        <option value="centre-val-de-loire" id="centre-val-de-loire">Centre-Val de Loire</option>
+        <option value="grand-est" id="grand-est">Grand Est</option>
+        <option value="hauts-de-france" id="hauts-de-france">Hauts-de-France</option>
+        <option value="ile-de-france" id="ile-de-france">Île-de-France</option>
+        <option value="nouvelle-aquitaine" id="nouvelle-aquitaine">Nouvelle-Aquitaine</option>
+        <option value="occitanie" id="occitanie">Occitanie</option>
+        <option value="pays-de-la-loire" id="pays-de-la-loire">Pays de la Loire</option>
+        <option value="provence-alpes-côte-dazur" id="provence-alpes-côte-dazur">Provence-Alpes-Côte d'Azur</option>
+      </select>
+      <select class="duree" id="duree" name="Durée de la formation/intervention (en j)">
+        <option value="0.5-duree" id="0.5-duree">0,5</option>
+        <option value="1-duree" id="1-duree">1</option>
+        <option value="1.5-duree" id="1.5-duree">1,5</option>
+        <option value="2-duree" id="2-duree">2</option>
+        <option value="3-duree" id="3-duree">3</option>
+        <option value="5-duree" id="5-duree">5</option>
+        <option value="8-duree" id="8-duree">8</option>
+        <option value="10.5-duree" id="10.5-duree">10,5</option>
+        <option value="58-duree" id="58-duree">58</option>
+      </select>
+      <select class="modacces" id="modacces" name="Modalité d'accés">
+        <option value="presentiel" id="presentiel">Présentiel</option>
+        <option value="distanciel" id="distanciel">Distanciel</option>
+        <option value="hybride" id="hybride">Hybride</option>
+      </select>
+      <div class="flex">
+        <input type="button" class="flex-child" onclick="filter()" value="Filtrer résultat">
+        <input type="reset" class="flex-child" value="Reset" />
       </div>
-      <div class="structure" id="structure">
-        <h4 class="filter_five">Structure:</h4>
-        <ul id="bulletpoint">
-          <li>
-            <label for="mooc"> <input type="checkbox" name="structure" value="mooc" id="mooc">MOOC</label>
-          </li>
-          <li>
-            <label for="prive"><input type="checkbox" name="structure" value="prive" id="prive">Prive</label>
-          </li>
-          <li>
-            <label for="public"><input type="checkbox" name="structure" value="public" id="public">Public</label>
-          </li>
-        </ul>
-      </div>
-      <div class="localisation" id="localisation">
-        <h4 class="filter_five">Localisation:</h4>
-        <ul id="bulletpoint_long">
-          <li>
-            <label for="auvergne-rhône-alpes"> <input type="radio" name="localisation" value="auvergne-rhône-alpes"
-                id="auvergne-rhône-alpes">Auvergne-Rhône-Alpes</label>
-          </li>
-          <li>
-            <label for="bourgogne-franche-comté"><input type="radio" name="localisation" value="bourgogne-franche-comté"
-                id="bourgogne-franche-comté">Bourgogne-Franche-Comté</label>
-          </li>
-          <li>
-            <label for="bretagne"><input type="radio" name="localisation" value="bretagne"
-                id="bretagne">Bretagne</label>
-          </li>
-          <li>
-            <label for="centre-val-de-loire"><input type="radio" name="localisation" value="centre-val-de-loire"
-                id="centre-val-de-loire">Centre-Val de Loire</label>
-          </li>
-          <li>
-            <label for="grand-est"><input type="radio" name="localisation" value="grand-est" id="grand-est">Grand
-              Est</label>
-          </li>
-          <li>
-            <label for="hauts-de-france"><input type="radio" name="localisation" value="hauts-de-france"
-                id="hauts-de-france">Hauts-de-France</label>
-          </li>
-          <li>
-            <label for="ile-de-france"><input type="radio" name="localisation" value="ile-de-france"
-                id="ile-de-france">Île-de-France</label>
-          </li>
-          <li>
-            <label for="nouvelle-aquitaine"><input type="radio" name="localisation" value="nouvelle-aquitaine"
-                id="nouvelle-aquitaine">Nouvelle-Aquitaine</label>
-          </li>
-          <li>
-            <label for="occitanie"><input type="radio" name="localisation" value="occitanie"
-                id="occitanie">Occitanie</label>
-          </li>
-          <li>
-            <label for="pays-de-la-loire"><input type="radio" name="localisation" value="pays-de-la-loire"
-                id="pays-de-la-loire">Pays de la Loire</label>
-          </li>
-          <li>
-            <label for="provence-alpes-côte-dazur"><input type="radio" name="localisation"
-                value="provence-alpes-côte-dazur" id="provence-alpes-côte-dazur">Provence-Alpes-Côte d'Azur</label>
-          </li>
-        </ul>
-      </div>
-
-        <div class="duree" id="duree">
-          <h4 class="filter_five">Durée de la formation/intervention (en j) :</h4>
-          <ul id="bulletpoint_long">
-            <li>
-              <label for="0.5-duree"> <input type="checkbox" name="duree" value="0.5-duree" id="0.5-duree">0,5</label>
-            </li>
-            <li>
-              <label for="1-duree"> <input type="checkbox" name="duree" value="1-duree" id="1-duree">1</label>
-            </li>
-            <li>
-              <label for="1.5-duree"> <input type="checkbox" name="duree" value="1.5-duree" id="1.5-duree">1,5</label>
-            </li>
-            <li>
-              <label for="2-duree"> <input type="checkbox" name="duree" value="2-duree" id="2-duree">2</label>
-            </li>
-            <li>
-              <label for="3-duree"> <input type="checkbox" name="duree" value="3-duree" id="3-duree">3</label>
-            </li>
-            <li>
-              <label for="5-duree"> <input type="checkbox" name="duree" value="5-duree" id="5-duree">5</label>
-            </li>
-            <li>
-              <label for="8-duree"> <input type="checkbox" name="duree" value="8-duree" id="8-duree">8</label>
-            </li>
-            <li>
-              <label for="10.5-duree"> <input type="checkbox" name="duree" value="10.5-duree"
-                  id="10.5-duree">10,5</label>
-            </li>
-            <li>
-              <label for="58-duree"> <input type="checkbox" name="duree" value="58-duree" id="58-duree">58</label>
-            </li>
-          </ul>
-        </div>
-        <div class="modacces" id="modacces">
-          <h4 class="filter_five">Modalité d'accés :</h4>
-          <ul id="bulletpoint">
-            <li>
-              <label for="presentiel"> <input type="checkbox" name="modacces" value="presentiel"
-                  id="presentiel">Présentiel</label>
-            </li>
-            <li>
-              <label for="distanciel"><input type="checkbox" name="modacces" value="distanciel"
-                  id="distanciel">Distanciel</label>
-            </li>
-            <li>
-              <label for="hybride"> <input type="checkbox" name="modacces" value="hybride" id="hybride">Hybride</label>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="flex">
-      <input type="button" class="flex-child" onclick="filter()" value="Filtrer résultat">
-      <input type="reset" class="flex-child" value="Reset" />
-    </div>
     </form>
     </div>
     <div class="centralblock">
@@ -231,9 +141,10 @@
                         <path id="nantes" class="at-176__pin"
                           d="M24,0A24,24,0,0,0,0,24C0,37.25,20,72,24,72S48,37.25,48,24A24,24,0,0,0,24,0Zm0,33a9,9,0,1,1,9-9A9,9,0,0,1,24,34Z" />
                       </g>
-                            <g transform="translate(138,227) scale(0.2)">
-                              <path id="saint-etienne-de-montluc" class="at-176__pin" d="M24,0A24,24,0,0,0,0,24C0,37.25,20,72,24,72S48,37.25,48,24A24,24,0,0,0,24,0Zm0,33a9,9,0,1,1,9-9A9,9,0,0,1,24,34Z"/>
-                              </g>
+                      <g transform="translate(138,227) scale(0.2)">
+                        <path id="saint-etienne-de-montluc" class="at-176__pin"
+                          d="M24,0A24,24,0,0,0,0,24C0,37.25,20,72,24,72S48,37.25,48,24A24,24,0,0,0,24,0Zm0,33a9,9,0,1,1,9-9A9,9,0,0,1,24,34Z" />
+                      </g>
                       <g transform="translate(190,215) scale(0.2)">
                         <path id="saint-barthelemy-danjou" class="at-176__pin"
                           d="M24,0A24,24,0,0,0,0,24C0,37.25,20,72,24,72S48,37.25,48,24A24,24,0,0,0,24,0Zm0,33a9,9,0,1,1,9-9A9,9,0,0,1,24,34Z" />
