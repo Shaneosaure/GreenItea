@@ -1856,7 +1856,6 @@ function affichagelist() {
     /**vidage filter list */
     let list1 = document.getElementById("showinglist");
     if (list1.childElementCount!=formationsList.formationsList.length) {
-        
         for (let i = 0; i < filtersList.filtersList.length; i++) {
             list1.removeChild(list1.lastChild);
         }
