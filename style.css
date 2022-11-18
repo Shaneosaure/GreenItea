@@ -2,7 +2,7 @@
     --vh: 100vh;
 }
 
-.filter, .flex-child, .footer, .header{
+.flex-child, .footer, .header{
     background-color: #156531;
     box-shadow: 1px 1px 1px 1px #0e4321;
 }
@@ -86,9 +86,11 @@
     border-radius: 50%;
     overflow: hidden;
     color: #000;
+    background-color: #ffffff;
+}
+.addButton:hover{
     background-color: #156531;
 }
-
 /* css de chaque région */
 #Auvergne-Rhône-Alpes {
     display: visible;
@@ -281,7 +283,7 @@
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     padding: 1%;
 }
 
@@ -300,9 +302,12 @@
 /**Pour le filtre*/
 
 .filter {
+    width: 33%;
     display: flex;
     align-content: center;
     border-radius: 2%;
+    margin-right: 36vw;
+    margin-left: 31vw;
 }
 
 .filter_five{
