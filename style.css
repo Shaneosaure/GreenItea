@@ -39,6 +39,7 @@
     height: 90vh;
     display: inline-block;
     width: 45%;
+    min-width: 600px;
 }
 
 .mapblock::-webkit-scrollbar {
@@ -85,18 +86,24 @@
 }
 
 .dotdetail,
-.addButton {
+.addButton,
+.subButton {
     margin-left: 90%;
 }
 
-.addButton {
+
+.addButton,
+.subButton,
+#download-basket {
     border: 2px solid #000;
     border-radius: 50%;
     overflow: hidden;
     color: #000;
     background-color: #ffffff;
 }
-.addButton:hover{
+.addButton:hover,
+.subButton:hover,
+#download-basket:hover{
     background-color: #156531;
 }
 /* css de chaque région */
@@ -294,9 +301,14 @@
     display: none;
 }
 
-.showinglist {
-    font-size: 5%;
+.nomVille {
+    font-size: 2em;
+    color:rgb(168, 168, 168);
 }
+
+/**.showinglist {
+    font-size: 5%;
+}*/
 
 #searchBar {
     position: absolute;
@@ -341,6 +353,7 @@
     overflow-y: auto;
     scrollbar-width: auto;
     -ms-overflow-style: none;
+    z-index: 2;
 }
 
 #basket.show-menu {
@@ -386,7 +399,6 @@
     border-radius: 2%;
     justify-content: center;
     align-content: center;
-    justify-content: space-evenly;
 }
 
 .filter_five {
@@ -411,4 +423,10 @@
 
 #bulletpoint_long {
     columns: 2;
+}
+
+
+.submit{
+    text-decoration: underline;
+    font-weight: bold;
 }
