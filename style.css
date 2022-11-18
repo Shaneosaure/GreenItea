@@ -51,6 +51,7 @@
 }
 
 .dotdetail {
+    position: relative;
     font-weight: bolder;
     font-size: larger;
     display: inline-block;
@@ -305,9 +306,9 @@
     color:rgb(168, 168, 168);
 }
 
-.showinglist {
+/**.showinglist {
     font-size: 5%;
-}
+}*/
 
 #searchBar {
     position: absolute;
