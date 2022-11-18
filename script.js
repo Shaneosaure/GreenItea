@@ -1421,7 +1421,7 @@ let formationsList = {
             nom: "IT Akademy",
             intitule: "Développeur fullstack",
             ville: "Lyon",
-            region:"Auvergne-Rhône-Alpes",
+            region: "Auvergne-Rhône-Alpes",
             acquis: "Certification RNCP31678 pour l'ensemble de la formation",
             duree: 1,
             modalites: "Présentiel",
@@ -1724,6 +1724,7 @@ let filtersList = {
 };
 
 
+
 /** ressors les checkbox pas sélectionné */
 function filter() {
     let values = [];
@@ -1734,28 +1735,27 @@ function filter() {
     let cblocalisation = document.querySelectorAll('input[name="localisation"]:not(:checked)');
     let cbduree = document.querySelectorAll('input[name="duree"]:not(:checked)');
     let cbmodacces = document.querySelectorAll('input[name="modacces"]:not(:checked)');
-    values.push("Formation:")
     cbformation.forEach((checkbox) => {
         values.push(checkbox.value);
     });
-    values.push("\nStructure:")
+    values.push(";")
     cbstructure.forEach((checkbox) => {
         values.push(checkbox.value);
     });
-    values.push("\nLocalisation:")
+    values.push(";")
     cblocalisation.forEach((radio) => {
         values.push(radio.value);
     });
-    values.push("\nDurée:")
+    values.push(";")
     cbduree.forEach((checkbox) => {
         values.push(checkbox.value);
     });
-    values.push("\nModalité d'accés:")
+    values.push(";")
     cbmodacces.forEach((checkbox) => {
         values.push(checkbox.value);
     });
+    values.push(";")
     console.log(values);
-    console.log(formationsList.formationsList[5].duree);
 }
 
 
@@ -2045,7 +2045,7 @@ function searchList() {
         filtersList: []
     };
     /**trouve la valeur contenue dans la barre de recherche */
-    const result = document.getElementById("searchBar").value.toLowerCase();   
+    const result = document.getElementById("searchBar").value.toLowerCase();
     /**si valeur non nulle, chercher dans la liste formations; retourne la position du string value quand il le trouve, ou -1 sinon   */
     if (result != "") {
         for (let i = 0; i < formationsList.formationsList.length; i++) {
@@ -2287,7 +2287,7 @@ function showRegion(nameelm, locx, locy) {
 
 
 function setButtonsDisplayRegion(elm, prop) {
-    var reg = document.getElementById("g_"+elm);
+    var reg = document.getElementById("g_" + elm);
     reg.style.display = prop;
 }
 
