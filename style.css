@@ -294,6 +294,11 @@
     display: none;
 }
 
+.nomVille {
+    font-size: 2em;
+    color:rgb(168, 168, 168);
+}
+
 .showinglist {
     font-size: 5%;
 }
