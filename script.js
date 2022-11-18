@@ -1,7 +1,4 @@
 /**ficher pour java script */
-
-
-
 /**liste des formations**/
 let formationsList = {
     formationsList: [
@@ -1421,7 +1418,7 @@ let formationsList = {
             nom: "IT Akademy",
             intitule: "Développeur fullstack",
             ville: "Lyon",
-            region:"Auvergne-Rhône-Alpes",
+            region: "Auvergne-Rhône-Alpes",
             acquis: "Certification RNCP31678 pour l'ensemble de la formation",
             duree: 1,
             modalites: "Présentiel",
@@ -1718,51 +1715,44 @@ let formationsList = {
     ]
 }
 
-/** list temporaire pour les filtres */
+/** liste pour les filtres */
 let filtersList = {
     filtersList: []
 };
 
+/**ressors les checkbox pas sélectionné*/
 
-/** ressors les checkbox pas sélectionné */
 function filter() {
     let values = [];
 
-    /**query de chaque colonne du tableau */
+    /**query de chaque colonne du tableau*/
     let cbformation = document.querySelectorAll('input[name="formation"]:not(:checked)');
     let cbstructure = document.querySelectorAll('input[name="structure"]:not(:checked)');
     let cblocalisation = document.querySelectorAll('input[name="localisation"]:not(:checked)');
-    let cbvalidation = document.querySelectorAll('input[name="validation"]:not(:checked)');
     let cbduree = document.querySelectorAll('input[name="duree"]:not(:checked)');
     let cbmodacces = document.querySelectorAll('input[name="modacces"]:not(:checked)');
-    values.push("Formation:")
     cbformation.forEach((checkbox) => {
         values.push(checkbox.value);
     });
-    values.push("\nStructure:")
+    values.push(";")
+    cbstructure.forEach((checkbox) => {
+        values.push(checkbox.value);
+    });
+    values.push(";")
     cblocalisation.forEach((radio) => {
         values.push(radio.value);
     });
-    values.push("\nLocalisation:")
-    cblocalisation.forEach((checkbox) => {
-        values.push(checkbox.value);
-    });
-    values.push("\nValidation:")
-    cbvalidation.forEach((radio) => {
-        values.push(radio.value);
-    });
-    values.push("\nDurée:")
+    values.push(";")
     cbduree.forEach((checkbox) => {
         values.push(checkbox.value);
     });
-    values.push("\nModalité d'accés:")
+    values.push(";")
     cbmodacces.forEach((checkbox) => {
         values.push(checkbox.value);
     });
+    values.push(";")
     console.log(values);
-    console.log(formationsList.formationsList[5].duree);
 }
-
 
 /** au chargement de la page, la liste s'affiche*/
 window.onload = function affichageload() {
@@ -2050,37 +2040,42 @@ function searchList() {
         filtersList: []
     };
     /**trouve la valeur contenue dans la barre de recherche */
-    const result = document.getElementById("searchBar").value.toLowerCase();   
-    /**si valeur non nulle, chercher dans la liste formations; retourne la position du string value quand il le trouve, ou -1 sinon   */
-    if (result != "") {
-        for (let i = 0; i < formationsList.formationsList.length; i++) {
-            let position1 = formationsList.formationsList[i].intitule.toLowerCase().search(result);
-            if (position1 != (-1)) {
-                filtersList.filtersList.push(formationsList.formationsList[i]);
-            } else {
-                let position2 = formationsList.formationsList[i].nom.toLowerCase().search(result);
-                if (position2 != (-1)) {
+    if (document.getElementById("searchBar").value.toLowerCase()!="") {
+        let result = document.getElementById("searchBar").value.toLowerCase();
+        /**si valeur non nulle, chercher dans la liste formations; retourne la position du string value quand il le trouve, ou -1 sinon   */
+        if (result != "") {
+            for (let i = 0; i < formationsList.formationsList.length; i++) {
+                let position1 = formationsList.formationsList[i].intitule.toLowerCase().search(result);
+                if (position1 != (-1)) {
                     filtersList.filtersList.push(formationsList.formationsList[i]);
                 } else {
-                    let position3 = formationsList.formationsList[i].ville.toLowerCase().search(result);
-                    if (position3 != (-1)) {
+                    let position2 = formationsList.formationsList[i].nom.toLowerCase().search(result);
+                    if (position2 != (-1)) {
                         filtersList.filtersList.push(formationsList.formationsList[i]);
                     } else {
-                        let position4 = formationsList.formationsList[i].structure.toLowerCase().search(result);
-                        if (position4 != (-1)) {
+                        let position3 = formationsList.formationsList[i].ville.toLowerCase().search(result);
+                        if (position3 != (-1)) {
                             filtersList.filtersList.push(formationsList.formationsList[i]);
                         } else {
-                            let position5 = formationsList.formationsList[i].type_formation.toLowerCase().search(result);
-                            if (position5 != (-1)) {
+                            let position4 = formationsList.formationsList[i].structure.toLowerCase().search(result);
+                            if (position4 != (-1)) {
                                 filtersList.filtersList.push(formationsList.formationsList[i]);
+                            } else {
+                                let position5 = formationsList.formationsList[i].type_formation.toLowerCase().search(result);
+                                if (position5 != (-1)) {
+                                    filtersList.filtersList.push(formationsList.formationsList[i]);
+                                }
                             }
                         }
                     }
                 }
             }
+            afficheFilterList();
         }
-        afficheFilterList();
-    }
+    }else{
+        affichagelist();
+    } 
+        
 }
 
 var basketList = [];
@@ -2252,7 +2247,6 @@ function downloadBasket() {
 
 /**Argument pour Email */
 const SubjectVariable = "Demande de Devis de Formation";
-/**const BodyVariable = "Bonjour,\n Je souhaiterais avoir un devi sur ces formations suivantes:"+basketList;*/
 function sendMail() {
     var aaa = "";
     for (var i = 0; i < basketList.length; i++) {
@@ -2292,7 +2286,7 @@ function showRegion(nameelm, locx, locy) {
 
 
 function setButtonsDisplayRegion(elm, prop) {
-    var reg = document.getElementById("g_"+elm);
+    var reg = document.getElementById("g_" + elm);
     reg.style.display = prop;
 }
 

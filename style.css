@@ -2,15 +2,20 @@
     --vh: 100vh;
 }
 
-.filter, .flex-child, .footer, .header{
+.filter,
+.flex-child,
+.footer,
+.header {
     background-color: #156531;
     box-shadow: 1px 1px 1px 1px #0e4321;
 }
-.header, .footer{
+
+.header,
+.footer {
     border-radius: 5%;
 }
 
-.body{
+.body {
     background-color: #1D8742
 }
 
@@ -26,7 +31,6 @@
     -webkit-border-radius: 18px / 20px;
     -moz-border-radius: 18px / 20px;
     border-radius: 18px / 20px;
-    overflow-y: auto;
     scrollbar-width: auto;
     -ms-overflow-style: none;
     margin-bottom: 70px;
@@ -46,12 +50,13 @@
 
 .dotdetail {
     position: relative;
-    font-weight:bolder;
-    font-size:larger;
+    font-weight: bolder;
+    font-size: larger;
     display: inline-block;
     border-bottom: 2px dotted black;
 }
-.dotdetailtext{
+
+.dotdetailtext {
     font-weight: normal;
     font-size: normal;
 }
@@ -65,31 +70,34 @@
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-    
+
 
 
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
-    right:50%;
+    right: 50%;
 }
 
 .dotdetail:hover .dotdetailtext {
     visibility: visible;
 }
 
-.dotdetail, .addButton{
-    margin-left: 90% ;
+.dotdetail,
+.addButton {
+    margin-left: 90%;
 }
 
-.addButton{
+.addButton {
     border: 2px solid #000;
     border-radius: 50%;
     overflow: hidden;
     color: #000;
+    background-color: #ffffff;
+}
+.addButton:hover{
     background-color: #156531;
 }
-
 /* css de chaque région */
 #Auvergne-Rhône-Alpes {
     display: visible;
@@ -192,9 +200,44 @@
     justify-content: space-evenly;
 }#closebutton {
     z-index: 1;
-    display:"visible";
+    display: "visible";
 }
 
+.amcharts-chart-div {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 90hv;
+    padding: 0px;
+    touch-action: none;
+}
+
+.pindetail:hover .pindetailtext {
+    visibility: visible;
+}
+
+[id^="pin_"] {
+	position: absolute;
+	padding: 1em;
+
+  display: none;
+  pointer-events: none;
+}
+
+
+.mapblock{
+    background-color:#1E433C
+
+
+.amcharts-main-div {
+    position: relative;
+}
+
+#chartdiv {
+    height: 90vh; 
+    overflow: hidden; 
+    text-align: left;
+}
 
 /*hover css */
 .pindetail .pindetailtext {
@@ -226,11 +269,12 @@
 }
 
 
-.mapblock{
-    background-color:#1E433C
+.mapblock {
+    background-color: #1E433C
 }
-.listblock{
-    background-color:#24A854
+
+.listblock {
+    background-color: #24A854
 }
 
 .listblock {
@@ -253,31 +297,32 @@
     display: none;
 }
 
-.showinglist{
-    font-size:5% ;
+.showinglist {
+    font-size: 5%;
 }
 
-#searchBar{
+#searchBar {
     position: absolute;
-    top:0;
-    right:52px;
+    top: 0;
+    right: 52px;
     height: 44px;
-    font-size:17px;
+    font-size: 17px;
 }
-.bouton-panier{
-    position:absolute;
-    top:0;
-    right:0;
-    width:50px;
-    height:50px;
-    overflow:hidden;
-    background:#fff;
-    color:#000;
-    line-height:50px;
-    text-align:center;
-    font-size:40px;
-    cursor:pointer;
-    transition:all .5s;
+
+.bouton-panier {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    background: #fff;
+    color: #000;
+    line-height: 50px;
+    text-align: center;
+    font-size: 40px;
+    cursor: pointer;
+    transition: all .5s;
 }
 
 #close-menu {
@@ -312,7 +357,7 @@
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     padding: 1%;
 }
 
@@ -331,15 +376,18 @@
 /**Pour le filtre*/
 
 .filter {
+    width: 33%;
     display: flex;
     align-content: center;
     border-radius: 2%;
+    margin-right: 36vw;
+    margin-left: 31vw;
 }
 
-.filter_five{
+.filter_five {
     font-size: large;
     font-weight: bold;
-    text-decoration: underline; 
+    text-decoration: underline;
 
 }
 
@@ -350,7 +398,8 @@
     font-size: 100%;
 }
 
-#bulletpoint, #bulletpoint_long {
+#bulletpoint,
+#bulletpoint_long {
     list-style-type: none;
     text-align: left;
 }
