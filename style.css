@@ -28,6 +28,7 @@
 .mapblock {
     box-sizing: border-box;
     border: 5px solid #000000;
+    background-color: #1E433C;
     -webkit-border-radius: 18px / 20px;
     -moz-border-radius: 18px / 20px;
     border-radius: 18px / 20px;
@@ -224,10 +225,6 @@
     text-align: left;
 }
 
-.mapblock {
-    background-color: #1E433C
-}
-
 .listblock {
     background-color: #24A854
 }
@@ -312,7 +309,6 @@
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    /* flex-direction: column; */
     padding: 1%;
 }
 
@@ -328,15 +324,24 @@
     padding: 10px;
 }
 
+.flex-child:hover{
+    background-color: #24A854;
+    box-shadow: 3px 3px 3px 3px #1E433C;
+}
+
+.flex-child:active{
+    background-color: #0b7431;
+    box-shadow: 3px 3px 3px 3px #0b1f1b;
+}
+
 /**Pour le filtre*/
 
 .filter {
-    width: 33%;
-    display: flex;
-    align-content: center;
+    display: flex; 
     border-radius: 2%;
-    margin-right: 36vw;
-    margin-left: 31vw;
+    justify-content: center;
+    align-content: center;
+    justify-content: space-evenly;
 }
 
 .filter_five {
