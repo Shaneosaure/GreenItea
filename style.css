@@ -353,6 +353,7 @@
     overflow-y: auto;
     scrollbar-width: auto;
     -ms-overflow-style: none;
+    z-index: 2;
 }
 
 #basket.show-menu {
