@@ -1736,7 +1736,7 @@ function filtrerChoix() {
     values.push(document.getElementById("localisation").value);
     values.push(document.getElementById("duree").value);
     values.push(document.getElementById("modacces").value);
-    console.log(values);
+
     for (let i = 0; i < formationsList.formationsList.length; i++) {
         if (formationsList.formationsList[i].type_formation == values[0] || values[0] == "select-all") {
             if (formationsList.formationsList[i].structure == values[1] || values[1] == "select-all") {
@@ -1744,7 +1744,7 @@ function filtrerChoix() {
                     if (formationsList.formationsList[i].duree <= values[3] || values[3] == "select-all") {
                         if (formationsList.formationsList[i].modalites == values[4] || values[4] == "select-all") {
                             filtersList.filtersList.push(formationsList.formationsList[i]);
-                            console.log(formationsList.formationsList[i])
+
                         } else {
                             continue;
                         }
@@ -1956,7 +1956,7 @@ function afficheFilterList() {
     let list = document.getElementById("showinglist");
     list.innerHTML = "";
 
-    console.log(list);
+    
     for (let i = 0; i < filtersList.filtersList.length; i++) {
         /**on crée un li */
         let li = document.createElement("li");
@@ -2262,7 +2262,7 @@ function sendMail() {
     var aaa = "";
     for (var i = 0; i < basketList.length; i++) {
         aaa = aaa + document.getElementById('b_' + i).innerText + "%0D%0A";
-        console.log(aaa);
+
     }
     var body = "Bonjour,%0D%0AJe souhaiterai un devis sur ces formations suivante:%0D%0A" + aaa + "%0D%0AMerci de votre retour%0D%0ACordialement,";
     window.location.href = "mailto:design4green@etik.com ?subject=Demande de Devis de Formation &body=" + body;
@@ -2276,7 +2276,7 @@ function filterRegion(region) {
             filtersList.filtersList.push(formationsList.formationsList[i]);
         }
     }
-    console.log(filtersList);
+
 
 }
 
