@@ -85,18 +85,21 @@
 }
 
 .dotdetail,
-.addButton {
+.addButton,
+.subButton {
     margin-left: 90%;
 }
 
-.addButton {
+.addButton,
+.subButton {
     border: 2px solid #000;
     border-radius: 50%;
     overflow: hidden;
     color: #000;
     background-color: #ffffff;
 }
-.addButton:hover{
+.addButton:hover,
+.subButton:hover{
     background-color: #156531;
 }
 /* css de chaque région */
@@ -386,7 +389,6 @@
     border-radius: 2%;
     justify-content: center;
     align-content: center;
-    justify-content: space-evenly;
 }
 
 .filter_five {
